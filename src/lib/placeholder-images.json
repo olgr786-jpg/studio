@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "A stunning tropical waterfall cascading into a clear pool.",
-      "imageUrl": "https://images.unsplash.com/photo-1728051768204-f3955be76de0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cm9waWNhbCUyMHdhdGVyZmFsbHxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A stunning tropical waterfall cascading into a clear turquoise pool.",
+      "imageUrl": "https://images.unsplash.com/photo-1547028941-a633c395489c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMHdhdGVyZmFsbCUyMGNsZWFyJTIwd2F0ZXJ8ZW58MHx8fHwxNzI4MzQ3MjY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "tropical waterfall"
     },
     {
@@ -38,21 +38,21 @@
     },
     {
       "id": "origin-stream",
-      "description": "A clear, pristine stream flowing through a lush tropical forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1651243259109-d278b0bdd435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGVhciUyMHN0cmVhbXxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clear stream"
+      "description": "A lush rainforest stream with clear water flowing over mossy rocks.",
+      "imageUrl": "https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXNoJTIwcmFpbmZvcmVzdCUyMHN0cmVhbXxlbnwwfHx8fDE3MjgzNDcyODl8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "rainforest stream"
     },
     {
       "id": "origin-rocks",
-      "description": "Water flowing over dark, wet rocks, signifying natural filtration.",
-      "imageUrl": "https://images.unsplash.com/photo-1694867016516-800978ec4fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZXQlMjByb2Nrc3xlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wet rocks"
+      "description": "A hidden tropical spring with crystal clear water bubbling up between rocks.",
+      "imageUrl": "https://images.unsplash.com/photo-1437482078695-7cb6932c5436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NzeSUyMHJvY2tzJTIwd2F0ZXJmYWxsfGVufDB8fHx8MTcyODM0NzMwM3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "tropical spring"
     },
     {
       "id": "about-leaf-water",
-      "description": "A single drop of water on a large green tropical leaf, symbolizing purity and nature.",
-      "imageUrl": "https://images.unsplash.com/photo-1685197359006-f4a835c6d5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhZiUyMHdhdGVyLWRyb3B8ZW58MHx8fHwxNzY0MTg0MjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "leaf water-drop"
+      "description": "A crystal clear tropical lagoon seen from above, showing shades of turquoise and blue.",
+      "imageUrl": "https://images.unsplash.com/photo-1517585536425-4b8a23a3e6a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcnlzdGFsJTIwY2xlYXIlMjBsYWdvb24lMjB0cm9waWNhbHxlbnwwfHx8fDE3MjgzNDczMjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "tropical lagoon"
     }
   ]
 }
