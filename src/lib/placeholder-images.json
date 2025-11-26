@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-waterfall",
+      "description": "A stunning tropical waterfall cascading into a clear pool.",
+      "imageUrl": "https://images.unsplash.com/photo-1728051768204-f3955be76de0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cm9waWNhbCUyMHdhdGVyZmFsbHxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tropical waterfall"
+    },
+    {
+      "id": "product-500ml",
+      "description": "A 500ml bottle of AiguaPura water.",
+      "imageUrl": "https://images.unsplash.com/photo-1616118132534-381148898bb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "product-1l",
+      "description": "A 1L bottle of AiguaPura water.",
+      "imageUrl": "https://images.unsplash.com/photo-1530711654140-23ef9ad45094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2F0ZXIlMjBib3R0bGV8ZW58MHx8fHwxNzY0MTg0MjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "product-1_5l",
+      "description": "A 1.5L bottle of AiguaPura water.",
+      "imageUrl": "https://images.unsplash.com/photo-1616118133712-8c947f7b822c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "product-5l",
+      "description": "A 5L dispenser of AiguaPura water.",
+      "imageUrl": "https://images.unsplash.com/photo-1544198841-10f34f31f8dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXRlciUyMGRpc3BlbnNlcnxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water dispenser"
+    },
+    {
+      "id": "product-8l",
+      "description": "An 8L dispenser of AiguaPura water.",
+      "imageUrl": "https://images.unsplash.com/photo-1672826979189-faae44e1b7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YXRlciUyMGRpc3BlbnNlcnxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water dispenser"
+    },
+    {
+      "id": "origin-stream",
+      "description": "A clear, pristine stream flowing through a lush tropical forest.",
+      "imageUrl": "https://images.unsplash.com/photo-1651243259109-d278b0bdd435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGVhciUyMHN0cmVhbXxlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clear stream"
+    },
+    {
+      "id": "origin-rocks",
+      "description": "Water flowing over dark, wet rocks, signifying natural filtration.",
+      "imageUrl": "https://images.unsplash.com/photo-1694867016516-800978ec4fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZXQlMjByb2Nrc3xlbnwwfHx8fDE3NjQxODQyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wet rocks"
+    },
+    {
+      "id": "about-leaf-water",
+      "description": "A single drop of water on a large green tropical leaf, symbolizing purity and nature.",
+      "imageUrl": "https://images.unsplash.com/photo-1685197359006-f4a835c6d5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhZiUyMHdhdGVyLWRyb3B8ZW58MHx8fHwxNzY0MTg0MjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leaf water-drop"
+    }
+  ]
 }
