@@ -36,19 +36,19 @@ export default function Header() {
         isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo />
-        <nav className="hidden md:flex items-center gap-6">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+        <Logo className="mr-6" />
+        <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary">
               {link.label}
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
            <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="relative">
+              <Button variant="ghost" size="icon" className="relative rounded-full transition-colors hover:bg-primary/10">
                 <ShoppingCart className="h-5 w-5" />
                 <span className="sr-only">Obrir carretó</span>
               </Button>
@@ -62,7 +62,7 @@ export default function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button className="hidden md:inline-flex">Comprar Ara</Button>
+          <Button className="hidden md:inline-flex shadow-sm hover:shadow-lg transition-shadow">Comprar Ara</Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -88,7 +88,7 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                 <Button className="mt-4">Comprar Ara</Button>
+                 <Button className="mt-4 shadow-sm">Comprar Ara</Button>
               </nav>
             </SheetContent>
           </Sheet>
