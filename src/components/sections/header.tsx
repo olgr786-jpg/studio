@@ -22,13 +22,12 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
+    // Run on mount to set initial state
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -67,7 +66,9 @@ export default function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button className="hidden md:inline-flex shadow-sm hover:shadow-lg transition-shadow">Comprar Ara</Button>
+          <Button asChild className="hidden md:inline-flex shadow-sm hover:shadow-lg transition-shadow">
+            <Link href="#productes">Comprar Ara</Link>
+          </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -93,7 +94,9 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                 <Button className="mt-4 shadow-sm">Comprar Ara</Button>
+                 <Button asChild className="mt-4 shadow-sm">
+                   <Link href="#productes">Comprar Ara</Link>
+                 </Button>
               </nav>
             </SheetContent>
           </Sheet>
