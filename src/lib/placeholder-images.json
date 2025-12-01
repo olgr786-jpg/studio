@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "Cascada tropical envoltada de vegetació verda, aigua transparent que cau, llum natural.",
+      "description": "Cascada tropical envoltada de vegetació verda, aigua transparent que cau, llum natural, fotorealisme.",
       "imageUrl": "https://images.unsplash.com/photo-1500930287299-6d6548a3c827?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical waterfall"
     },
@@ -21,7 +21,7 @@
     {
       "id": "product-1_5l",
       "description": "Ampolla d'aigua de 1.5 litres, perfecta per a tota la jornada.",
-      "imageUrl": "https://images.unsplash.com/photo-1620051941442-37733857e841?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG9otby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1620051941442-37733857e841?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "water bottle"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "id": "origin-stream",
-      "description": "Rierol en una selva exuberant amb aigua clara que flueix sobre roques amb molsa.",
+      "description": "Riu tropical amb aigua cristal·lina, vegetació exuberant al voltant, reflexos a l’aigua, fotorealisme.",
       "imageUrl": "https://images.unsplash.com/photo-1418985991501-7e2f29345fde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "rainforest stream"
     },
@@ -51,7 +51,7 @@
     {
       "id": "about-leaf-water",
       "description": "Una llacuna tropical d'aigua cristal·lina vista des de dalt, mostrant tons de turquesa i blau.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlibrb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical lagoon"
     }
   ]
