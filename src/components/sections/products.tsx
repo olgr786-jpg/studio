@@ -73,16 +73,16 @@ const productCategories = [
       {
         id: 'nalu-electrolyte',
         name: 'Nalu Electrolyte+',
-        description: 'Rehidratació ràpida per a esportistes o dies intensos. Recupera els minerals essencials.',
+        description: 'Rehidratació ràpida per a esportistes o dies intensos. Recupera els minerals essencials en una ampolla de vidre. Format: 500ml.',
         imageId: 'product-wellness-electrolyte',
-        price: '3.00€',
+        price: '3.50€',
       },
       {
         id: 'nalu-boost',
         name: 'Nalu Boost Vitamines',
-        description: "Un impuls d'energia natural amb vitamines B+C per afrontar el dia amb vitalitat.",
+        description: "Un impuls d'energia natural amb vitamines B+C per afrontar el dia amb vitalitat, en ampolla de vidre. Format: 500ml.",
         imageId: 'product-wellness-boost',
-        price: '3.00€',
+        price: '3.50€',
       },
       {
         id: 'nalu-relax',
