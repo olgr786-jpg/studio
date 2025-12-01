@@ -26,7 +26,7 @@
     --chart-1: 182 100% 40%; /* Turquesa */
     --chart-2: 46 100% 50%; /* Groc */
     --chart-3: 168 100% 36%; /* Verd tropical */
-    --chart-4: 355 100% 69%; /* Corall suau (aproximat) */
+    --chart-4: 5 100% 69%; /* Corall suau */
     --chart-5: 201 100% 36%; /* Blau oceà */
     --radius: 0.8rem;
   }
@@ -53,7 +53,7 @@
     --chart-1: 182 100% 40%;
     --chart-2: 46 100% 50%;
     --chart-3: 168 100% 36%;
-    --chart-4: 355 100% 69%;
+    --chart-4: 5 100% 69%;
     --chart-5: 201 100% 36%;
   }
 }
