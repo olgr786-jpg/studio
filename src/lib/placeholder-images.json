@@ -39,26 +39,26 @@
     {
       "id": "blog-hydration",
       "description": "Un atleta bevent aigua després de fer exercici a l'aire lliure.",
-      "imageUrl": "https://images.unsplash.com/photo-1587598893450-42c26ea6357d?q=80&w=1974&auto=format=fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1587598893450-42c26ea6357d?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "athlete drinking water"
     },
     {
-      "id": "product-500ml",
-      "description": "Ampolla d'aigua de vidre de 500ml amb disseny minimalista, sobre un fons de pedres volcàniques humides.",
-      "imageUrl": "https://images.unsplash.com/photo-1607598681216-5d552045657a?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "glass water bottle"
+      "id": "pack-tropical-essences",
+      "description": "Una selecció d'ampolles d'aigua Nalu amb sabors de coco, pinya i mango, envoltades de fruita fresca.",
+      "imageUrl": "https://images.unsplash.com/photo-1553531589-4a45a835b46d?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "fruit flavored water"
     },
     {
-      "id": "product-1.5l",
-      "description": "Diverses ampolles d'aigua de 1.5L alineades, amb reflexos de llum sobre un fons blau profund.",
-      "imageUrl": "https://images.unsplash.com/photo-1543337395-a787455b5500?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water bottles"
+      "id": "pack-wellness",
+      "description": "La gamma funcional de Nalu Water, amb ampolles per a electròlits, vitamines i relaxació, en un entorn de spa.",
+      "imageUrl": "https://images.unsplash.com/photo-1544200195-e3a4a643195b?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "wellness drinks"
     },
     {
-      "id": "product-5l",
-      "description": "Una garrafa de vidre gran d'aigua amb dispensador, al costat d'un got ple, amb una fulla de monstera al fons.",
-      "imageUrl": "https://images.unsplash.com/photo-1601599554333-35661d99a39f?q=80&w=1974&auto=format=fit=crop",
-      "imageHint": "water dispenser glass"
+      "id": "pack-adventure",
+      "description": "Una ampolla d'acer inoxidable de Nalu al costat d'una motxilla en un paisatge de muntanya.",
+      "imageUrl": "https://images.unsplash.com/photo-1522163182525-2825e83834b2?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "reusable bottle nature"
     }
   ]
 }
