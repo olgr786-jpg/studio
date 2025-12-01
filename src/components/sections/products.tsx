@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useToast } from '@/hooks/use-toast';
-import { ShoppingCart, Leaf, Heart, Gift, GlassWater, Droplets, Sparkles, Star } from 'lucide-react';
+import { ShoppingCart, Leaf, Heart, Gift, GlassWater, Sparkles, Star } from 'lucide-react';
 
 const productCategories = [
   {
@@ -151,7 +151,7 @@ const productCategories = [
         id: 'pack-esport',
         name: 'Pack Esport',
         description: 'La combinació perfecta: Nalu Original, Electrolyte+ i Citrus Paradise per a la teva rutina.',
-        imageId: 'pack-wellness',
+        imageId: 'pack-sport',
         price: '8.00€',
       },
       {

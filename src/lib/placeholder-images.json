@@ -33,7 +33,7 @@
     {
       "id": "blog-sustainability",
       "description": "Ampolles de vidre reutilitzables plenes d'aigua en una cistella.",
-      "imageUrl": "https://images.unsplash.com/photo-1610484830842-db63a5610731?q=80&w=1974&auto=format=fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1610484830842-db63a5610731?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "glass bottles"
     },
     {
@@ -56,67 +56,67 @@
     },
     {
       "id": "product-essences",
-      "description": "Grup d'ampolles de Nalu amb essències de coco en un ambient de platja.",
-      "imageUrl": "https://images.unsplash.com/photo-1607513746885-337a597b4737?q=80&w=1974&auto=format&fit=crop",
+      "description": "Aigua de coco en un got amb cocos al fons.",
+      "imageUrl": "https://images.unsplash.com/photo-1556881261-b53fa435a297?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "coconut water"
     },
     {
       "id": "product-essences-pineapple",
-      "description": "Ampolla de Nalu amb essència de pinya al costat de trossos de pinya fresca.",
-      "imageUrl": "https://images.unsplash.com/photo-1589881177653-524675e3a241?q=80&w=1974&auto=format&fit=crop",
+      "description": "Aigua amb sabor a pinya en un got amb una rodanxa de pinya.",
+      "imageUrl": "https://images.unsplash.com/photo-1525498128493-380d1990a112?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "pineapple drink"
     },
     {
       "id": "product-essences-mango",
-      "description": "Ampolla de Nalu amb essència de mango sobre un fons tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1601131127027-e4c700b8b983?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "mango drink"
+      "description": "Got de suc de mango amb mangos frescos al voltant.",
+      "imageUrl": "https://images.unsplash.com/photo-1605645743130-1f3b723a17b1?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "mango juice"
     },
     {
       "id": "product-essences-citrus",
-      "description": "Ampolla de Nalu amb essència de cítrics amb rodanxes de llimona i llima.",
-      "imageUrl": "https://images.unsplash.com/photo-1613482143845-bab93278f8b8?q=80&w=1974&auto=format&fit=crop",
+      "description": "Aigua cítrica en un got amb rodanxes de llimona, llima i taronja.",
+      "imageUrl": "https://images.unsplash.com/photo-1551025890-70f13e59a633?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "citrus water"
     },
     {
       "id": "product-wellness-electrolyte",
-      "description": "Ampolla de Nalu Electrolyte+ en un context esportiu.",
-      "imageUrl": "https://images.unsplash.com/photo-1575043023021-3c6a835b678c?q=80&w=1974&auto=format&fit=crop",
+      "description": "Beguda per a esportistes blava per a la rehidratació.",
+      "imageUrl": "https://images.unsplash.com/photo-1600720179831-5085c883e200?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "sports drink"
     },
     {
       "id": "product-wellness-boost",
-      "description": "Ampolla de Nalu Boost amb fruites que representen les vitamines.",
-      "imageUrl": "https://images.unsplash.com/photo-1578849223063-cb3f10137599?q=80&w=1974&auto=format&fit=crop",
+      "description": "Got d'aigua amb rodanxes de taronja, que representen les vitamines B i C.",
+      "imageUrl": "https://images.unsplash.com/photo-1577601618999-528f09f0f15c?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "vitamin water"
     },
     {
       "id": "product-wellness-relax",
-      "description": "Ampolla de Nalu Relax amb elements que suggereixen calma, com flors de lavanda.",
-      "imageUrl": "https://images.unsplash.com/photo-1599388136367-33147f8a7e78?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "relaxing drink"
+      "description": "Ampolla amb líquid de color lavanda en un camp de lavanda.",
+      "imageUrl": "https://images.unsplash.com/photo-1565011712-45e39e589a1a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "lavender drink"
     },
     {
       "id": "product-eco-recycled",
-      "description": "Ampolla de Nalu Earth feta 100% de material reciclat, amb un fons verd natural.",
-      "imageUrl": "https://images.unsplash.com/photo-1620788031853-37255b7f0f6e?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "recycled bottle"
+      "description": "Una persona agafant una ampolla de plàstic d'una pila per reciclar.",
+      "imageUrl": "https://images.unsplash.com/photo-1590621423321-c236e18898f3?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "recycling plastic"
     },
     {
       "id": "product-eco-refill",
-      "description": "Bag-in-Box de Nalu Refill en una cuina moderna o oficina.",
-      "imageUrl": "https://images.unsplash.com/photo-1624453442323-2b9a7a9d9494?q=80&w=1974&auto=format&fit=crop",
+      "description": "Dispensador d'aigua de sobretaula per omplir gots.",
+      "imageUrl": "https://images.unsplash.com/photo-1620917696038-16c873a11532?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water dispenser"
     },
     {
       "id": "product-merch-cups",
-      "description": "Gots reutilitzables amb dissenys tropicals de Nalu.",
-      "imageUrl": "https://images.unsplash.com/photo-1619731718392-452a81f3358a?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "reusable cups"
+      "description": "Gots de vidre de colors amb disseny modern.",
+      "imageUrl": "https://images.unsplash.com/photo-1623588220973-55079d375a7a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "reusable glasses"
     },
     {
       "id": "pack-adventure",
-      "description": "Ampolla d'acer inoxidable de Nalu al costat d'una motxilla en un paisatge de muntanya.",
+      "description": "Ampolla d'acer inoxidable al costat d'una motxilla en un paisatge de muntanya.",
       "imageUrl": "https://images.unsplash.com/photo-1522163182525-2825e83834b2?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "reusable bottle nature"
     },
@@ -128,15 +128,21 @@
     },
     {
       "id": "pack-wellness",
-      "description": "La gamma funcional de Nalu Water, amb ampolles per a electròlits, vitamines i relaxació, en un entorn de spa.",
-      "imageUrl": "https://images.unsplash.com/photo-1544200195-e3a4a643195b?q=80&w=1974&auto=format&fit=crop",
+      "description": "Tres gots amb begudes de diferents colors (blau, groc, vermell) en un entorn de spa.",
+      "imageUrl": "https://images.unsplash.com/photo-1600055533352-73a4fe0a7b45?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "wellness drinks"
     },
     {
       "id": "product-merch-pack",
-      "description": "Un pack de regal de Nalu amb una selecció de productes i merchandising.",
+      "description": "Una capsa de regal oberta que mostra diversos productes.",
       "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e502067?q=80&w=2003&auto=format&fit=crop",
       "imageHint": "gift box"
+    },
+    {
+      "id": "pack-sport",
+      "description": "Combinació d'aigua, beguda energètica i beguda cítrica per a esportistes.",
+      "imageUrl": "https://images.unsplash.com/photo-1549477112-2c5b97f743a9?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "sport drinks"
     }
   ]
 }
