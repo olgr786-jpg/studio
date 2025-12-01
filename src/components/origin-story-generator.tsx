@@ -3,9 +3,8 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { getOriginStory } from '@/app/actions/story';
-import { Loader2 } from 'lucide-react';
+import { Loader2, Terminal } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Terminal } from "lucide-react"
 
 export function OriginStoryGenerator() {
   const [story, setStory] = useState('');
