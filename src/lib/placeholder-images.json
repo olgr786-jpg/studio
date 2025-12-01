@@ -3,8 +3,14 @@
     {
       "id": "hero-waterfall",
       "description": "Un paisatge tropical de Fiji amb muntanyes verdes i un mar turquesa.",
-      "imageUrl": "https://images.unsplash.com/photo-1527004112199-c35b89c33393?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f6ea?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "Fiji landscape"
+    },
+    {
+      "id": "who-we-are",
+      "description": "Una platja de sorra blanca i aigües cristal·lines, que representa la puresa i l'origen de Nalu.",
+      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "beach water"
     },
     {
       "id": "testimonial-1",
@@ -45,25 +51,25 @@
     {
       "id": "product-original",
       "description": "Ampolla clàssica d'aigua Nalu Original en un entorn natural i fresc.",
-      "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1553563463-a71990a78a63?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water bottle nature"
     },
     {
       "id": "product-premium",
       "description": "Elegant ampolla de vidre de Nalu Premium en una taula de restaurant.",
-      "imageUrl": "https://images.unsplash.com/photo-1563453392212-9a3c5d799612?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1616161482782-b0c01724275f?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "glass water bottle"
     },
     {
       "id": "product-essences-coco",
       "description": "Aigua de coco en un got amb cocos al fons.",
-      "imageUrl": "https://images.unsplash.com/photo-1556881261-b53fa435a297?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1581050522013-a4e9b930a6c0?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "coconut water"
     },
     {
       "id": "product-essences-pineapple",
       "description": "Aigua amb sabor a pinya en un got amb una rodanxa de pinya.",
-      "imageUrl": "https://images.unsplash.com/photo-1525498128493-380d1990a112?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1622153549302-3c227e462a63?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "pineapple drink"
     },
     {
@@ -75,55 +81,55 @@
     {
       "id": "product-essences-citrus",
       "description": "Aigua cítrica en un got amb rodanxes de llimona, llima i taronja.",
-      "imageUrl": "https://images.unsplash.com/photo-1551025890-70f13e59a633?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1621263764928-df1444c59858?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "citrus water"
     },
     {
       "id": "product-wellness-electrolyte",
       "description": "Beguda per a esportistes blava per a la rehidratació.",
-      "imageUrl": "https://images.unsplash.com/photo-1600720179831-5085c883e200?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1575043144123-9117a3363353?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "sports drink"
     },
     {
       "id": "product-wellness-boost",
       "description": "Got d'aigua amb rodanxes de taronja, que representen les vitamines B i C.",
-      "imageUrl": "https://images.unsplash.com/photo-1577601618999-528f09f0f15c?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1614298823249-fe5fde670a25?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "vitamin water"
     },
     {
       "id": "product-wellness-relax",
       "description": "Ampolla amb líquid de color lavanda en un camp de lavanda.",
-      "imageUrl": "https://images.unsplash.com/photo-1565011712-45e39e589a1a?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1626248999339-6541b634c346?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "lavender drink"
     },
     {
       "id": "product-eco-recycled",
       "description": "Una persona agafant una ampolla de plàstic d'una pila per reciclar.",
-      "imageUrl": "https://images.unsplash.com/photo-1590621423321-c236e18898f3?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "recycling plastic"
     },
     {
       "id": "product-eco-refill",
       "description": "Dispensador d'aigua de sobretaula per omplir gots.",
-      "imageUrl": "https://images.unsplash.com/photo-1620917696038-16c873a11532?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1545636075-8fe3c05a78e4?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water dispenser"
     },
     {
       "id": "product-merch-cups",
       "description": "Gots de vidre de colors amb disseny modern.",
-      "imageUrl": "https://images.unsplash.com/photo-1623588220973-55079d375a7a?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1599599810703-65a587425124?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "reusable glasses"
     },
     {
       "id": "pack-adventure",
       "description": "Ampolla d'acer inoxidable al costat d'una motxilla en un paisatge de muntanya.",
-      "imageUrl": "https://images.unsplash.com/photo-1522163182525-2825e83834b2?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1570823635306-2d88661014e0?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "reusable bottle nature"
     },
     {
       "id": "pack-tropical-essences",
       "description": "Una selecció d'ampolles d'aigua Nalu amb sabors de coco, pinya i mango, envoltades de fruita fresca.",
-      "imageUrl": "https://images.unsplash.com/photo-1553531589-4a45a835b46d?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1610935593845-c546876c6416?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "fruit flavored water"
     },
     {
@@ -135,13 +141,13 @@
     {
       "id": "product-merch-pack",
       "description": "Una capsa de regal oberta que mostra diversos productes.",
-      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e502067?q=80&w=2003&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1571288233371-a79a52e89640?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "gift box"
     },
     {
       "id": "pack-sport",
       "description": "Combinació d'aigua, beguda energètica i beguda cítrica per a esportistes.",
-      "imageUrl": "https://images.unsplash.com/photo-1549477112-2c5b97f743a9?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1579803814881-804d6124b898?q=80&w=2022&auto=format&fit=crop",
       "imageHint": "sport drinks"
     }
   ]

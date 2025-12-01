@@ -34,6 +34,7 @@ export default function Footer({ currentYear }: { currentYear: number }) {
             <nav className="flex flex-col space-y-2">
               <Link href="#inici" className="text-gray-400 hover:text-secondary transition-colors">Inici</Link>
               <Link href="#productes" className="text-gray-400 hover:text-secondary transition-colors">Productes</Link>
+              <Link href="#qui-som" className="text-gray-400 hover:text-secondary transition-colors">Qui Som</Link>
               <Link href="#origen" className="text-gray-400 hover:text-secondary transition-colors">Testimonis</Link>
               <Link href="#blog" className="text-gray-400 hover:text-secondary transition-colors">Blog</Link>
               <Link href="#contacte" className="text-gray-400 hover:text-secondary transition-colors">Contacte</Link>
