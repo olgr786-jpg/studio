@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Calendar, FileText, Newspaper } from 'lucide-react';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { ArrowRight, Calendar } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 
@@ -18,7 +18,6 @@ const blogPosts = [
     date: '5 de Juliol, 2024',
     excerpt: 'Un bon sistema d\'emmagatzematge és clau per a una cadena de subministrament àgil. T\'expliquem com aconseguir-ho.',
     imageId: 'blog-2',
-    highlighted: true,
   },
   {
     id: 'blog-3',
@@ -34,7 +33,7 @@ export default function Blog() {
     <section id="blog" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">El Nostre Blog</h2>
+          <h2>El Nostre Blog</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Mantén-te al dia de les últimes notícies i tendències del sector logístic.
           </p>
@@ -66,8 +65,8 @@ export default function Blog() {
                   <p className="text-muted-foreground text-sm">{post.excerpt}</p>
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
-                  <Button variant="link" className="px-0">
-                    Llegir Més <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button variant="link" className="px-0 group">
+                    Llegir Més <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </CardFooter>
               </Card>

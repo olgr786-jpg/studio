@@ -4,16 +4,15 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, ShoppingCart, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#inici', label: 'Inici' },
-  { href: '#productes', label: 'Productes' },
-  { href: '#origen', label: 'Origen' },
-  { href: '#subscripcions', label: 'Subscripcions' },
-  { href: '#sobre-nosaltres', label: 'Sobre Nosaltres' },
+  { href: '#serveis', label: 'Serveis' },
+  { href: '#qui-som', label: 'Qui Som' },
+  { href: '#blog', label: 'Blog' },
   { href: '#contacte', label: 'Contacte' },
 ];
 
@@ -26,9 +25,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    // Run on mount to set initial state
-    handleScroll();
-
+    handleScroll(); // Check on mount
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -40,7 +37,7 @@ export default function Header() {
         isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Logo className="mr-6" />
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -50,24 +47,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-           <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="relative rounded-full transition-colors hover:bg-primary/10">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="sr-only">Obrir carretó</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>El Teu Carretó</SheetTitle>
-              </SheetHeader>
-              <div className="mt-8">
-                <p className="text-center text-muted-foreground">El teu carretó està buit.</p>
-              </div>
-            </SheetContent>
-          </Sheet>
           <Button asChild className="hidden md:inline-flex shadow-sm hover:shadow-lg transition-shadow">
-            <Link href="#productes">Comprar Ara</Link>
+            <Link href="#contacte">Demanar Pressupost</Link>
           </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -95,7 +76,7 @@ export default function Header() {
                   </Link>
                 ))}
                  <Button asChild className="mt-4 shadow-sm">
-                   <Link href="#productes">Comprar Ara</Link>
+                   <Link href="#contacte">Demanar Pressupost</Link>
                  </Button>
               </nav>
             </SheetContent>

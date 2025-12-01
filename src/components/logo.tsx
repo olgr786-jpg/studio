@@ -1,26 +1,14 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { Globe } from 'lucide-react';
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="#inici" className={cn("flex items-center gap-2 text-foreground transition-colors hover:text-primary", className)}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-primary"
-      >
-        <path d="M3 12c.5-2.5 1.5-5 5-5 3.5 0 4.5 2.5 5 5s1.5 5 5 5c3.5 0 4.5-2.5 5-5" />
-      </svg>
+    <Link href="#inici" className={cn("flex items-center gap-3 text-foreground transition-colors hover:text-primary", className)}>
+      <Globe className="h-7 w-7 text-primary" />
       <div className="flex items-baseline">
-        <span className="font-headline font-semibold text-3xl">NALU</span>
-        <span className="font-body font-light text-xl ml-1">water</span>
+        <span className="font-headline font-bold text-2xl tracking-wide">GLOBAL</span>
+        <span className="font-body font-light text-2xl ml-1">Logistics</span>
       </div>
     </Link>
   );

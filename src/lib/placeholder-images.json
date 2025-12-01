@@ -1,58 +1,52 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-waterfall",
-      "description": "Una cascada impressionant en un bosc tropical frondós.",
-      "imageUrl": "https://images.unsplash.com/photo-1547775492-54d72689a95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical waterfall"
+      "id": "hero-container-ship",
+      "description": "Un gran vaixell portacontenidors navegant en mar obert al capvespre.",
+      "imageUrl": "https://images.unsplash.com/photo-1613697988225-10ef8a82b45e?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "container ship"
     },
     {
-      "id": "product-500ml",
-      "description": "Ampolla d'aigua de 500ml amb un disseny elegant, sobre un fons net.",
-      "imageUrl": "https://images.unsplash.com/photo-1554106132-24335a4d048b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water bottle"
+      "id": "service-trucks",
+      "description": "Una flota de camions de càrrega en una terminal logística.",
+      "imageUrl": "https://images.unsplash.com/photo-1587093356952-440f1a4e8d38?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "cargo trucks"
     },
     {
-      "id": "product-1l",
-      "description": "Ampolla d'aigua d'1 litre, ideal per a la hidratació diària.",
-      "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water bottle"
+      "id": "service-warehouse",
+      "description": "Interior d'un magatzem logístic modern i ben organitzat.",
+      "imageUrl": "https://images.unsplash.com/photo-1565610216969-97a454315267?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "logistics warehouse"
     },
     {
-      "id": "product-1_5l",
-      "description": "Ampolla d'aigua de 1.5 litres, perfecta per a tota la jornada.",
-      "imageUrl": "https://images.unsplash.com/photo-1624510237922-a08332c7a233?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water bottle"
+      "id": "service-air-cargo",
+      "description": "Un avió de càrrega sent carregat en un aeroport.",
+      "imageUrl": "https://images.unsplash.com/photo-1606772889620-50b647344a49?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "air cargo"
     },
     {
-      "id": "product-5l",
-      "description": "Garrafa d'aigua de 5 litres, per a ús domèstic o d'oficina.",
-      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water jug"
+      "id": "about-warehouse",
+      "description": "Treballadors operant en un gran magatzem logístic.",
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-06924151d145?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "warehouse workers"
     },
     {
-      "id": "product-8l",
-      "description": "Garrafa d'aigua de 8 litres, per a ús domèstic o d'oficina.",
-      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water jug"
+      "id": "blog-1",
+      "description": "Vista aèria d'un port industrial amb contenidors de colors.",
+      "imageUrl": "https://images.unsplash.com/photo-1577985051132-15f795d3a436?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "container port"
     },
     {
-      "id": "origin-stream",
-      "description": "Riu tropical amb aigua cristal·lina, vegetació exuberant al voltant, reflexos a l’aigua.",
-      "imageUrl": "https://images.unsplash.com/photo-1473992436528-7a879e2930b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical river"
+      "id": "blog-2",
+      "description": "Un carretó elevador movent mercaderies dins d'un magatzem.",
+      "imageUrl": "https://images.unsplash.com/photo-1587145820137-a9dbc8c51a93?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "forklift warehouse"
     },
     {
-      "id": "origin-rocks",
-      "description": "Cascada tropical envoltada de vegetació verda, aigua transparent que cau, llum natural.",
-      "imageUrl": "https://images.unsplash.com/photo-1509233725247-40e534141858?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical waterfall"
-    },
-    {
-      "id": "about-leaf-water",
-      "description": "Una platja tropical amb aigües turqueses i sorra blanca.",
-      "imageUrl": "https://images.unsplash.com/photo-1476673164421-3c213c48a126?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical beach"
+      "id": "blog-3",
+      "description": "Primer pla d'una persona signant uns documents de lliurament.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "signing delivery"
     }
   ]
 }

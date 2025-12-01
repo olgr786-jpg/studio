@@ -4,10 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-waterfall');
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-container-ship');
 
   return (
-    <section id="inici" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-center text-white p-0">
+    <section id="inici" className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white p-0">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -18,19 +18,22 @@ export default function Hero() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-[rgba(26,188,156,0.3)] backdrop-brightness-110" />
+      <div className="absolute inset-0 bg-slate-800/60" />
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center gap-6">
-        <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg">
+        <div className="bg-black/30 backdrop-blur-sm p-8 rounded-lg max-w-4xl">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-5xl lg:text-6xl !leading-tight" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
-            Nalu Water: frescor natural per al teu dia a dia.
+              Solucions Logístiques Globals i Eficients
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-neutral-100" style={{textShadow: '0 1px 4px rgba(0,0,0,0.4)'}}>
-            Qualitat i sabor pur, per a tothom.
+              Connectem el teu negoci amb el món. Transport, emmagatzematge i distribució a la teva mida.
             </p>
-            <div className="mt-10">
-            <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <Link href="#productes">Descobreix els nostres productes</Link>
-            </Button>
+            <div className="mt-10 flex gap-4 justify-center">
+              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Link href="#serveis">Descobreix els Serveis</Link>
+              </Button>
+              <Button asChild size="lg" variant="secondary" className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Link href="#contacte">Cotitzar Ara</Link>
+              </Button>
             </div>
         </div>
       </div>

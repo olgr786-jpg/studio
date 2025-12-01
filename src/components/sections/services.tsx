@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useToast } from "@/hooks/use-toast"
 import { ArrowRight, Truck, Ship, Plane } from 'lucide-react';
 
 const services = [
@@ -32,13 +31,12 @@ const services = [
 ];
 
 export default function Services() {
-  const { toast } = useToast()
 
   return (
-    <section id="serveis" className="bg-background">
+    <section id="serveis" className="bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">El Nostres Serveis Logístics</h2>
+          <h2>Els Nostres Serveis Logístics</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Oferim una gamma completa de serveis per cobrir totes les teves necessitats de transport i logística.
           </p>
@@ -47,7 +45,7 @@ export default function Services() {
           {services.map((service) => {
             const serviceImage = PlaceHolderImages.find(img => img.id === service.imageId);
             return (
-              <Card key={service.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+              <Card key={service.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl bg-card">
                 <CardHeader className="p-0">
                   {serviceImage && (
                     <div className="aspect-video relative">
@@ -66,11 +64,11 @@ export default function Services() {
                         <service.icon className="h-8 w-8 text-primary" />
                         <CardTitle className="m-0">{service.name}</CardTitle>
                     </div>
-                    <CardDescription className="mt-2 flex-grow">{service.description}</CardDescription>
+                    <p className="text-muted-foreground mt-2 flex-grow">{service.description}</p>
                 </div>
                 <CardFooter>
-                  <Button variant="link" className="px-0">
-                    Saber-ne més <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button variant="link" className="px-0 group">
+                    Saber-ne més <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </CardFooter>
               </Card>

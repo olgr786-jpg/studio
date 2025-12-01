@@ -1,36 +1,36 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Heart, Leaf, Eye } from 'lucide-react';
+import { Ship, Building, Globe } from 'lucide-react';
 
 export default function About() {
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-leaf-water');
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-warehouse');
 
   const values = [
     {
-      icon: Heart,
-      title: 'Salut',
-      description: 'La teva salut és la nostra prioritat. Per això t\'oferim una aigua pura i equilibrada, ideal per a un estil de vida saludable.',
+      icon: Ship,
+      title: 'Experiència Global',
+      description: 'Amb dècades d\'experiència, oferim solucions logístiques que connecten el teu negoci amb el món.',
     },
     {
-      icon: Leaf,
-      title: 'Sostenibilitat',
-      description: 'Cuidem el planeta com cuidem la nostra aigua. Utilitzem envasos 100% reciclables i processos que respecten el medi ambient.',
+      icon: Building,
+      title: 'Infraestructura Moderna',
+      description: 'Els nostres magatzems i flota estan equipats amb la última tecnologia per garantir l\'eficiència.',
     },
     {
-      icon: Eye,
-      title: 'Transparència',
-      description: 'Creiem en la claredat, des de l’origen de la nostra aigua fins a l’etiqueta. Confia en el que beus.',
+      icon: Globe,
+      title: 'Compromís amb el Client',
+      description: 'La teva satisfacció és la nostra prioritat. Oferim un servei personalitzat i transparent en cada enviament.',
     },
   ];
 
   return (
-    <section id="sobre-nosaltres" className="bg-card">
+    <section id="qui-som" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">La Nostra Promesa: Puresa i Compromís</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">La Nostra Missió: Connectar el Món</h2>
             <p className="text-lg text-muted-foreground">
-              A Nalu Water, la nostra missió és senzilla: portar-te la puresa de la natura a cada glop. Som una marca propera, compromesa amb la teva salut, el benestar del planeta i la total transparència.
+              A Global Logistics, la nostra missió és simple: oferir solucions logístiques eficients, fiables i a mida. Som un soci estratègic compromès amb el teu èxit, la innovació i la sostenibilitat.
             </p>
             <div className="space-y-6">
               {values.map((value, index) => (
@@ -46,7 +46,7 @@ export default function About() {
               ))}
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-2xl">
+          <div className="relative aspect-video overflow-hidden rounded-lg shadow-2xl">
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}

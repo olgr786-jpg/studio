@@ -8,39 +8,31 @@ body {
 
 @layer base {
   :root {
-    --background: 207 72% 95%; /* Blau fluix per a fons */
+    --background: 220 20% 98%;
     --foreground: 222 84% 5%;
-    --card: 0 0% 100%; /* Blanc pur */
+    --card: 0 0% 100%;
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    --primary: 168 76% 42%; /* Turquesa #1ABC9C */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 39 92% 51%; /* Taronja #F39C12 */
-    --secondary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* Blau corporatiu */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 100% 51%; /* Groc/Daurat corporatiu */
+    --secondary-foreground: 222 84% 5%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
-    --accent: 286 49% 76%; /* Lila-rosa #D8A7E0 */
+    --accent: 210 40% 96.1%;
     --accent-foreground: 222 84% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 30% 85%;
-    --input: 210 30% 85%;
-    --ring: 168 76% 42%; /* Turquesa */
-    --chart-1: 168 76% 42%; /* Turquesa */
-    --chart-2: 39 92% 51%; /* Taronja */
-    --chart-3: 286 49% 76%; /* Lila-rosa #D8A7E0 */
-    --chart-4: 207 72% 81%; /* Blau fluix */
-    --chart-5: 168 76% 30%; /* Turquesa fosc */
-    --radius: 0.75rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+    --chart-1: 217 91% 60%;
+    --chart-2: 45 100% 51%;
+    --chart-3: 168 76% 42%;
+    --chart-4: 286 49% 76%;
+    --chart-5: 39 92% 51%;
+    --radius: 0.5rem;
   }
   .dark {
     --background: 222 84% 5%;
@@ -49,10 +41,10 @@ body {
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    --primary: 168 76% 42%; /* Turquesa */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 39 92% 51%; /* Taronja */
-    --secondary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 222 84% 5%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
     --accent: 217 33% 17%;
@@ -61,20 +53,12 @@ body {
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 168 76% 42%; /* Turquesa */
-    --chart-1: 168 76% 42%; /* Turquesa */
-    --chart-2: 39 92% 51%; /* Taronja */
-    --chart-3: 286 49% 76%; /* Lila-rosa */
-    --chart-4: 207 72% 81%; /* Blau fluix */
-    --chart-5: 168 76% 60%; /* Turquesa clar */
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --ring: 217 91% 60%;
+    --chart-1: 217 91% 60%;
+    --chart-2: 45 100% 51%;
+    --chart-3: 168 76% 42%;
+    --chart-4: 286 49% 76%;
+    --chart-5: 39 92% 51%;
   }
 }
 
@@ -84,7 +68,6 @@ body {
   }
   body {
     @apply bg-background text-foreground font-body;
-    background-image: linear-gradient(to bottom, hsl(var(--background)), hsl(207 72% 81%));
   }
   section {
     @apply py-12 md:py-20 lg:py-24;
@@ -92,8 +75,8 @@ body {
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
   }
-  h1 { @apply text-4xl tracking-tight sm:text-5xl md:text-6xl; }
-  h2 { @apply text-3xl tracking-tight sm:text-4xl; }
-  h3 { @apply text-2xl; }
+  h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl; }
+  h2 { @apply text-3xl font-bold tracking-tight sm:text-4xl; }
+  h3 { @apply text-2xl font-semibold; }
   p { @apply leading-7; }
 }

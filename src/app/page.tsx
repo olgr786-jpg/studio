@@ -1,10 +1,8 @@
 import Header from '@/components/sections/header';
 import Hero from '@/components/sections/hero';
-import Products from '@/components/sections/products';
-import Origin from '@/components/sections/origin';
-import Benefits from '@/components/sections/benefits';
-import Subscriptions from '@/components/sections/subscriptions';
+import Services from '@/components/sections/services';
 import About from '@/components/sections/about';
+import Blog from '@/components/sections/blog';
 import Footer from '@/components/sections/footer';
 
 export default function Home() {
@@ -15,11 +13,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Products />
-        <Origin />
-        <Benefits />
-        <Subscriptions />
+        <Services />
         <About />
+        <Blog />
       </main>
       <Footer currentYear={currentYear} />
     </div>
