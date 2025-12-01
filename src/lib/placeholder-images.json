@@ -8,33 +8,33 @@
     },
     {
       "id": "product-500ml",
-      "description": "Aigua cristal·lina en un entorn tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1538902613693-d3b644a1e35c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "clear water"
+      "description": "Ampolla d'aigua de 500ml amb un disseny elegant, sobre un fons net.",
+      "imageUrl": "https://images.unsplash.com/photo-1553564426-78b104196152?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water bottle"
     },
     {
       "id": "product-1l",
-      "description": "Riu tropical amb aigua turquesa i vegetació exuberant.",
-      "imageUrl": "https://images.unsplash.com/photo-1543832833-853412543b59?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "turquoise river"
+      "description": "Ampolla d'aigua d'1 litre, ideal per a la hidratació diària.",
+      "imageUrl": "https://images.unsplash.com/photo-1543274266-974d61543317?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water bottle"
     },
     {
       "id": "product-1_5l",
-      "description": "Riu tropical amb aigua cristal·lina i vegetació exuberant al voltant.",
-      "imageUrl": "https://images.unsplash.com/photo-1518023150341-3d23b37803b9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical river"
+      "description": "Ampolla d'aigua de 1.5 litres, perfecta per a tota la jornada.",
+      "imageUrl": "https://images.unsplash.com/photo-1620051941442-37733857e841?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG9otby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water bottle"
     },
     {
       "id": "product-5l",
-      "description": "Llacuna tropical d'aigua cristal·lina vista des de dalt.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical lagoon"
+      "description": "Garrafa d'aigua de 5 litres, per a ús domèstic o d'oficina.",
+      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water jug"
     },
     {
       "id": "product-8l",
-      "description": "Platja tropical amb palmeres i aigua turquesa.",
-      "imageUrl": "https://images.unsplash.com/photo-1528731708534-816fe59f90cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical beach"
+      "description": "Garrafa d'aigua de 8 litres de gran capacitat, ideal per a dispensadors.",
+      "imageUrl": "https://images.unsplash.com/photo-1619451999294-f86315250415?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water dispenser"
     },
     {
       "id": "origin-stream",
@@ -51,7 +51,7 @@
     {
       "id": "about-leaf-water",
       "description": "Una llacuna tropical d'aigua cristal·lina vista des de dalt, mostrant tons de turquesa i blau.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlibrb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical lagoon"
     }
   ]
