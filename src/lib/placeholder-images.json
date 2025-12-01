@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "Cascada tropical envoltada de vegetació verda, aigua transparent que cau, llum natural, fotorealisme.",
+      "description": "Una cascada impressionant en un bosc tropical frondós.",
       "imageUrl": "https://images.unsplash.com/photo-1500930287299-6d6548a3c827?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical waterfall"
     },
@@ -38,21 +38,21 @@
     },
     {
       "id": "origin-stream",
-      "description": "Riu tropical amb aigua cristal·lina, vegetació exuberant al voltant, reflexos a l’aigua, fotorealisme.",
+      "description": "Un riu d'aigua cristal·lina que flueix a través d'una selva tropical verda.",
       "imageUrl": "https://images.unsplash.com/photo-1473992334833-4a25178a1a3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical river"
     },
     {
       "id": "origin-rocks",
-      "description": "Aigua que flueix sobre roques volcàniques en un entorn tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb513?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Aigua que flueix suaument sobre roques cobertes de molsa en un rierol.",
+      "imageUrl": "https://images.unsplash.com/photo-1437482078695-7cb6932c5436?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "water rocks"
     },
     {
       "id": "about-leaf-water",
-      "description": "Una fulla tropical amb una gota d'aigua cristal·lina a sobre.",
+      "description": "Una platja tropical amb aigües turqueses i sorra blanca.",
       "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "leaf water"
+      "imageHint": "tropical beach"
     }
   ]
 }
