@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    --background: 183 83% 94%; /* Soft Aquamarine: #E0FBFC */
+    --background: 183 83% 94%; /* Aiguamarina suau: #E0FBFC */
     --foreground: 222 84% 5%;
-    --card: 165 100% 99%; /* Cream White: #FAFFFD */
+    --card: 165 100% 99%; /* Blanc crema: #FAFFFD */
     --card-foreground: 222 84% 5%;
     --popover: 165 100% 99%;
     --popover-foreground: 222 84% 5%;
-    --primary: 182 100% 40%; /* Turquoise/Aqua: #00C4CC */
+    --primary: 182 100% 40%; /* Turquesa / Aqua: #00C4CC */
     --primary-foreground: 0 0% 100%;
-    --secondary: 46 100% 50%; /* Sun Yellow: #FFC300 */
+    --secondary: 46 100% 50%; /* Groc sol: #FFC300 */
     --secondary-foreground: 222 84% 10%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
@@ -23,11 +23,11 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 182 100% 40%;
-    --chart-1: 182 100% 40%; /* Turquoise */
-    --chart-2: 46 100% 50%; /* Yellow */
-    --chart-3: 168 100% 36%; /* Tropical Green */
-    --chart-4: 349 79% 72%; /* Lilac-Pink */
-    --chart-5: 201 100% 36%; /* Ocean Blue */
+    --chart-1: 182 100% 40%; /* Turquesa */
+    --chart-2: 46 100% 50%; /* Groc */
+    --chart-3: 168 100% 36%; /* Verd tropical */
+    --chart-4: 355 100% 69%; /* Corall suau (aproximat) */
+    --chart-5: 201 100% 36%; /* Blau oceà */
     --radius: 0.8rem;
   }
   .dark {
@@ -53,7 +53,7 @@
     --chart-1: 182 100% 40%;
     --chart-2: 46 100% 50%;
     --chart-3: 168 100% 36%;
-    --chart-4: 349 79% 72%;
+    --chart-4: 355 100% 69%;
     --chart-5: 201 100% 36%;
   }
 }
