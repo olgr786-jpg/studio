@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Montserrat', 'sans-serif'],
-        headline: ['Pacifico', 'cursive'],
+        headline: ['Playfair Display', 'serif'],
         code: ['monospace'],
       },
       colors: {
