@@ -23,13 +23,13 @@ export function ContactForm() {
       <Input
         type="email"
         placeholder="El teu correu electrònic"
-        className="bg-card/10 border-border/20 text-primary-foreground placeholder:text-accent/80 focus:ring-primary"
+        className="bg-card/10 border-border/20 text-primary-foreground placeholder:text-accent-foreground/60 focus:ring-primary"
         aria-label="Correu electrònic"
         required
       />
       <Textarea
         placeholder="El teu missatge"
-        className="bg-card/10 border-border/20 text-primary-foreground placeholder:text-accent/80 focus:ring-primary"
+        className="bg-card/10 border-border/20 text-primary-foreground placeholder:text-accent-foreground/60 focus:ring-primary"
         aria-label="Missatge"
         required
       />
