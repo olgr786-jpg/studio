@@ -1,76 +1,76 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Leaf, Mountain, Droplets } from 'lucide-react';
+import { Star } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent } from '@/components/ui/card';
+
+const testimonials = [
+  {
+    name: 'Laura M.',
+    avatar: '/avatars/01.png',
+    rating: 5,
+    text: "L'aigua més refrescant que he provat mai! El servei a domicili és súper còmode. Totalment recomanat.",
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-1')
+  },
+  {
+    name: 'Carles P.',
+    avatar: '/avatars/02.png',
+    rating: 5,
+    text: "Qualitat excel·lent i un gust puríssim. Des que la prenc, em sento molt més hidratat. No la canvio per res!",
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-2')
+  },
+  {
+    name: 'Sofia G.',
+    avatar: '/avatars/03.png',
+    rating: 5,
+    text: "M'encanta el seu compromís amb la sostenibilitat i el disseny de les ampolles. És l'aigua perfecta per a mi.",
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-3')
+  }
+];
 
 export default function Origin() {
-  const originImage1 = PlaceHolderImages.find(img => img.id === 'origin-river');
-  const originImage2 = PlaceHolderImages.find(img => img.id === 'origin-waterfall-2');
-
-  const values = [
-    {
-      icon: Mountain,
-      title: 'Font Natural',
-      description: 'La nostra aigua prové d\'una font de muntanya protegida, filtrada naturalment durant anys.',
-    },
-    {
-      icon: Droplets,
-      title: 'Puresa Garantida',
-      description: 'Envasem l\'aigua directament a la font per preservar la seva puresa i composició mineral única.',
-    },
-    {
-      icon: Leaf,
-      title: 'Compromís Sostenible',
-      description: 'Protegim l\'entorn de la nostra font i utilitzem envasos 100% reciclables.',
-    },
-  ];
-
   return (
     <section id="origen" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">L'Origen de la Puresa</h2>
-            <p className="text-lg text-muted-foreground">
-             A Nalu Water, creiem que la millor aigua és la que la natura ens ofereix. Per això, la nostra missió és portar-te la seva puresa intacta.
-            </p>
-            <div className="space-y-6">
-              {values.map((value, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                    <value.icon className="h-6 w-6 text-primary" />
-                  </div>
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Què diuen els nostres clients?</h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            La satisfacció dels nostres clients és la nostra millor carta de presentació.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => (
+            <Card key={testimonial.name} className="overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+              {testimonial.image && (
+                <div className="aspect-video relative">
+                  <Image
+                    src={testimonial.image.imageUrl}
+                    alt={`Imatge per al testimoni de ${testimonial.name}`}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={testimonial.image.imageHint}
+                  />
+                </div>
+              )}
+              <CardContent className="p-6 text-center">
+                <p className="text-muted-foreground italic mb-4">"{testimonial.text}"</p>
+                <div className="flex items-center justify-center gap-4">
+                  <Avatar>
+                    <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
                   <div>
-                    <h3 className="text-xl font-semibold">{value.title}</h3>
-                    <p className="text-muted-foreground mt-1">{value.description}</p>
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <div className="flex text-secondary">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-4">
-             {originImage1 && (
-                <div className="relative aspect-video overflow-hidden rounded-lg shadow-lg">
-                    <Image
-                        src={originImage1.imageUrl}
-                        alt={originImage1.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={originImage1.imageHint}
-                    />
-                </div>
-             )}
-             {originImage2 && (
-                <div className="relative aspect-video overflow-hidden rounded-lg shadow-lg">
-                    <Image
-                        src={originImage2.imageUrl}
-                        alt={originImage2.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={originImage2.imageHint}
-                    />
-                </div>
-             )}
-          </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

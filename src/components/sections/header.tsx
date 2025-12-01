@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '#inici', label: 'Inici' },
   { href: '#productes', label: 'Productes' },
-  { href: '#origen', label: 'El Nostre Origen' },
+  { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
 ];
 
@@ -24,7 +24,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    handleScroll(); // Check on mount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

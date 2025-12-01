@@ -2,57 +2,63 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "Una cascada tropical espectacular envoltada de vegetació exuberant i llum solar.",
-      "imageUrl": "https://images.unsplash.com/photo-1547634673-396f7311f4d7?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "tropical waterfall"
+      "description": "Una platja tropical amb palmeres i aigua turquesa.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f3ea?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "tropical beach"
     },
     {
-      "id": "origin-river",
-      "description": "Riu tropical amb aigua cristal·lina que flueix entre roques i vegetació densa.",
-      "imageUrl": "https://images.unsplash.com/photo-1505373333972-31b03f003709?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "tropical river"
+      "id": "testimonial-1",
+      "description": "Posta de sol en una platja tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "tropical sunset"
     },
     {
-      "id": "origin-waterfall-2",
-      "description": "Una cascada en un entorn selvàtic, amb aigua caient sobre roques cobertes de molsa.",
-      "imageUrl": "https://images.unsplash.com/photo-1500373994708-4d7414d96929?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "lush waterfall"
+      "id": "testimonial-2",
+      "description": "Un bungalow sobre l'aigua en un resort tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1570229399281-a2386d63469e?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "tropical resort"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Una noia relaxant-se en una hamaca entre palmeres.",
+      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "relaxing beach"
     },
     {
       "id": "blog-benefit",
-      "description": "Una persona somrient bevent un got d'aigua fresca.",
+      "description": "Un got de suc de fruita tropical en una taula de fusta.",
       "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "drinking water"
+      "imageHint": "tropical juice"
     },
     {
       "id": "blog-sustainability",
-      "description": "Ampolles de plàstic reciclades en una planta de tractament.",
-      "imageUrl": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "recycled bottles"
+      "description": "Fulles de palmera verdes amb el sol filtrant-se.",
+      "imageUrl": "https://images.unsplash.com/photo-1520302630591-fd1c67d51d02?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "palm leaves"
     },
     {
       "id": "blog-hydration",
-      "description": "Un atleta omplint la seva ampolla d'aigua en una font durant una cursa de muntanya.",
-      "imageUrl": "https://images.unsplash.com/photo-1576678216443-cdf5926c8a66?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "athlete hydration"
+      "description": "Un coco obert amb una palla a la sorra de la platja.",
+      "imageUrl": "https://images.unsplash.com/photo-1557810319-3f36070a25e1?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "coconut drink"
     },
     {
       "id": "product-500ml",
-      "description": "Ampolla d'aigua de 500ml amb un disseny modern sobre un fons blanc.",
-      "imageUrl": "https://images.unsplash.com/photo-1621503323280-9270dc9c7333?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water bottle"
+      "description": "Ampolla d'aigua de vidre amb rodanxes de llima i menta, sobre un fons tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1526401485004-2aa7d6b1a49a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "infused water"
     },
     {
       "id": "product-1.5l",
-      "description": "Ampolla d'aigua de 1.5 litres, ideal per compartir.",
-      "imageUrl": "https://images.unsplash.com/photo-1553531384-411a247ccd78?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "large water bottle"
+      "description": "Diverses ampolles d'aigua amb fruites tropicals al fons.",
+      "imageUrl": "https://images.unsplash.com/photo-1543337395-a787455b5500?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water bottles fruit"
     },
     {
       "id": "product-5l",
-      "description": "Garrafa d'aigua de 5 litres, per a ús domèstic o d'oficina.",
-      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water jug"
+      "description": "Una persona servint aigua d'una garrafa gran a un got amb gel.",
+      "imageUrl": "https://images.unsplash.com/photo-1601599554333-35661d99a39f?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "pouring water"
     }
   ]
 }

@@ -30,7 +30,7 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="bg-card">
+    <section id="blog" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2>El Nostre Blog</h2>
@@ -42,7 +42,7 @@ export default function Blog() {
           {blogPosts.map((post) => {
              const postImage = PlaceHolderImages.find(img => img.id === post.imageId);
              return (
-              <Card key={post.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+              <Card key={post.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl rounded-2xl">
                  {postImage && (
                   <CardHeader className="p-0">
                       <div className="aspect-video relative">

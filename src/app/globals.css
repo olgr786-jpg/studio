@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 220 20% 98%;
+    --background: 180 25% 98%; /* Light Cyan-White */
     --foreground: 222 84% 5%;
     --card: 0 0% 100%;
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    --primary: 195 86% 45%; /* Blau Aigua */
+    --primary: 175 70% 40%; /* Turquoise */
     --primary-foreground: 0 0% 100%;
-    --secondary: 142 76% 36%; /* Verd Natura */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 90% 60%; /* Tropical Yellow */
+    --secondary-foreground: 222 84% 10%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
     --accent: 210 40% 96.1%;
@@ -26,13 +26,13 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 195 86% 45%;
-    --chart-1: 195 86% 45%;
-    --chart-2: 142 76% 36%;
+    --ring: 175 70% 40%;
+    --chart-1: 175 70% 40%;
+    --chart-2: 45 90% 60%;
     --chart-3: 168 76% 42%;
     --chart-4: 286 49% 76%;
     --chart-5: 39 92% 51%;
-    --radius: 0.5rem;
+    --radius: 0.8rem;
   }
   .dark {
     --background: 222 84% 5%;
@@ -41,10 +41,10 @@ body {
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    --primary: 195 86% 45%;
+    --primary: 175 70% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 90% 60%;
+    --secondary-foreground: 222 84% 10%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
     --accent: 217 33% 17%;
@@ -53,9 +53,9 @@ body {
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 195 86% 45%;
-    --chart-1: 195 86% 45%;
-    --chart-2: 142 76% 36%;
+    --ring: 175 70% 40%;
+    --chart-1: 175 70% 40%;
+    --chart-2: 45 90% 60%;
     --chart-3: 168 76% 42%;
     --chart-4: 286 49% 76%;
     --chart-5: 39 92% 51%;
@@ -70,7 +70,7 @@ body {
     @apply bg-background text-foreground font-body;
   }
   section {
-    @apply py-12 md:py-20 lg:py-24;
+    @apply py-16 md:py-24 lg:py-28;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;

@@ -12,11 +12,11 @@ export default function Footer({ currentYear }: { currentYear: number }) {
           
           <div className="lg:col-span-4 space-y-4">
             <Logo className="text-primary-foreground hover:text-primary" />
-            <p className="text-gray-400">Aigua pura de font natural, directament a casa teva.</p>
+            <p className="text-gray-400">Aigua pura, fresca i amb essència paradisíaca.</p>
             <div>
               <h3 className="text-lg font-semibold text-primary-foreground mb-2">Dades de Contacte</h3>
               <address className="not-italic text-gray-400 space-y-1">
-                <p>Carrer de la Puresa, 123, 08000 Manantial</p>
+                <p>Avinguda Tropical, 123, 08000 Paradís</p>
                 <p>Email: <a href="mailto:contacte@naluwater.cat" className="hover:text-secondary">contacte@naluwater.cat</a></p>
                 <p>Telèfon: <a href="tel:+34930123456" className="hover:text-secondary">+34 930 123 456</a></p>
               </address>
@@ -34,7 +34,7 @@ export default function Footer({ currentYear }: { currentYear: number }) {
             <nav className="flex flex-col space-y-2">
               <Link href="#inici" className="text-gray-400 hover:text-secondary transition-colors">Inici</Link>
               <Link href="#productes" className="text-gray-400 hover:text-secondary transition-colors">Productes</Link>
-              <Link href="#origen" className="text-gray-400 hover:text-secondary transition-colors">Origen</Link>
+              <Link href="#origen" className="text-gray-400 hover:text-secondary transition-colors">Testimonis</Link>
               <Link href="#blog" className="text-gray-400 hover:text-secondary transition-colors">Blog</Link>
               <Link href="#contacte" className="text-gray-400 hover:text-secondary transition-colors">Contacte</Link>
             </nav>
