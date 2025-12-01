@@ -17,9 +17,9 @@ const productCategories = [
       {
         id: 'nalu-original',
         name: 'Nalu Original',
-        description: 'Aigua pura i equilibrada. Perfecta per al dia a dia. Formats: 330ml, 500ml, 1L, 1.5L.',
+        description: 'Aigua pura i equilibrada. Perfecta per al dia a dia. Formats: 330ml (1.50€), 500ml (1.80€), 1L (2.20€) i 1.5L (3.00€).',
         imageId: 'product-original',
-        price: '1.50€ - 3.00€',
+        price: 'Des de 1.50€',
       },
       {
         id: 'nalu-premium',
