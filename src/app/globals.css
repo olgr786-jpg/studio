@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    --background: 180 25% 98%; /* Light Cyan-White */
+    --background: 183 83% 94%; /* Soft Aquamarine: #E0FBFC */
     --foreground: 222 84% 5%;
-    --card: 0 0% 100%;
+    --card: 165 100% 99%; /* Cream White: #FAFFFD */
     --card-foreground: 222 84% 5%;
-    --popover: 0 0% 100%;
+    --popover: 165 100% 99%;
     --popover-foreground: 222 84% 5%;
-    --primary: 175 70% 40%; /* Turquoise */
+    --primary: 182 100% 40%; /* Turquoise/Aqua: #00C4CC */
     --primary-foreground: 0 0% 100%;
-    --secondary: 45 90% 60%; /* Tropical Yellow */
+    --secondary: 46 100% 50%; /* Sun Yellow: #FFC300 */
     --secondary-foreground: 222 84% 10%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
@@ -22,12 +22,12 @@
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 175 70% 40%;
-    --chart-1: 175 70% 40%;
-    --chart-2: 45 90% 60%;
-    --chart-3: 168 76% 42%;
-    --chart-4: 286 49% 76%;
-    --chart-5: 39 92% 51%;
+    --ring: 182 100% 40%;
+    --chart-1: 182 100% 40%; /* Turquoise */
+    --chart-2: 46 100% 50%; /* Yellow */
+    --chart-3: 168 100% 36%; /* Tropical Green */
+    --chart-4: 349 79% 72%; /* Lilac-Pink */
+    --chart-5: 201 100% 36%; /* Ocean Blue */
     --radius: 0.8rem;
   }
   .dark {
@@ -37,9 +37,9 @@
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    --primary: 175 70% 40%;
+    --primary: 182 100% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 45 90% 60%;
+    --secondary: 46 100% 50%;
     --secondary-foreground: 222 84% 10%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
@@ -49,12 +49,12 @@
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 175 70% 40%;
-    --chart-1: 175 70% 40%;
-    --chart-2: 45 90% 60%;
-    --chart-3: 168 76% 42%;
-    --chart-4: 286 49% 76%;
-    --chart-5: 39 92% 51%;
+    --ring: 182 100% 40%;
+    --chart-1: 182 100% 40%;
+    --chart-2: 46 100% 50%;
+    --chart-3: 168 100% 36%;
+    --chart-4: 349 79% 72%;
+    --chart-5: 201 100% 36%;
   }
 }
 
@@ -63,7 +63,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
@@ -71,5 +71,5 @@
   h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl; }
   h2 { @apply text-3xl font-bold tracking-tight sm:text-4xl; }
   h3 { @apply text-2xl font-semibold; }
-  p { @apply leading-7; }
+  p { @apply font-body leading-7; }
 }
