@@ -3,26 +3,26 @@
     {
       "id": "hero-waterfall",
       "description": "Una ampolla de vidre d'aigua en una platja de sorra blanca amb el mar turquesa de fons.",
-      "imageUrl": "https://images.unsplash.com/photo-1541591223558-459154741c37?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1541591223558-4d7414d9e2b2?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "water bottle beach"
     },
     {
       "id": "testimonial-1",
-      "description": "Una persona somrient bevent aigua d'una ampolla en un entorn lluminós i natural.",
-      "imageUrl": "https://images.unsplash.com/photo-1554570732-66159f81335f?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "person drinking water"
+      "description": "Cascada en un bosc verd i frondós.",
+      "imageUrl": "https://images.unsplash.com/photo-1500373994708-4d7414d9e2b2?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "waterfall forest"
     },
     {
       "id": "testimonial-2",
-      "description": "Una taula elegant amb copes d'aigua i un àpat saludable, amb llum natural.",
-      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "healthy meal water"
+      "description": "Riu tranquil que flueix a través d'un paisatge verd.",
+      "imageUrl": "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "river landscape"
     },
     {
       "id": "testimonial-3",
-      "description": "Una sessió de ioga o meditació a la platja a la sortida del sol.",
-      "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop",
-      "imageHint": "beach yoga"
+      "description": "Aigua de riu que flueix sobre roques en un entorn natural.",
+      "imageUrl": "https://images.unsplash.com/photo-1433838552652-f9a46b332c40?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "river rocks"
     },
     {
       "id": "blog-benefit",
