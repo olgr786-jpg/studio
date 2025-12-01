@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
 @layer base {
   :root {
     --background: 180 25% 98%; /* Light Cyan-White */
@@ -68,9 +64,6 @@ body {
   }
   body {
     @apply bg-background text-foreground font-body;
-  }
-  section {
-    @apply py-16 md:py-24 lg:py-28;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;

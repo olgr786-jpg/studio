@@ -10,7 +10,7 @@ export function Logo({ className }: { className?: string }) {
        </div>
       <div className="flex items-baseline">
         <span className="font-headline font-bold text-2xl tracking-wide">Nalu</span>
-        <span className="font-body font-light text-2xl ml-1">Water</span>
+        <span className="font-special text-2xl ml-1 text-secondary">Water</span>
       </div>
     </Link>
   );
