@@ -20,7 +20,7 @@ body {
     --secondary-foreground: 210 40% 98%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
-    --accent: 207 72% 81%; /* Blau fluix #AED6F1 */
+    --accent: 286 49% 76%; /* Lila-rosa #D8A7E0 */
     --accent-foreground: 222 84% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -84,7 +84,7 @@ body {
   }
   body {
     @apply bg-background text-foreground font-body;
-    background-image: linear-gradient(to bottom, hsl(var(--background)), hsl(var(--accent)));
+    background-image: linear-gradient(to bottom, hsl(var(--background)), hsl(207 72% 81%));
   }
   section {
     @apply py-12 md:py-20 lg:py-24;

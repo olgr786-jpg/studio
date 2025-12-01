@@ -35,7 +35,7 @@ export default function Benefits() {
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center p-6 bg-background rounded-lg shadow-sm transition-shadow hover:shadow-lg">
+            <div key={index} className="text-center p-6 bg-background/50 rounded-lg shadow-sm transition-shadow hover:shadow-lg">
               <div className="flex justify-center items-center mb-4">
                 <div className="bg-primary/10 p-4 rounded-full">
                   <benefit.icon className="h-8 w-8 text-primary" />

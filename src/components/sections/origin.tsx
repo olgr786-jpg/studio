@@ -7,7 +7,7 @@ export default function Origin() {
   const rocksImage = PlaceHolderImages.find(img => img.id === 'origin-rocks');
 
   return (
-    <section id="origen" className="bg-background">
+    <section id="origen" className="bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">L’Origen de la Puresa</h2>

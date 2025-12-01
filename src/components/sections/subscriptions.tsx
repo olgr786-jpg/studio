@@ -43,7 +43,7 @@ const subscriptionPlans = [
 
 export default function Subscriptions() {
   return (
-    <section id="subscripcions" className="bg-background">
+    <section id="subscripcions" className="bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Subscripcions a la teva mida</h2>
@@ -53,7 +53,7 @@ export default function Subscriptions() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {subscriptionPlans.map((plan, index) => (
-            <Card key={index} className={cn('flex flex-col transition-transform duration-300', plan.highlighted ? 'border-primary shadow-2xl scale-105' : 'shadow-lg hover:scale-105')}>
+            <Card key={index} className={cn('flex flex-col transition-transform duration-300 bg-card', plan.highlighted ? 'border-primary shadow-2xl scale-105' : 'shadow-lg hover:scale-105')}>
               <CardHeader className="text-center pt-8">
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-max mb-4">
                     <plan.icon className="h-8 w-8 text-primary" />
