@@ -24,7 +24,7 @@ const productCategories = [
       {
         id: 'nalu-premium',
         name: 'Nalu Premium Vidre',
-        description: 'Gust suau i perfil mineral únic en una elegant ampolla de vidre. Ideal per a la restauració.',
+        description: 'Gust suau i perfil mineral únic en una elegant ampolla de vidre. Ideal per a la restauració. Format: 750ml.',
         imageId: 'product-premium',
         price: '4.50€',
       },
