@@ -18,7 +18,7 @@ export default function Hero() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-cyan-800/30 backdrop-brightness-110" />
+      <div className="absolute inset-0 bg-cyan-900/40 backdrop-brightness-105" />
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center gap-6">
         <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-5xl lg:text-6xl !leading-tight text-shadow" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>

@@ -8,19 +8,19 @@ body {
 
 @layer base {
   :root {
-    --background: 207 72% 95%; /* Blau fluix, lleugerament més clar per a fons */
+    --background: 207 72% 95%; /* Blau fluix per a fons */
     --foreground: 222 84% 5%;
     --card: 0 0% 100%; /* Blanc pur */
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    --primary: 168 76% 42%; /* Turquesa */
+    --primary: 168 76% 42%; /* Turquesa #1ABC9C */
     --primary-foreground: 210 40% 98%;
-    --secondary: 39 92% 90%; /* Taronja suau per secundari */
-    --secondary-foreground: 39 92% 25%;
+    --secondary: 39 92% 51%; /* Taronja #F39C12 */
+    --secondary-foreground: 210 40% 98%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
-    --accent: 207 72% 90%; /* Blau fluix per accent */
+    --accent: 207 72% 81%; /* Blau fluix #AED6F1 */
     --accent-foreground: 222 84% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -29,7 +29,7 @@ body {
     --ring: 168 76% 42%; /* Turquesa */
     --chart-1: 168 76% 42%; /* Turquesa */
     --chart-2: 39 92% 51%; /* Taronja */
-    --chart-3: 286 49% 76%; /* Lila-rosa */
+    --chart-3: 286 49% 76%; /* Lila-rosa #D8A7E0 */
     --chart-4: 207 72% 81%; /* Blau fluix */
     --chart-5: 168 76% 30%; /* Turquesa fosc */
     --radius: 0.75rem;
@@ -51,7 +51,7 @@ body {
     --popover-foreground: 210 40% 98%;
     --primary: 168 76% 42%; /* Turquesa */
     --primary-foreground: 210 40% 98%;
-    --secondary: 39 92% 30%; /* Taronja fosc */
+    --secondary: 39 92% 51%; /* Taronja */
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
