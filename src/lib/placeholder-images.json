@@ -32,27 +32,27 @@
     },
     {
       "id": "product-8l",
-      "description": "Garrafa d'aigua de 8 litres de gran capacitat, ideal per a dispensadors.",
-      "imageUrl": "https://images.unsplash.com/photo-1619451999294-f86315250415?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "water dispenser"
+      "description": "Garrafa d'aigua de 8 litres, per a ús domèstic o d'oficina.",
+      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water jug"
     },
     {
       "id": "origin-stream",
       "description": "Riu tropical amb aigua cristal·lina, vegetació exuberant al voltant, reflexos a l’aigua, fotorealisme.",
-      "imageUrl": "https://images.unsplash.com/photo-1418985991501-7e2f29345fde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "rainforest stream"
+      "imageUrl": "https://images.unsplash.com/photo-1473992334833-4a25178a1a3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tropical river"
     },
     {
       "id": "origin-rocks",
-      "description": "Font tropical amagada amb aigua cristal·lina que brolla entre les roques.",
-      "imageUrl": "https://images.unsplash.com/photo-1590073539823-3d23b37803b9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical spring"
+      "description": "Aigua que flueix sobre roques volcàniques en un entorn tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb513?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "water rocks"
     },
     {
       "id": "about-leaf-water",
-      "description": "Una llacuna tropical d'aigua cristal·lina vista des de dalt, mostrant tons de turquesa i blau.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical lagoon"
+      "description": "Una fulla tropical amb una gota d'aigua cristal·lina a sobre.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leaf water"
     }
   ]
 }
