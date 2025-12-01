@@ -87,9 +87,9 @@ const productCategories = [
       {
         id: 'nalu-relax',
         name: 'Nalu Relax',
-        description: 'Amb magnesi i un toc de lavanda per a un moment de calma i benestar.',
+        description: 'Amb magnesi i un toc de lavanda per a un moment de calma i benestar, en ampolla de vidre. Format: 500ml.',
         imageId: 'product-wellness-relax',
-        price: '3.00€',
+        price: '3.50€',
       },
     ],
   },
