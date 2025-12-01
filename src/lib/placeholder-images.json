@@ -27,7 +27,7 @@
     {
       "id": "blog-benefit",
       "description": "Primer pla d'una gota d'aigua caient sobre una fulla verda tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1550100136-705240366947?q=80&w=1974&auto=format=fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1550100136-705240366947?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water drop leaf"
     },
     {
@@ -55,7 +55,7 @@
       "imageHint": "glass water bottle"
     },
     {
-      "id": "product-essences",
+      "id": "product-essences-coco",
       "description": "Aigua de coco en un got amb cocos al fons.",
       "imageUrl": "https://images.unsplash.com/photo-1556881261-b53fa435a297?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "coconut water"

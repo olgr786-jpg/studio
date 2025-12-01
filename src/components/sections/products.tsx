@@ -39,7 +39,7 @@ const productCategories = [
         id: 'nalu-coco',
         name: 'Nalu Coco Breeze',
         description: 'Un toc refrescant de coco que et transportarà al paradís. Sense sucres afegits.',
-        imageId: 'product-essences',
+        imageId: 'product-essences-coco',
         price: '2.50€',
       },
       {
