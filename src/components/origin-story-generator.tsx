@@ -27,7 +27,7 @@ export function OriginStoryGenerator() {
 
   return (
     <div className="mt-8 flex flex-col items-center gap-6">
-      <Button onClick={handleGenerate} disabled={loading} size="lg">
+      <Button onClick={handleGenerate} disabled={loading} size="lg" variant="secondary">
         {loading ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />

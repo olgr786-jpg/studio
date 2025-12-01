@@ -78,7 +78,7 @@ export default function Subscriptions() {
                 </div>
               </CardContent>
               <CardFooter className="p-6">
-                <Button className="w-full" variant={plan.highlighted ? 'default' : 'outline'}>
+                <Button className="w-full" variant={plan.highlighted ? 'default' : 'secondary'}>
                   Subscriu-te Ara
                 </Button>
               </CardFooter>
