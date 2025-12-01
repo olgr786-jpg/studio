@@ -43,6 +43,84 @@
       "imageHint": "athlete drinking water"
     },
     {
+      "id": "product-original",
+      "description": "Ampolla clàssica d'aigua Nalu Original en un entorn natural i fresc.",
+      "imageUrl": "https://images.unsplash.com/photo-1553457055-88e355673b08?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water bottle nature"
+    },
+    {
+      "id": "product-premium",
+      "description": "Elegant ampolla de vidre de Nalu Premium en una taula de restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1567602538933-87b5a190013d?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "glass water bottle"
+    },
+    {
+      "id": "product-essences",
+      "description": "Grup d'ampolles de Nalu amb essències de coco en un ambient de platja.",
+      "imageUrl": "https://images.unsplash.com/photo-1607513746885-337a597b4737?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "coconut water"
+    },
+    {
+      "id": "product-essences-pineapple",
+      "description": "Ampolla de Nalu amb essència de pinya al costat de trossos de pinya fresca.",
+      "imageUrl": "https://images.unsplash.com/photo-1589881177653-524675e3a241?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "pineapple drink"
+    },
+    {
+      "id": "product-essences-mango",
+      "description": "Ampolla de Nalu amb essència de mango sobre un fons tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1601131127027-e4c700b8b983?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "mango drink"
+    },
+    {
+      "id": "product-essences-citrus",
+      "description": "Ampolla de Nalu amb essència de cítrics amb rodanxes de llimona i llima.",
+      "imageUrl": "https://images.unsplash.com/photo-1613482143845-bab93278f8b8?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "citrus water"
+    },
+    {
+      "id": "product-wellness-electrolyte",
+      "description": "Ampolla de Nalu Electrolyte+ en un context esportiu.",
+      "imageUrl": "https://images.unsplash.com/photo-1575043023021-3c6a835b678c?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "sports drink"
+    },
+    {
+      "id": "product-wellness-boost",
+      "description": "Ampolla de Nalu Boost amb fruites que representen les vitamines.",
+      "imageUrl": "https://images.unsplash.com/photo-1578849223063-cb3f10137599?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "vitamin water"
+    },
+    {
+      "id": "product-wellness-relax",
+      "description": "Ampolla de Nalu Relax amb elements que suggereixen calma, com flors de lavanda.",
+      "imageUrl": "https://images.unsplash.com/photo-1599388136367-33147f8a7e78?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "relaxing drink"
+    },
+    {
+      "id": "product-eco-recycled",
+      "description": "Ampolla de Nalu Earth feta 100% de material reciclat, amb un fons verd natural.",
+      "imageUrl": "https://images.unsplash.com/photo-1620788031853-37255b7f0f6e?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "recycled bottle"
+    },
+    {
+      "id": "product-eco-refill",
+      "description": "Bag-in-Box de Nalu Refill en una cuina moderna o oficina.",
+      "imageUrl": "https://images.unsplash.com/photo-1624453442323-2b9a7a9d9494?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water dispenser"
+    },
+    {
+      "id": "product-merch-cups",
+      "description": "Gots reutilitzables amb dissenys tropicals de Nalu.",
+      "imageUrl": "https://images.unsplash.com/photo-1619731718392-452a81f3358a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "reusable cups"
+    },
+    {
+      "id": "pack-adventure",
+      "description": "Ampolla d'acer inoxidable de Nalu al costat d'una motxilla en un paisatge de muntanya.",
+      "imageUrl": "https://images.unsplash.com/photo-1522163182525-2825e83834b2?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "reusable bottle nature"
+    },
+    {
       "id": "pack-tropical-essences",
       "description": "Una selecció d'ampolles d'aigua Nalu amb sabors de coco, pinya i mango, envoltades de fruita fresca.",
       "imageUrl": "https://images.unsplash.com/photo-1553531589-4a45a835b46d?q=80&w=1974&auto=format&fit=crop",
@@ -55,10 +133,10 @@
       "imageHint": "wellness drinks"
     },
     {
-      "id": "pack-adventure",
-      "description": "Una ampolla d'acer inoxidable de Nalu al costat d'una motxilla en un paisatge de muntanya.",
-      "imageUrl": "https://images.unsplash.com/photo-1522163182525-2825e83834b2?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "reusable bottle nature"
+      "id": "product-merch-pack",
+      "description": "Un pack de regal de Nalu amb una selecció de productes i merchandising.",
+      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e502067?q=80&w=2003&auto=format&fit=crop",
+      "imageHint": "gift box"
     }
   ]
 }
