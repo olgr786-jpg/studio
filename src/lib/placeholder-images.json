@@ -8,33 +8,33 @@
     },
     {
       "id": "product-500ml",
-      "description": "A 500ml bottle of Nalu water.",
-      "imageUrl": "https://images.unsplash.com/photo-1544003484-3cd181d17917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjQ0OTQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water bottle"
+      "description": "A bottle of water on a tropical beach.",
+      "imageUrl": "https://images.unsplash.com/photo-1528731708534-816fe59f90cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "beach water"
     },
     {
       "id": "product-1l",
-      "description": "A 1L bottle of Nalu water.",
-      "imageUrl": "https://images.unsplash.com/photo-1616118132534-381148898bb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjQ0OTQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water bottle"
+      "description": "Crystal clear water in a tropical setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1538902613693-d3b644a1e35c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "clear water"
     },
     {
       "id": "product-1_5l",
-      "description": "A 1.5L bottle of Nalu water.",
-      "imageUrl": "https://images.unsplash.com/photo-1561041695-d2fadf9f318c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjQ0OTQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water bottle"
+      "description": "A tropical river with turquoise water.",
+      "imageUrl": "https://images.unsplash.com/photo-1543832833-853412543b59?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "turquoise river"
     },
     {
       "id": "product-5l",
-      "description": "A 5L dispenser of Nalu water.",
-      "imageUrl": "https://images.unsplash.com/photo-1643324520514-8ed019f29561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXRlciUyMGRpc3BlbnNlcnxlbnwwfHx8fDE3NjQ2MDE2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water dispenser"
+      "description": "Overhead view of a beautiful tropical lagoon.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tropical lagoon"
     },
     {
       "id": "product-8l",
-      "description": "An 8L dispenser of Nalu water.",
-      "imageUrl": "https://images.unsplash.com/photo-1672826979189-faae44e1b7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YXRlciUyMGRpc3BlbnNlcnxlbnwwfHx8fDE3NjQ2MDE2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water dispenser"
+      "description": "Lush vegetation surrounding a tropical water source.",
+      "imageUrl": "https://images.unsplash.com/photo-1518023150341-35b54b65c345?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tropical water"
     },
     {
       "id": "origin-stream",
