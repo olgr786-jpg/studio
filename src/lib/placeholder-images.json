@@ -2,55 +2,55 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "A stunning tropical waterfall cascading into a clear turquoise pool.",
+      "description": "Cascada tropical envoltada de vegetació verda, aigua transparent que cau, llum natural.",
       "imageUrl": "https://images.unsplash.com/photo-1500930287299-6d6548a3c827?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical waterfall"
     },
     {
       "id": "product-500ml",
-      "description": "A bottle of water on a tropical beach.",
-      "imageUrl": "https://images.unsplash.com/photo-1528731708534-816fe59f90cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "beach water"
-    },
-    {
-      "id": "product-1l",
-      "description": "Crystal clear water in a tropical setting.",
+      "description": "Aigua cristal·lina en un entorn tropical.",
       "imageUrl": "https://images.unsplash.com/photo-1538902613693-d3b644a1e35c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "clear water"
     },
     {
-      "id": "product-1_5l",
-      "description": "A tropical river with turquoise water.",
+      "id": "product-1l",
+      "description": "Riu tropical amb aigua turquesa i vegetació exuberant.",
       "imageUrl": "https://images.unsplash.com/photo-1543832833-853412543b59?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "turquoise river"
     },
     {
+      "id": "product-1_5l",
+      "description": "Riu tropical amb aigua cristal·lina i vegetació exuberant al voltant.",
+      "imageUrl": "https://images.unsplash.com/photo-1518023150341-3d23b37803b9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tropical river"
+    },
+    {
       "id": "product-5l",
-      "description": "Overhead view of a beautiful tropical lagoon.",
+      "description": "Llacuna tropical d'aigua cristal·lina vista des de dalt.",
       "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical lagoon"
     },
     {
       "id": "product-8l",
-      "description": "Lush vegetation surrounding a tropical water source.",
-      "imageUrl": "https://images.unsplash.com/photo-1518023150341-35b54b65c345?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tropical water"
+      "description": "Platja tropical amb palmeres i aigua turquesa.",
+      "imageUrl": "https://images.unsplash.com/photo-1528731708534-816fe59f90cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tropical beach"
     },
     {
       "id": "origin-stream",
-      "description": "A lush rainforest stream with clear water flowing over mossy rocks.",
+      "description": "Rierol en una selva exuberant amb aigua clara que flueix sobre roques amb molsa.",
       "imageUrl": "https://images.unsplash.com/photo-1418985991501-7e2f29345fde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "rainforest stream"
     },
     {
       "id": "origin-rocks",
-      "description": "A hidden tropical spring with crystal clear water bubbling up between rocks.",
+      "description": "Font tropical amagada amb aigua cristal·lina que brolla entre les roques.",
       "imageUrl": "https://images.unsplash.com/photo-1590073539823-3d23b37803b9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical spring"
     },
     {
       "id": "about-leaf-water",
-      "description": "A crystal clear tropical lagoon seen from above, showing shades of turquoise and blue.",
+      "description": "Una llacuna tropical d'aigua cristal·lina vista des de dalt, mostrant tons de turquesa i blau.",
       "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "tropical lagoon"
     }
