@@ -39,7 +39,7 @@
     {
       "id": "blog-hydration",
       "description": "Un atleta bevent aigua després de fer exercici a l'aire lliure.",
-      "imageUrl": "https://images.unsplash.com/photo-1587598893450-42c26ea6357d?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1587598893450-42c26ea6357d?q=80&w=1974&auto=format=fit=crop",
       "imageHint": "athlete drinking water"
     },
     {
