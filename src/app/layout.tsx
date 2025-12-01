@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'AiguaPura',
-  description: 'AiguaPura: frescor natural per al teu dia a dia.',
+  title: 'Nalu Water',
+  description: 'Nalu Water: frescor natural per al teu dia a dia.',
 };
 
 export default function RootLayout({

@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center gap-6">
         <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-5xl lg:text-6xl !leading-tight text-shadow" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>
-            AiguaPura: frescor natural per al teu dia a dia.
+            Nalu Water: frescor natural per al teu dia a dia.
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-neutral-100" style={{textShadow: '0 1px 4px rgba(0,0,0,0.4)'}}>
             Qualitat i sabor pur, per a tothom.

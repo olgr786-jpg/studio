@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 export function Logo({ className }: { className?: string }) {
   return (
     <Link href="#inici" className={cn("text-2xl font-semibold text-foreground transition-colors hover:text-primary", className)}>
-      AiguaPura
+      Nalu Water
     </Link>
   );
 }

@@ -12,7 +12,7 @@ export default function Origin() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">L’Origen de la Puresa</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            AiguaPura brolla de fonts naturals protegides. La seva puresa prové d'un lent procés de filtració a través de roques volcàniques, que l'enriqueixen amb minerals essencials i li atorguen un gust únic i equilibrat.
+            Nalu Water brolla de fonts naturals protegides. La seva puresa prové d'un lent procés de filtració a través de roques volcàniques, que l'enriqueixen amb minerals essencials i li atorguen un gust únic i equilibrat.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

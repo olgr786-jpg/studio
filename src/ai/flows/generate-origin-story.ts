@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview Generates an origin story for AiguaPura based on the brand's values.
+ * @fileOverview Generates an origin story for Nalu Water based on the brand's values.
  *
  * - generateOriginStory - A function that generates the origin story.
  * - GenerateOriginStoryInput - The input type for the generateOriginStory function.
@@ -15,13 +15,13 @@ const GenerateOriginStoryInputSchema = z.object({
   brandValues: z
     .string()
     .describe(
-      'The core values of AiguaPura, such as health, sustainability, and transparency.'
+      'The core values of Nalu Water, such as health, sustainability, and transparency.'
     ),
 });
 export type GenerateOriginStoryInput = z.infer<typeof GenerateOriginStoryInputSchema>;
 
 const GenerateOriginStoryOutputSchema = z.object({
-  originStory: z.string().describe('The generated origin story of AiguaPura.'),
+  originStory: z.string().describe('The generated origin story of Nalu Water.'),
 });
 export type GenerateOriginStoryOutput = z.infer<typeof GenerateOriginStoryOutputSchema>;
 
@@ -35,7 +35,7 @@ const prompt = ai.definePrompt({
   name: 'generateOriginStoryPrompt',
   input: {schema: GenerateOriginStoryInputSchema},
   output: {schema: GenerateOriginStoryOutputSchema},
-  prompt: `You are a creative storyteller crafting a captivating, albeit fictional, origin story of AiguaPura, a new water brand, to connect visitors to the brand's values.
+  prompt: `You are a creative storyteller crafting a captivating, albeit fictional, origin story of Nalu Water, a new water brand, to connect visitors to the brand's values.
 
   Based on the brand values provided, create a compelling and engaging origin story that resonates with consumers.
   The story should evoke a sense of purity and nature, emphasizing the brand's commitment to quality, sustainability, and the health of its consumers.

@@ -48,7 +48,7 @@ export default function Subscriptions() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Subscripcions a la teva mida</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Rep AiguaPura a casa teva, sense complicacions. Tria el pla que millor s'adapti a tu i oblida't de carregar ampolles.
+            Rep Nalu Water a casa teva, sense complicacions. Tria el pla que millor s'adapti a tu i oblida't de carregar ampolles.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">

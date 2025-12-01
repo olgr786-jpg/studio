@@ -8,9 +8,9 @@ import { useToast } from "@/hooks/use-toast"
 import { ShoppingCart } from 'lucide-react';
 
 const products = [
-  { id: 'p1', name: 'AiguaPura 0.5L', description: 'Perfecta per al gimnàs i activitats.', price: '1.50€', imageId: 'product-500ml' },
-  { id: 'p2', name: 'AiguaPura 1L', description: 'Ideal per al consum diari.', price: '2.00€', imageId: 'product-1l' },
-  { id: 'p3', name: 'AiguaPura 1.5L', description: 'La mida perfecta per a famílies.', price: '2.50€', imageId: 'product-1_5l' },
+  { id: 'p1', name: 'Nalu Water 0.5L', description: 'Perfecta per al gimnàs i activitats.', price: '1.50€', imageId: 'product-500ml' },
+  { id: 'p2', name: 'Nalu Water 1L', description: 'Ideal per al consum diari.', price: '2.00€', imageId: 'product-1l' },
+  { id: 'p3', name: 'Nalu Water 1.5L', description: 'La mida perfecta per a famílies.', price: '2.50€', imageId: 'product-1_5l' },
   { id: 'p4', name: 'Garrafa 5L', description: 'Per a casa i la oficina.', price: '5.00€', imageId: 'product-5l' },
   { id: 'p5', name: 'Garrafa 8L', description: 'Màxima capacitat, menys viatges.', price: '7.50€', imageId: 'product-8l' },
   { id: 'p6', name: 'Pack Setmanal', description: '7 ampolles de 1.5L per a la teva setmana.', price: '15.00€', imageId: 'product-1_5l' },
@@ -25,7 +25,7 @@ export default function Products() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Els Nostres Productes</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Des de la mida personal fins a formats familiars, tenim l'AiguaPura perfecta per a cada ocasió.
+            Des de la mida personal fins a formats familiars, tenim la Nalu Water perfecta per a cada ocasió.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">

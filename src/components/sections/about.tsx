@@ -30,7 +30,7 @@ export default function About() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">La Nostra Promesa: Puresa i Compromís</h2>
             <p className="text-lg text-muted-foreground">
-              A AiguaPura, la nostra missió és senzilla: portar-te la puresa de la natura a cada glop. Som una marca propera, compromesa amb la teva salut, el benestar del planeta i la total transparència.
+              A Nalu Water, la nostra missió és senzilla: portar-te la puresa de la natura a cada glop. Som una marca propera, compromesa amb la teva salut, el benestar del planeta i la total transparència.
             </p>
             <div className="space-y-6">
               {values.map((value, index) => (
