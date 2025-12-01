@@ -45,7 +45,7 @@ const productCategories = [
       {
         id: 'nalu-pineapple',
         name: 'Nalu Pineapple Wave',
-        description: 'L\'essència de la pinya més dolça i tropical en cada glop. Sense sucres afegits.',
+        description: "L'essència de la pinya més dolça i tropical en cada glop. Sense sucres afegits.",
         imageId: 'product-essences-pineapple',
         price: '2.50€',
       },
@@ -80,7 +80,7 @@ const productCategories = [
       {
         id: 'nalu-boost',
         name: 'Nalu Boost Vitamines',
-        description: 'Un impuls d\'energia natural amb vitamines B+C per afrontar el dia amb vitalitat.',
+        description: "Un impuls d'energia natural amb vitamines B+C per afrontar el dia amb vitalitat.",
         imageId: 'product-wellness-boost',
         price: '3.00€',
       },
@@ -108,7 +108,7 @@ const productCategories = [
       {
         id: 'nalu-refill',
         name: 'Nalu Refill (Bag-in-Box)',
-        description: 'Format familiar o d\'oficina de 8L per reduir residus plàstics. La opció més sostenible.',
+        description: "Format familiar o d'oficina de 8L per reduir residus plàstics. La opció més sostenible.",
         imageId: 'product-eco-refill',
         price: '12.00€',
       },
@@ -157,7 +157,7 @@ const productCategories = [
       {
         id: 'pack-experiencia',
         name: 'Pack Experiència Nalu',
-        description: 'El regal perfecte: selecció d\'aigües, got reutilitzable i una dedicatòria especial.',
+        description: "El regal perfecte: selecció d'aigües, got reutilitzable i una dedicatòria especial.",
         imageId: 'product-merch-pack',
         price: '39.90€',
       },
