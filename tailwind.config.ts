@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Poppins', 'sans-serif'],
-        headline: ['Montserrat', 'sans-serif'],
+        body: ['Montserrat', 'sans-serif'],
+        headline: ['Pacifico', 'cursive'],
         code: ['monospace'],
       },
       colors: {
