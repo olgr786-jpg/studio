@@ -1,52 +1,58 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-container-ship",
-      "description": "Un gran vaixell portacontenidors navegant en mar obert al capvespre.",
-      "imageUrl": "https://images.unsplash.com/photo-1613697988225-10ef8a82b45e?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "container ship"
+      "id": "hero-waterfall",
+      "description": "Una cascada tropical espectacular envoltada de vegetació exuberant i llum solar.",
+      "imageUrl": "https://images.unsplash.com/photo-1547634673-396f7311f4d7?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "tropical waterfall"
     },
     {
-      "id": "service-trucks",
-      "description": "Una flota de camions de càrrega en una terminal logística.",
-      "imageUrl": "https://images.unsplash.com/photo-1587093356952-440f1a4e8d38?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "cargo trucks"
+      "id": "origin-river",
+      "description": "Riu tropical amb aigua cristal·lina que flueix entre roques i vegetació densa.",
+      "imageUrl": "https://images.unsplash.com/photo-1505373333972-31b03f003709?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "tropical river"
     },
     {
-      "id": "service-warehouse",
-      "description": "Interior d'un magatzem logístic modern i ben organitzat.",
-      "imageUrl": "https://images.unsplash.com/photo-1565610216969-97a454315267?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "logistics warehouse"
+      "id": "origin-waterfall-2",
+      "description": "Una cascada en un entorn selvàtic, amb aigua caient sobre roques cobertes de molsa.",
+      "imageUrl": "https://images.unsplash.com/photo-1500373994708-4d7414d96929?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "lush waterfall"
     },
     {
-      "id": "service-air-cargo",
-      "description": "Un avió de càrrega sent carregat en un aeroport.",
-      "imageUrl": "https://images.unsplash.com/photo-1606772889620-50b647344a49?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "air cargo"
+      "id": "blog-benefit",
+      "description": "Una persona somrient bevent un got d'aigua fresca.",
+      "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "drinking water"
     },
     {
-      "id": "about-warehouse",
-      "description": "Treballadors operant en un gran magatzem logístic.",
-      "imageUrl": "https://images.unsplash.com/photo-1586528116311-06924151d145?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "warehouse workers"
+      "id": "blog-sustainability",
+      "description": "Ampolles de plàstic reciclades en una planta de tractament.",
+      "imageUrl": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "recycled bottles"
     },
     {
-      "id": "blog-1",
-      "description": "Vista aèria d'un port industrial amb contenidors de colors.",
-      "imageUrl": "https://images.unsplash.com/photo-1577985051132-15f795d3a436?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "container port"
+      "id": "blog-hydration",
+      "description": "Un atleta omplint la seva ampolla d'aigua en una font durant una cursa de muntanya.",
+      "imageUrl": "https://images.unsplash.com/photo-1576678216443-cdf5926c8a66?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "athlete hydration"
     },
     {
-      "id": "blog-2",
-      "description": "Un carretó elevador movent mercaderies dins d'un magatzem.",
-      "imageUrl": "https://images.unsplash.com/photo-1587145820137-a9dbc8c51a93?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "forklift warehouse"
+      "id": "product-500ml",
+      "description": "Ampolla d'aigua de 500ml amb un disseny modern sobre un fons blanc.",
+      "imageUrl": "https://images.unsplash.com/photo-1621503323280-9270dc9c7333?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water bottle"
     },
     {
-      "id": "blog-3",
-      "description": "Primer pla d'una persona signant uns documents de lliurament.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "signing delivery"
+      "id": "product-1.5l",
+      "description": "Ampolla d'aigua de 1.5 litres, ideal per compartir.",
+      "imageUrl": "https://images.unsplash.com/photo-1553531384-411a247ccd78?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "large water bottle"
+    },
+    {
+      "id": "product-5l",
+      "description": "Garrafa d'aigua de 5 litres, per a ús domèstic o d'oficina.",
+      "imageUrl": "https://images.unsplash.com/photo-1571732665137-5d3315a6b6f9?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water jug"
     }
   ]
 }

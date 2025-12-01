@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Global Logistics',
-  description: 'Solucions logístiques integrals per al teu negoci.',
+  title: 'Nalu Water',
+  description: 'Aigua pura de font natural, directament a casa teva.',
 };
 
 export default function RootLayout({

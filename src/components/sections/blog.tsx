@@ -7,24 +7,24 @@ import Image from 'next/image';
 const blogPosts = [
   {
     id: 'blog-1',
-    title: 'Optimització de Rutes: Com Estalviar Temps i Diners',
+    title: '5 Beneficis de Beure Aigua Mineral Natural',
     date: '15 de Juliol, 2024',
-    excerpt: 'Descobreix les últimes tecnologies i estratègies per optimitzar les teves rutes de lliurament i millorar l\'eficiència.',
-    imageId: 'blog-1',
+    excerpt: 'Descobreix com la hidratació amb aigua de font pot millorar la teva salut i benestar general.',
+    imageId: 'blog-benefit',
   },
   {
     id: 'blog-2',
-    title: 'La Importància de l\'Emmagatzematge Intel·ligent',
+    title: 'La importància de la sostenibilitat en l\'envasament d\'aigua',
     date: '5 de Juliol, 2024',
-    excerpt: 'Un bon sistema d\'emmagatzematge és clau per a una cadena de subministrament àgil. T\'expliquem com aconseguir-ho.',
-    imageId: 'blog-2',
+    excerpt: 'A Nalu Water, estem compromesos amb el planeta. Coneix les nostres iniciatives d\'envasament sostenible.',
+    imageId: 'blog-sustainability',
   },
   {
     id: 'blog-3',
-    title: 'Tendències en Logística Sostenible per al 2025',
+    title: 'Com Mantenir-se Hidratat Durant l\'Estiu',
     date: '28 de Juny, 2024',
-    excerpt: 'La sostenibilitat ja no és una opció. Analitzem les tendències que marcaran el futur del sector logístic.',
-    imageId: 'blog-3',
+    excerpt: 'Consells pràctics i senzills per assegurar una hidratació adequada durant els mesos de més calor.',
+    imageId: 'blog-hydration',
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Blog() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2>El Nostre Blog</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Mantén-te al dia de les últimes notícies i tendències del sector logístic.
+            Consells, notícies i curiositats sobre la importància d'una bona hidratació.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">

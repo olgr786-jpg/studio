@@ -3,17 +3,16 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#inici', label: 'Inici' },
-  { href: '#serveis', label: 'Serveis' },
-  { href: '#qui-som', label: 'Qui Som' },
+  { href: '#productes', label: 'Productes' },
+  { href: '#origen', label: 'El Nostre Origen' },
   { href: '#blog', label: 'Blog' },
-  { href: '#contacte', label: 'Contacte' },
 ];
 
 export default function Header() {
@@ -24,9 +23,8 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
-    handleScroll(); // Check on mount
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -48,7 +46,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:inline-flex shadow-sm hover:shadow-lg transition-shadow">
-            <Link href="#contacte">Demanar Pressupost</Link>
+            <Link href="#contacte">Contacte</Link>
           </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -76,7 +74,7 @@ export default function Header() {
                   </Link>
                 ))}
                  <Button asChild className="mt-4 shadow-sm">
-                   <Link href="#contacte">Demanar Pressupost</Link>
+                   <Link href="#contacte">Contacte</Link>
                  </Button>
               </nav>
             </SheetContent>

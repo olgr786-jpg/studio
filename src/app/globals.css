@@ -14,10 +14,10 @@ body {
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    --primary: 217 91% 60%; /* Blau corporatiu */
+    --primary: 195 86% 45%; /* Blau Aigua */
     --primary-foreground: 0 0% 100%;
-    --secondary: 45 100% 51%; /* Groc/Daurat corporatiu */
-    --secondary-foreground: 222 84% 5%;
+    --secondary: 142 76% 36%; /* Verd Natura */
+    --secondary-foreground: 0 0% 100%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
     --accent: 210 40% 96.1%;
@@ -26,9 +26,9 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 217 91% 60%;
-    --chart-1: 217 91% 60%;
-    --chart-2: 45 100% 51%;
+    --ring: 195 86% 45%;
+    --chart-1: 195 86% 45%;
+    --chart-2: 142 76% 36%;
     --chart-3: 168 76% 42%;
     --chart-4: 286 49% 76%;
     --chart-5: 39 92% 51%;
@@ -41,10 +41,10 @@ body {
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
+    --primary: 195 86% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 45 100% 51%;
-    --secondary-foreground: 222 84% 5%;
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
     --accent: 217 33% 17%;
@@ -53,9 +53,9 @@ body {
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 217 91% 60%;
-    --chart-1: 217 91% 60%;
-    --chart-2: 45 100% 51%;
+    --ring: 195 86% 45%;
+    --chart-1: 195 86% 45%;
+    --chart-2: 142 76% 36%;
     --chart-3: 168 76% 42%;
     --chart-4: 286 49% 76%;
     --chart-5: 39 92% 51%;
