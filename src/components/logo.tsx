@@ -1,16 +1,23 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { Droplet } from 'lucide-react';
+import { Waves } from 'lucide-react';
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="#inici" className={cn("flex items-center gap-2 text-foreground transition-colors hover:text-primary", className)}>
-       <div className="bg-primary p-2 rounded-full">
-         <Droplet className="h-6 w-6 text-primary-foreground" />
-       </div>
+    <Link
+      href="#inici"
+      className={cn(
+        'flex items-center gap-3 text-foreground transition-colors hover:text-primary',
+        className
+      )}
+    >
+      <div className="rounded-full border-2 border-primary/50 p-2">
+        <Waves className="h-6 w-6 text-primary" />
+      </div>
       <div className="flex items-baseline">
-        <span className="font-headline font-bold text-2xl tracking-wide">Nalu</span>
-        <span className="font-special text-2xl ml-1 text-secondary">Water</span>
+        <span className="font-headline text-3xl font-bold tracking-wide">
+          Nalu
+        </span>
       </div>
     </Link>
   );

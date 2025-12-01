@@ -1,4 +1,4 @@
-import type {Config} from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['class'],
@@ -10,9 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Quicksand', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
-        special: ['Pacifico', 'cursive'],
+        body: ['Montserrat', 'sans-serif'],
+        headline: ['Playfair Display', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

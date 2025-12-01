@@ -2,63 +2,63 @@
   "placeholderImages": [
     {
       "id": "hero-waterfall",
-      "description": "Una platja tropical amb palmeres i aigua turquesa.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a996f3ea?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "tropical beach"
+      "description": "Una ampolla de vidre d'aigua en una platja de sorra blanca amb el mar turquesa de fons.",
+      "imageUrl": "https://images.unsplash.com/photo-1541591223558-459154741c37?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "water bottle beach"
     },
     {
       "id": "testimonial-1",
-      "description": "Posta de sol en una platja tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "tropical sunset"
+      "description": "Una persona somrient bevent aigua d'una ampolla en un entorn lluminós i natural.",
+      "imageUrl": "https://images.unsplash.com/photo-1554570732-66159f81335f?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "person drinking water"
     },
     {
       "id": "testimonial-2",
-      "description": "Un bungalow sobre l'aigua en un resort tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1570229399281-a2386d63469e?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "tropical resort"
+      "description": "Una taula elegant amb copes d'aigua i un àpat saludable, amb llum natural.",
+      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "healthy meal water"
     },
     {
       "id": "testimonial-3",
-      "description": "Una noia relaxant-se en una hamaca entre palmeres.",
-      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "relaxing beach"
+      "description": "Una sessió de ioga o meditació a la platja a la sortida del sol.",
+      "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop",
+      "imageHint": "beach yoga"
     },
     {
       "id": "blog-benefit",
-      "description": "Un got de suc de fruita tropical en una taula de fusta.",
-      "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "tropical juice"
+      "description": "Primer pla d'una gota d'aigua caient sobre una fulla verda tropical.",
+      "imageUrl": "https://images.unsplash.com/photo-1550100136-705240366947?q=80&w=1974&auto=format=fit=crop",
+      "imageHint": "water drop leaf"
     },
     {
       "id": "blog-sustainability",
-      "description": "Fulles de palmera verdes amb el sol filtrant-se.",
-      "imageUrl": "https://images.unsplash.com/photo-1520302630591-fd1c67d51d02?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "palm leaves"
+      "description": "Ampolles de vidre reutilitzables plenes d'aigua en una cistella.",
+      "imageUrl": "https://images.unsplash.com/photo-1610484830842-db63a5610731?q=80&w=1974&auto=format=fit=crop",
+      "imageHint": "glass bottles"
     },
     {
       "id": "blog-hydration",
-      "description": "Un coco obert amb una palla a la sorra de la platja.",
-      "imageUrl": "https://images.unsplash.com/photo-1557810319-3f36070a25e1?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "coconut drink"
+      "description": "Un atleta bevent aigua després de fer exercici a l'aire lliure.",
+      "imageUrl": "https://images.unsplash.com/photo-1587598893450-42c26ea6357d?q=80&w=1974&auto=format=fit=crop",
+      "imageHint": "athlete drinking water"
     },
     {
       "id": "product-500ml",
-      "description": "Ampolla d'aigua de vidre amb rodanxes de llima i menta, sobre un fons tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1526401485004-2aa7d6b1a49a?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "infused water"
+      "description": "Ampolla d'aigua de vidre de 500ml amb disseny minimalista, sobre un fons de pedres volcàniques humides.",
+      "imageUrl": "https://images.unsplash.com/photo-1607598681216-5d552045657a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "glass water bottle"
     },
     {
       "id": "product-1.5l",
-      "description": "Diverses ampolles d'aigua amb fruites tropicals al fons.",
+      "description": "Diverses ampolles d'aigua de 1.5L alineades, amb reflexos de llum sobre un fons blau profund.",
       "imageUrl": "https://images.unsplash.com/photo-1543337395-a787455b5500?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water bottles fruit"
+      "imageHint": "water bottles"
     },
     {
       "id": "product-5l",
-      "description": "Una persona servint aigua d'una garrafa gran a un got amb gel.",
-      "imageUrl": "https://images.unsplash.com/photo-1601599554333-35661d99a39f?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "pouring water"
+      "description": "Una garrafa de vidre gran d'aigua amb dispensador, al costat d'un got ple, amb una fulla de monstera al fons.",
+      "imageUrl": "https://images.unsplash.com/photo-1601599554333-35661d99a39f?q=80&w=1974&auto=format=fit=crop",
+      "imageHint": "water dispenser glass"
     }
   ]
 }

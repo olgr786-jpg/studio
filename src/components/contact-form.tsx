@@ -22,24 +22,24 @@ export function ContactForm() {
       <Input
         type="text"
         placeholder="El teu nom"
-        className="bg-card/80"
+        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-400"
         aria-label="Nom"
         required
       />
       <Input
         type="email"
         placeholder="El teu correu electrònic"
-        className="bg-card/80"
+        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-400"
         aria-label="Correu electrònic"
         required
       />
       <Textarea
         placeholder="El teu missatge"
-        className="bg-card/80"
+        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-400"
         aria-label="Missatge"
         required
       />
-      <Button type="submit" variant="secondary" className="w-full">
+      <Button type="submit" variant="secondary" className="w-full rounded-lg">
         Enviar Missatge
       </Button>
     </form>

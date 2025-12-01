@@ -7,45 +7,45 @@ import Image from 'next/image';
 const blogPosts = [
   {
     id: 'blog-1',
-    title: '5 Beneficis de Beure Aigua Mineral Natural',
+    title: 'Els Minerals Essencials de la Nostra Aigua',
     date: '15 de Juliol, 2024',
-    excerpt: 'Descobreix com la hidratació amb aigua de font pot millorar la teva salut i benestar general.',
+    excerpt: 'Descobreix la composició única que fa de Nalu una font de benestar i equilibri natural.',
     imageId: 'blog-benefit',
   },
   {
     id: 'blog-2',
-    title: 'La importància de la sostenibilitat en l\'envasament d\'aigua',
+    title: 'El Nostre Compromís: Sostenibilitat i Puresa',
     date: '5 de Juliol, 2024',
-    excerpt: 'A Nalu Water, estem compromesos amb el planeta. Coneix les nostres iniciatives d\'envasament sostenible.',
+    excerpt: 'Exploreu les nostres iniciatives per protegir el medi ambient, des de l\'origen fins a l\'envàs.',
     imageId: 'blog-sustainability',
   },
   {
     id: 'blog-3',
-    title: 'Com Mantenir-se Hidratat Durant l\'Estiu',
+    title: 'Hidratació Premium: Com Afecta la Teva Pell',
     date: '28 de Juny, 2024',
-    excerpt: 'Consells pràctics i senzills per assegurar una hidratació adequada durant els mesos de més calor.',
+    excerpt: 'Consells d\'experts per lluir una pell radiant gràcies a una hidratació de qualitat superior.',
     imageId: 'blog-hydration',
   },
 ];
 
 export default function Blog() {
   return (
-    <section id="blog" className="bg-background">
+    <section id="blog" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2>El Nostre Blog</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Consells, notícies i curiositats sobre la importància d'una bona hidratació.
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Nalu Journal</h2>
+          <p className="mt-6 text-lg text-muted-foreground">
+            Descobreix més sobre el món de la hidratació, el benestar i la sostenibilitat amb els nostres articles.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-stretch">
           {blogPosts.map((post) => {
              const postImage = PlaceHolderImages.find(img => img.id === post.imageId);
              return (
-              <Card key={post.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl rounded-2xl">
+              <Card key={post.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-2xl rounded-2xl shadow-lg bg-card">
                  {postImage && (
                   <CardHeader className="p-0">
-                      <div className="aspect-video relative">
+                      <div className="aspect-[4/3] relative">
                         <Image
                           src={postImage.imageUrl}
                           alt={post.title}
@@ -56,16 +56,16 @@ export default function Blog() {
                       </div>
                   </CardHeader>
                 )}
-                <CardContent className="flex flex-col flex-grow p-6">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                <CardContent className="flex flex-col flex-grow p-8">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="h-4 w-4" />
                     <span>{post.date}</span>
                   </div>
-                  <CardTitle className="text-xl mb-2 flex-grow">{post.title}</CardTitle>
-                  <p className="text-muted-foreground text-sm">{post.excerpt}</p>
+                  <CardTitle className="text-2xl mb-3 flex-grow">{post.title}</CardTitle>
+                  <p className="text-muted-foreground text-base">{post.excerpt}</p>
                 </CardContent>
-                <CardFooter className="p-6 pt-0">
-                  <Button variant="link" className="px-0 group">
+                <CardFooter className="p-8 pt-0">
+                  <Button variant="link" className="px-0 group text-primary">
                     Llegir Més <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </CardFooter>
