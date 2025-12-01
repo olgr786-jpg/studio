@@ -1,9 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { Twitter, Instagram, Facebook } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 
-export default function Footer() {
+export default function Footer({ currentYear }: { currentYear: number }) {
   return (
     <footer id="contacte" className="bg-foreground text-background">
       <div className="container mx-auto px-4 md:px-6 py-16">
@@ -44,7 +46,7 @@ export default function Footer() {
 
         </div>
         <div className="mt-12 border-t border-border/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-accent-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Nalu Water. Tots els drets reservats.</p>
+          <p>&copy; {currentYear} Nalu Water. Tots els drets reservats.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-primary transition-colors">Política de Privacitat</Link>
             <Link href="#" className="hover:text-primary transition-colors">Termes i Condicions</Link>

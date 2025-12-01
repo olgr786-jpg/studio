@@ -8,6 +8,8 @@ import About from '@/components/sections/about';
 import Footer from '@/components/sections/footer';
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="flex flex-col min-h-dvh bg-background">
       <Header />
@@ -19,7 +21,7 @@ export default function Home() {
         <Subscriptions />
         <About />
       </main>
-      <Footer />
+      <Footer currentYear={currentYear} />
     </div>
   );
 }
