@@ -21,7 +21,8 @@ export function Logo({ className }: { className?: string }) {
           strokeLinejoin="round"
           className="h-full w-full"
         >
-          <path d="M12 22a7 7 0 0 0 7-7c0-2.39-3.4-7.44-6-9.46a1 1 0 0 0-2 0C7.4 7.56 4 12.61 4 15a7 7 0 0 0 7 7z" />
+          <path d="M12 12c-2.333 0-4.435-1.5-5.5-3.5 1.065-2 3.167-3.5 5.5-3.5s4.435 1.5 5.5 3.5c-1.065 2-3.167 3.5-5.5 3.5z" />
+          <path d="M12 19c-2.333 0-4.435-1.5-5.5-3.5 1.065-2 3.167-3.5 5.5-3.5s4.435 1.5 5.5 3.5c-1.065 2-3.167 3.5-5.5 3.5z" />
         </svg>
       </div>
       <div className="flex items-baseline">
