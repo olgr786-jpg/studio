@@ -21,6 +21,13 @@ const productCategories = [
         imageId: 'product-original',
         price: 'Des de 1.50€',
       },
+      {
+        id: 'nalu-premium',
+        name: 'Nalu Premium',
+        description: 'Elegant ampolla de vidre ideal per a restaurants. Formats de 750ml (3€), 1L (4,50€) i 2L (5€).',
+        imageId: 'product-premium',
+        price: 'Des de 3.00€',
+      },
     ],
   },
   {
