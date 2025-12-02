@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { Waves } from 'lucide-react';
+import Image from 'next/image';
 
 export function Logo({ className }: { className?: string }) {
   return (
@@ -11,8 +11,14 @@ export function Logo({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="rounded-full border-2 border-primary/50 p-2">
-        <Waves className="h-6 w-6 text-primary" />
+      <div className="relative h-12 w-12">
+        <Image
+          src="/logo.png"
+          alt="Nalu Water Logo"
+          width={48}
+          height={48}
+          className="object-contain"
+        />
       </div>
       <div className="flex items-baseline">
         <span className="font-headline text-3xl font-bold tracking-wide">
