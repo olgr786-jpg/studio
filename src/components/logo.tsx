@@ -22,6 +22,8 @@ export function Logo({ className }: { className?: string }) {
           className="h-full w-full"
         >
           <path d="M12 22a7 7 0 0 0 7-7c0-2.39-3.4-7.44-6-9.46a1 1 0 0 0-2 0C7.4 7.56 4 12.61 4 15a7 7 0 0 0 7 7z" />
+          <path d="M8.5 13.5a2.5 2.5 0 1 0 0 5" />
+          <path d="M11.5 13.5a2.5 2.5 0 1 1 0 5" />
         </svg>
       </div>
       <div className="flex items-baseline">
