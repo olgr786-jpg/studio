@@ -15,8 +15,8 @@
     {
       "id": "product-original",
       "description": "Ampolla de vidre Nalu Original sobre un fons net.",
-      "imageUrl": "https://images.unsplash.com/photo-1553563936-c60527c3c099?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water bottle"
+      "imageUrl": "https://images.unsplash.com/photo-1619158401920-8a9fdf695958?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "water bottles"
     },
     {
       "id": "product-premium",
@@ -80,15 +80,15 @@
     },
     {
       "id": "product-merch-cups",
-      "description": "Joc de gots de vidre reutilitzables amb disseny.",
+      "description": "Gots de colors reutilitzables.",
       "imageUrl": "https://images.unsplash.com/photo-1634823634953-3335967b45a9?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "glass cups"
+      "imageHint": "colored glasses"
     },
     {
       "id": "pack-adventure",
       "description": "Ampolla d'acer inoxidable en un entorn d'aventura.",
-      "imageUrl": "https://images.unsplash.com/photo-1570823903527-8f5ff621a414?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "adventure bottle"
+      "imageUrl": "https://images.unsplash.com/photo-1524143477439-5a999a1a673d?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "steel bottle"
     },
     {
       "id": "pack-tropical-essences",
@@ -129,13 +129,13 @@
     {
       "id": "blog-benefit",
       "description": "Imatge abstracta de minerals i elements naturals.",
-      "imageUrl": "https://images.unsplash.com/photo-1611149923225-69069389e863?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1567113463300-c040854c18ce?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water minerals"
     },
     {
       "id": "blog-sustainability",
-      "description": "Paisatge verd i exuberant que representa la natura i la sostenibilitat.",
-      "imageUrl": "https://images.unsplash.com/photo-1444492417251-9f1265418962?q=80&w=2070&auto=format&fit=crop",
+      "description": "Mans subjectant un petit arbre, simbolitzant la cura del medi ambient.",
+      "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "nature sustainability"
     },
     {
