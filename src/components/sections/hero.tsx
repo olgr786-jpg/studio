@@ -28,7 +28,7 @@ export default function Hero() {
             className="text-5xl font-bold !leading-tight tracking-wide sm:text-6xl md:text-7xl"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}
           >
-            Nalu Water
+            Nalu
           </h1>
           <p
             className="mt-6 max-w-xl mx-auto text-xl md:text-2xl text-neutral-100 font-medium"
