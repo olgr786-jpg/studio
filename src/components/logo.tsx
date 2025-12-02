@@ -10,7 +10,7 @@ export function Logo({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="h-12 w-12">
+      <div className="h-10 w-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -21,8 +21,7 @@ export function Logo({ className }: { className?: string }) {
           strokeLinejoin="round"
           className="h-full w-full"
         >
-          <path d="M12 2C8.68 2 6 4.68 6 8c0 2.21 1.79 4 4 4h4c2.21 0 4-1.79 4-4s-1.79-6-5-6" transform="rotate(45 12 12)" />
-          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 4.2 2.6 7.8 6.2 9.2" />
+          <path d="M12 22a7 7 0 0 0 7-7c0-2.39-3.4-7.44-6-9.46a1 1 0 0 0-2 0C7.4 7.56 4 12.61 4 15a7 7 0 0 0 7 7z" />
         </svg>
       </div>
       <div className="flex items-baseline">
