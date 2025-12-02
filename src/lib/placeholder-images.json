@@ -32,15 +32,15 @@
     },
     {
       "id": "blog-benefit",
-      "description": "Primer pla d'una gota d'aigua caient sobre una fulla verda tropical.",
-      "imageUrl": "https://images.unsplash.com/photo-1550100136-705240366947?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "water drop leaf"
+      "description": "Primer pla d'una gota d'aigua sobre una superfície blava, representant la puresa i els minerals.",
+      "imageUrl": "https://images.unsplash.com/photo-1490974952206-64132b5003f5?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "water minerals"
     },
     {
       "id": "blog-sustainability",
-      "description": "Ampolles de vidre reutilitzables plenes d'aigua en una cistella.",
-      "imageUrl": "https://images.unsplash.com/photo-1610484830842-db63a5610731?q=80&w=1974&auto=format&fit=crop",
-      "imageHint": "glass bottles"
+      "description": "Mans subjectant un petit brot de planta amb terra, simbolitzant la cura del medi ambient.",
+      "imageUrl": "https://images.unsplash.com/photo-1455218873509-8097305ee378?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "sustainability nature"
     },
     {
       "id": "blog-hydration",
