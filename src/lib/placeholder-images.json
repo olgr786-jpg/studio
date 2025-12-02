@@ -8,9 +8,9 @@
     },
     {
       "id": "who-we-are",
-      "description": "Una platja de sorra blanca i aigües cristal·lines, que representa la puresa i l'origen de Nalu.",
-      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "beach water"
+      "description": "Una cascada tropical i colorida amb llum natural que flueix entre la vegetació.",
+      "imageUrl": "https://images.unsplash.com/photo-1476610182048-b716b8518a2a?q=80&w=1964&auto=format&fit=crop",
+      "imageHint": "tropical waterfall"
     },
     {
       "id": "testimonial-1",
@@ -33,13 +33,13 @@
     {
       "id": "blog-benefit",
       "description": "Primer pla d'una gota d'aigua sobre una superfície blava, representant la puresa i els minerals.",
-      "imageUrl": "https://images.unsplash.com/photo-1490974952206-64132b5003f5?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1432888435233-0414e8433749?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "water minerals"
     },
     {
       "id": "blog-sustainability",
       "description": "Mans subjectant un petit brot de planta amb terra, simbolitzant la cura del medi ambient.",
-      "imageUrl": "https://images.unsplash.com/photo-1455218873509-8097305ee378?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "sustainability nature"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "product-original",
       "description": "Assortiment d'ampolles d'aigua Nalu Original de 330ml, 500ml, 1L i 1.5L.",
-      "imageUrl": "https://images.unsplash.com/photo-1543274266-9973b45d064c?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1624467784033-659e55b62cef?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water bottles sizes"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "pack-adventure",
       "description": "Ampolla d'acer inoxidable al costat d'una motxilla en un paisatge de muntanya, ideal per a aventures.",
-      "imageUrl": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "reusable bottle"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "product-merch-pack",
       "description": "Una capsa de regal oberta que mostra diversos productes.",
-      "imageUrl": "https://images.unsplash.com/photo-1571288233371-a79a52e89640?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1571288233371-a79a50e89640?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "gift box"
     },
     {
