@@ -7,16 +7,10 @@
       "imageHint": "tropical waterfall"
     },
     {
-      "id": "who-we-are",
+      "id": "nalu-bottle-jungle",
       "description": "Una impressionant cascada tropical a l'illa de Fiji, simbolitzant l'origen pur de Nalu Water.",
       "imageUrl": "https://images.unsplash.com/photo-1595535373183-1572074a39c3?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "fiji waterfall"
-    },
-    {
-      "id": "nalu-bottle-jungle",
-      "description": "Una ampolla d'aigua Nalu sobre un fons d'una selva tropical lleuger.",
-      "imageUrl": "https://images.unsplash.com/photo-1554866585-cd94860890b7?q=80&w=1964&auto=format&fit=crop",
-      "imageHint": "bottle jungle"
     },
     {
       "id": "product-original",
@@ -86,7 +80,7 @@
     },
     {
       "id": "product-merch-cups",
-      "description": "Gots de colors reutilitzables.",
+      "description": "Gots de vidre de disseny modern.",
       "imageUrl": "https://images.unsplash.com/photo-1634823634953-3335967b45a9?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "colored glasses"
     },
@@ -134,13 +128,13 @@
     },
     {
       "id": "blog-benefit",
-      "description": "Imatge abstracta de minerals i elements naturals.",
+      "description": "Imatge de minerals de l'aigua.",
       "imageUrl": "https://images.unsplash.com/photo-1567113463300-c040854c18ce?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "water minerals"
     },
     {
       "id": "blog-sustainability",
-      "description": "Mans subjectant un petit arbre, simbolitzant la cura del medi ambient.",
+      "description": "Imatge de sostenibilitat a la natura.",
       "imageUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "nature sustainability"
     },
