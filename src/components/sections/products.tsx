@@ -17,16 +17,9 @@ const productCategories = [
       {
         id: 'nalu-original',
         name: 'Nalu Original',
-        description: 'Aigua pura i equilibrada. Perfecta per al dia a dia. Formats: 330ml (1.50€), 500ml (1.80€), 1L (2.20€) i 1.5L (3.00€).',
+        description: 'Aigua pura i equilibrada, perfecta per al dia a dia. Disponible en formats de 330ml, 500ml, 1L i 1.5L.',
         imageId: 'product-original',
         price: 'Des de 1.50€',
-      },
-      {
-        id: 'nalu-premium',
-        name: 'Nalu Premium Vidre',
-        description: 'Gust suau i perfil mineral únic en una elegant ampolla de vidre. Ideal per a la restauració. Format: 750ml.',
-        imageId: 'product-premium',
-        price: '4.50€',
       },
     ],
   },
@@ -235,5 +228,3 @@ export default function Products() {
     </section>
   );
 }
-
-    
