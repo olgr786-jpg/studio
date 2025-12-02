@@ -4,13 +4,13 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function WhoWeAre() {
-  const whoWeAreImage = PlaceHolderImages.find(img => img.id === 'who-we-are');
+  const whoWeAreImage = PlaceHolderImages.find(img => img.id === 'nalu-bottle-jungle');
 
   return (
     <section id="qui-som" className="bg-card py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="order-2 md:order-1">
+        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+          <div className="md:w-3/5">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">La Nostra Història</h2>
             <p className="mt-6 text-lg text-muted-foreground">
               Nalu Water va néixer l’any 2021 d’un somni: capturar l’essència de les illes més pures del món en una ampolla. Fundada per un grup d’apassionats per la natura i el benestar, la nostra aventura va començar amb un viatge a Fiji, on vam descobrir una font d’aigua d’una qualitat excepcional.
@@ -26,9 +26,9 @@ export default function WhoWeAre() {
               <Link href="#contacte">Uneix-te a la família Nalu</Link>
             </Button>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="md:w-2/5 w-full">
             {whoWeAreImage && (
-              <div className="aspect-square relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-square relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <Image
                   src={whoWeAreImage.imageUrl}
                   alt={whoWeAreImage.description}

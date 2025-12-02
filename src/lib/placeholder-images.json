@@ -13,6 +13,12 @@
       "imageHint": "fiji waterfall"
     },
     {
+      "id": "nalu-bottle-jungle",
+      "description": "Una ampolla d'aigua Nalu sobre un fons d'una selva tropical lleuger.",
+      "imageUrl": "https://images.unsplash.com/photo-1554866585-cd94860890b7?q=80&w=1964&auto=format&fit=crop",
+      "imageHint": "bottle jungle"
+    },
+    {
       "id": "product-original",
       "description": "Ampolla de vidre Nalu Original sobre un fons net.",
       "imageUrl": "https://images.unsplash.com/photo-1619158401920-8a9fdf695958?q=80&w=1974&auto=format&fit=crop",
