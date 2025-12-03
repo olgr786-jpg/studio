@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { ContactForm } from '@/components/contact-form';
 
-export default function Footer({ currentYear }: { currentYear: number }) {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer id="contacte" className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 md:px-6 py-20">
