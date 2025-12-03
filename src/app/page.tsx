@@ -5,6 +5,7 @@ import WhoWeAre from '@/components/sections/who-we-are';
 import Origin from '@/components/sections/origin';
 import Blog from '@/components/sections/blog';
 import Footer from '@/components/sections/footer';
+import { Toaster } from '@/components/ui/toaster';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Blog />
       </main>
       <Footer />
+      <Toaster />
     </div>
   );
 }

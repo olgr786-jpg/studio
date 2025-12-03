@@ -10,8 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Montserrat', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
+        sans: ['var(--font-inter)'],
       },
       colors: {
         background: 'hsl(var(--background))',

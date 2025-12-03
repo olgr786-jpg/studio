@@ -4,30 +4,30 @@
 
 @layer base {
   :root {
-    --background: 179 88% 93%; /* Aiguamarina suau: #E0FBFC */
+    --background: 195 85% 96%; /* Very light blue */
     --foreground: 222 84% 5%;
-    --card: 0 0% 100%; /* Blanc "clean" */
+    --card: 0 0% 100%;
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    --primary: 183 89% 38%; /* Turquesa profund: #0AAFB8 */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 45 90% 61%; /* Groc sorra: #F4C542 */
+    --primary: 195 53% 79%; /* Light blue */
+    --primary-foreground: 222 84% 10%;
+    --secondary: 175 73% 58%; /* Turquoise */
     --secondary-foreground: 222 84% 10%;
     --muted: 210 30% 90%;
     --muted-foreground: 210 25% 45%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 183 89% 38%;
+    --accent: 175 73% 58%; /* Turquoise */
+    --accent-foreground: 222 84% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 183 89% 38%;
-    --chart-1: 183 89% 38%; /* Turquesa profund */
-    --chart-2: 171 70% 45%; /* Verd tropical: #00B894 */
-    --chart-3: 45 90% 61%; /* Groc sorra */
-    --chart-4: 5 100% 69%; /* Corall suau: #FF6F61 */
-    --chart-5: 202 100% 36%; /* Blau oceà: #0077B6 */
+    --ring: 195 53% 79%; /* Light blue */
+    --chart-1: 195 53% 79%;
+    --chart-2: 175 73% 58%;
+    --chart-3: 45 90% 61%;
+    --chart-4: 5 100% 69%;
+    --chart-5: 202 100% 36%;
     --radius: 0.8rem;
   }
 
@@ -38,21 +38,21 @@
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    --primary: 183 89% 38%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 45 90% 61%;
+    --primary: 195 53% 79%;
+    --primary-foreground: 222 84% 10%;
+    --secondary: 175 73% 58%;
     --secondary-foreground: 222 84% 10%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 217 33% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 175 73% 58%;
+    --accent-foreground: 222 84% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 183 89% 38%;
-    --chart-1: 183 89% 38%;
-    --chart-2: 171 70% 45%;
+    --ring: 195 53% 79%;
+    --chart-1: 195 53% 79%;
+    --chart-2: 175 73% 58%;
     --chart-3: 45 90% 61%;
     --chart-4: 5 100% 69%;
     --chart-5: 202 100% 36%;
@@ -72,7 +72,7 @@
   h4,
   h5,
   h6 {
-    @apply font-headline;
+    @apply font-sans;
   }
   h1 {
     @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl;
@@ -84,6 +84,6 @@
     @apply text-2xl font-semibold;
   }
   p {
-    @apply font-body leading-7;
+    @apply font-sans leading-7;
   }
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Toaster } from '@/components/ui/toaster';
+import { inter } from '@/app/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Nalu',
@@ -14,17 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ca" className="!scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-body antialiased">
+      <body className={`${inter.className} antialiased`}>
         {children}
-        <Toaster />
       </body>
     </html>
   );
