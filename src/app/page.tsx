@@ -7,6 +7,7 @@ import Blog from '@/components/sections/blog';
 import Footer from '@/components/sections/footer';
 import { Toaster } from '@/components/ui/toaster';
 
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background">

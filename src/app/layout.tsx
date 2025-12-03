@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { inter } from '@/app/lib/fonts';
+import { inter, dmSerifDisplay } from '@/app/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Nalu',
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ca" className="!scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+    <html lang="ca" className={`${inter.variable} ${dmSerifDisplay.variable} !scroll-smooth`}>
+      <body className={'antialiased font-sans'}>
         {children}
       </body>
     </html>
