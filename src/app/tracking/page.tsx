@@ -10,7 +10,7 @@ import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 
 type ShipmentData = {
-  tracking_code: string;
+  code: string;
   origin: string;
   destination: string;
   eta: string;
@@ -23,6 +23,8 @@ const statusConfig = {
   'En trànsit': { progress: 50, color: 'bg-blue-500', icon: Truck },
   'Lliurat': { progress: 100, color: 'bg-green-500', icon: CheckCircle },
 };
+
+const API_URL = 'https://sheetdb.io/api/v1/3yz5a4npc7t4c';
 
 export default function TrackingPage() {
   const [trackingCode, setTrackingCode] = useState('');
@@ -39,20 +41,25 @@ export default function TrackingPage() {
     setError(null);
     setShipment(null);
 
+    console.log("Cercant codi:", trackingCode);
+
     try {
-      const response = await fetch(`https://sheetdb.io/api/v1/3yz5a4npc7t4c/search?tracking_code=${trackingCode}`);
+      const response = await fetch(`${API_URL}/search?code=${trackingCode}`);
       if (!response.ok) {
-        throw new Error('No s\'ha pogut connectar amb el servidor.');
+        throw new Error('Error connectant amb el servidor');
       }
+      
       const data: ShipmentData[] = await response.json();
+      console.log("Dades rebudes:", data);
       
       if (data.length > 0) {
         setShipment(data[0]);
       } else {
-        setError('Codi no trobat. Si us plau, verifica el codi i torna-ho a provar.');
+        setError('No hem trobat cap enviament amb aquest codi');
       }
     } catch (err) {
-      setError('Hi ha hagut un problema amb la teva sol·licitud.');
+      const errorMessage = err instanceof Error ? err.message : 'Hi ha hagut un problema amb la teva sol·licitud.';
+      setError(errorMessage);
       console.error(err);
     } finally {
       setLoading(false);
@@ -96,7 +103,7 @@ export default function TrackingPage() {
                 <Card className="shadow-2xl rounded-2xl">
                   <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl flex items-center justify-between">
-                      <span>Resultats per: {shipment.tracking_code}</span>
+                      <span>Resultats per: {shipment.code}</span>
                        <span className={`flex items-center text-lg font-medium px-3 py-1 rounded-full text-white ${currentStatus.color}`}>
                           <currentStatus.icon className="h-5 w-5 mr-2" />
                           {shipment.status}
