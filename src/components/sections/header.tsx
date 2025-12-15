@@ -14,12 +14,9 @@ const navLinks = [
   { href: '#qui-som', label: 'Qui Som' },
   { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
+  { href: '/tracking', label: 'Seguiment' },
+  { href: '#contacte', label: 'Contacte' },
 ];
-
-const secondaryNavLinks = [
-    { href: '/tracking', label: 'Seguiment' },
-    { href: '#contacte', label: 'Contacte' },
-]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,8 +31,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const allLinks = [...navLinks, ...secondaryNavLinks];
-
   return (
     <header
       className={cn(
@@ -46,14 +41,8 @@ export default function Header() {
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
         <Logo className="mr-6 flex-shrink-0" />
         <div className="flex-grow flex items-center justify-end">
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
-                {link.label}
-              </Link>
-            ))}
-            <div className="w-px h-6 bg-border mx-4"></div>
-            {secondaryNavLinks.map((link) => (
               <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
                 {link.label}
               </Link>
@@ -76,7 +65,7 @@ export default function Header() {
                     </Button>
                 </div>
               <nav className="flex flex-col gap-6">
-                {allLinks.map((link) => (
+                {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
