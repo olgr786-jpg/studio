@@ -14,6 +14,7 @@ const navLinks = [
   { href: '#qui-som', label: 'Qui Som' },
   { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
+  { href: '/tracking', label: 'Seguiment' },
 ];
 
 export default function Header() {

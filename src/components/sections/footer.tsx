@@ -38,6 +38,7 @@ export default function Footer() {
               <Link href="#qui-som" className="text-gray-400 hover:text-secondary transition-colors">Qui Som</Link>
               <Link href="#origen" className="text-gray-400 hover:text-secondary transition-colors">Testimonis</Link>
               <Link href="#blog" className="text-gray-400 hover:text-secondary transition-colors">Blog</Link>
+              <Link href="/tracking" className="text-gray-400 hover:text-secondary transition-colors">Seguiment</Link>
               <Link href="#contacte" className="text-gray-400 hover:text-secondary transition-colors">Contacte</Link>
             </nav>
           </div>
