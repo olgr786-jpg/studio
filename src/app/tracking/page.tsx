@@ -10,17 +10,17 @@ import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 
 type ShipmentData = {
-  code: string;
-  origin: string;
-  destination: string;
-  eta: string;
-  current_location: string;
-  status: 'En magatzem' | 'En trànsit' | 'Lliurat';
+  'tracking code': string;
+  origen: string;
+  destinacio: string;
+  'data d\'arribada': string;
+  localització: string;
+  estat: 'En magatzem' | 'En transit' | 'Lliurat';
 };
 
 const statusConfig = {
   'En magatzem': { progress: 10, color: 'bg-yellow-500', icon: Warehouse },
-  'En trànsit': { progress: 50, color: 'bg-blue-500', icon: Truck },
+  'En transit': { progress: 50, color: 'bg-blue-500', icon: Truck },
   'Lliurat': { progress: 100, color: 'bg-green-500', icon: CheckCircle },
 };
 
@@ -44,7 +44,7 @@ export default function TrackingPage() {
     console.log("Cercant codi:", trackingCode);
 
     try {
-      const response = await fetch(`${API_URL}/search?code=${trackingCode}`);
+      const response = await fetch(`${API_URL}/search?tracking code=${trackingCode}`);
       if (!response.ok) {
         throw new Error('Error connectant amb el servidor');
       }
@@ -66,7 +66,7 @@ export default function TrackingPage() {
     }
   };
 
-  const currentStatus = shipment ? statusConfig[shipment.status] : null;
+  const currentStatus = shipment ? statusConfig[shipment.estat] : null;
 
   return (
     <div className="flex flex-col min-h-dvh bg-background">
@@ -103,10 +103,10 @@ export default function TrackingPage() {
                 <Card className="shadow-2xl rounded-2xl">
                   <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl flex items-center justify-between">
-                      <span>Resultats per: {shipment.code}</span>
+                      <span>Resultats per: {shipment['tracking code']}</span>
                        <span className={`flex items-center text-lg font-medium px-3 py-1 rounded-full text-white ${currentStatus.color}`}>
                           <currentStatus.icon className="h-5 w-5 mr-2" />
-                          {shipment.status}
+                          {shipment.estat}
                        </span>
                     </CardTitle>
                   </CardHeader>
@@ -114,15 +114,15 @@ export default function TrackingPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
                       <div>
                         <p className="text-sm text-muted-foreground">Origen</p>
-                        <p className="font-semibold text-lg">{shipment.origin}</p>
+                        <p className="font-semibold text-lg">{shipment.origen}</p>
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Destí</p>
-                        <p className="font-semibold text-lg">{shipment.destination}</p>
+                        <p className="font-semibold text-lg">{shipment.destinacio}</p>
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Data prevista (ETA)</p>
-                        <p className="font-semibold text-lg">{shipment.eta}</p>
+                        <p className="font-semibold text-lg">{shipment['data d\'arribada']}</p>
                       </div>
                     </div>
                     
@@ -138,7 +138,7 @@ export default function TrackingPage() {
                                   <p className="text-xs mt-2">En magatzem</p>
                               </div>
                                <div className="flex flex-col items-center text-center">
-                                  <div className={`h-6 w-6 rounded-full flex items-center justify-center ${statusConfig['En trànsit'].progress <= currentStatus.progress ? statusConfig['En trànsit'].color : 'bg-muted'}`}>
+                                  <div className={`h-6 w-6 rounded-full flex items-center justify-center ${statusConfig['En transit'].progress <= currentStatus.progress ? statusConfig['En transit'].color : 'bg-muted'}`}>
                                       <Truck className="h-4 w-4 text-white"/>
                                   </div>
                                   <p className="text-xs mt-2">En trànsit</p>
@@ -153,7 +153,7 @@ export default function TrackingPage() {
                       </div>
                        <p className="text-center mt-8 text-lg">
                           <span className="text-muted-foreground">Ubicació actual:</span>
-                          <strong className="ml-2 font-semibold">{shipment.current_location}</strong>
+                          <strong className="ml-2 font-semibold">{shipment.localització}</strong>
                       </p>
                     </div>
 
