@@ -14,8 +14,12 @@ const navLinks = [
   { href: '#qui-som', label: 'Qui Som' },
   { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
-  { href: '/tracking', label: 'Seguiment' },
 ];
+
+const secondaryNavLinks = [
+    { href: '/tracking', label: 'Seguiment' },
+    { href: '#contacte', label: 'Contacte' },
+]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +34,8 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const allLinks = [...navLinks, ...secondaryNavLinks];
+
   return (
     <header
       className={cn(
@@ -38,21 +44,26 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
-        <Logo className="mr-6" />
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="flex items-center gap-4">
-          <Button asChild className="hidden md:inline-flex rounded-lg">
-            <Link href="#contacte">Contacte</Link>
-          </Button>
+        <Logo className="mr-6 flex-shrink-0" />
+        <div className="flex-grow flex items-center justify-end">
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
+                {link.label}
+              </Link>
+            ))}
+            <div className="w-px h-6 bg-border mx-4"></div>
+            {secondaryNavLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+        <div className="flex items-center gap-4 md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
+              <Button variant="outline" size="icon">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Obrir menú</span>
               </Button>
@@ -65,7 +76,7 @@ export default function Header() {
                     </Button>
                 </div>
               <nav className="flex flex-col gap-6">
-                {navLinks.map((link) => (
+                {allLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -75,9 +86,6 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                 <Button asChild className="mt-4 rounded-lg">
-                   <Link href="#contacte">Contacte</Link>
-                 </Button>
               </nav>
             </SheetContent>
           </Sheet>
