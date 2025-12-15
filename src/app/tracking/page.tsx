@@ -86,7 +86,7 @@ export default function TrackingPage() {
                   type="text"
                   value={trackingCode}
                   onChange={(e) => setTrackingCode(e.target.value)}
-                  placeholder="Ex: NALU123456"
+                  placeholder="TRK - 000"
                   className="h-12 text-lg text-center sm:text-left"
                   onKeyUp={(e) => e.key === 'Enter' && handleSearch()}
                 />
