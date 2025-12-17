@@ -67,6 +67,7 @@ export function ContactForm() {
         className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-400"
         aria-label="Missatge"
         required
+        rows={5}
       />
       <Button type="submit" variant="secondary" className="w-full rounded-lg">
         Enviar Missatge
