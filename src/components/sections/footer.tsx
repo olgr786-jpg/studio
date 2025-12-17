@@ -3,15 +3,8 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { ContactForm } from '@/components/contact-form';
-import { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
-
   return (
     <footer id="contacte" className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 md:px-6 py-20">
@@ -53,7 +46,7 @@ export default function Footer() {
 
         </div>
         <div className="mt-16 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; {currentYear} Nalu. Tots els drets reservats.</p>
+          <p>&copy; 2024 Nalu. Tots els drets reservats.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-secondary transition-colors">Avís Legal</Link>
             <Link href="#" className="hover:text-secondary transition-colors">Política de Privacitat</Link>
