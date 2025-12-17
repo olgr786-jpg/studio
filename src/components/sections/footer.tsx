@@ -3,9 +3,15 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { ContactForm } from '@/components/contact-form';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer id="contacte" className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 md:px-6 py-20">
