@@ -6,7 +6,7 @@ import { ContactForm } from '@/components/contact-form';
 import { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
