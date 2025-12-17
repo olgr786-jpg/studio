@@ -53,7 +53,7 @@ export default function Footer() {
 
         </div>
         <div className="mt-16 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; {currentYear ?? new Date().getFullYear()} Nalu. Tots els drets reservats.</p>
+          <p>&copy; {currentYear} Nalu. Tots els drets reservats.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-secondary transition-colors">Avís Legal</Link>
             <Link href="#" className="hover:text-secondary transition-colors">Política de Privacitat</Link>
