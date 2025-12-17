@@ -9,13 +9,13 @@ import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#inici', label: 'Inici' },
-  { href: '#productes', label: 'Productes' },
-  { href: '#qui-som', label: 'Qui Som' },
-  { href: '#blog', label: 'Blog' },
+  { href: '/#inici', label: 'Inici' },
+  { href: '/#productes', label: 'Productes' },
+  { href: '/#qui-som', label: 'Qui Som' },
+  { href: '/#blog', label: 'Blog' },
   { href: '/tracking', label: 'Seguiment' },
   { href: '/login', label: 'Login' },
-  { href: '#contacte', label: 'Contacte' },
+  { href: '/#contacte', label: 'Contacte' },
 ];
 
 export default function Header() {
@@ -31,6 +31,13 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Use a different root for the links when not on the homepage
+  const [isHomePage, setIsHomePage] = React.useState(false);
+  useEffect(() => {
+    setIsHomePage(window.location.pathname === '/');
+  }, []);
+
+
   return (
     <header
       className={cn(
@@ -43,7 +50,7 @@ export default function Header() {
         <div className="flex-grow flex items-center justify-end">
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
+              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
                 {link.label}
               </Link>
             ))}
@@ -68,7 +75,7 @@ export default function Header() {
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
-                    href={link.href}
+                    href={isHomePage ? link.href : `/${link.href}`}
                     className="text-lg font-medium text-foreground transition-colors hover:text-primary"
                     onClick={() => setIsMenuOpen(false)}
                   >
