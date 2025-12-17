@@ -50,7 +50,7 @@ export default function DashboardPage() {
         <div className="w-full max-w-2xl space-y-8">
             <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
-                    Benvingut, {user.usuari}!
+                    Benvingut a la teva zona privada, {user.usuari}!
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground">
                     Aquest és el teu panell de control personal.
@@ -78,7 +78,7 @@ export default function DashboardPage() {
                <div className="border-t pt-6">
                 <Button onClick={handleLogout} variant="outline" className="w-full">
                   <LogOut className="mr-2 h-5 w-5" />
-                  Tancar Sessió
+                  Sortir
                 </Button>
               </div>
             </CardContent>
