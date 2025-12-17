@@ -15,6 +15,7 @@ const navLinks = [
   { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
   { href: '/tracking', label: 'Seguiment' },
+  { href: '/login', label: 'Login' },
   { href: '#contacte', label: 'Contacte' },
 ];
 
