@@ -12,7 +12,6 @@ const navLinks = [
   { href: '#inici', label: 'Inici' },
   { href: '#productes', label: 'Productes' },
   { href: '#qui-som', label: 'Qui Som' },
-  { href: '#origen', label: 'Testimonis' },
   { href: '#blog', label: 'Blog' },
   { href: '/tracking', label: 'Seguiment' },
   { href: '/login', label: 'Login' },

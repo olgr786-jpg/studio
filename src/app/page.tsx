@@ -2,7 +2,6 @@ import Header from '@/components/sections/header';
 import Hero from '@/components/sections/hero';
 import Products from '@/components/sections/products';
 import WhoWeAre from '@/components/sections/who-we-are';
-import Origin from '@/components/sections/origin';
 import Blog from '@/components/sections/blog';
 import Footer from '@/components/sections/footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -16,7 +15,6 @@ export default function Home() {
         <Hero />
         <Products />
         <WhoWeAre />
-        <Origin />
         <Blog />
       </main>
       <Footer />
