@@ -1,12 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -29,6 +34,10 @@ export function ContactForm() {
     }
   };
   
+  if (!isClient) {
+    return null; // Don't render on the server
+  }
+
   if (submitted) {
     return (
       <div className="text-center text-gray-300 p-4 rounded-lg bg-green-900/50">

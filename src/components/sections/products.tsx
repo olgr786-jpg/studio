@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useToast } from '@/hooks/use-toast';
 import { ShoppingCart, Leaf, Heart, Gift, GlassWater, Sparkles, Star } from 'lucide-react';
+import React from 'react';
 
 const productCategories = [
   {
@@ -167,6 +168,11 @@ const productCategories = [
 
 export default function Products() {
   const { toast } = useToast();
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <section id="productes" className="py-24 sm:py-32 bg-background">
@@ -216,13 +222,15 @@ export default function Products() {
                         <p className="text-2xl font-bold text-primary mt-4 font-headline">{product.price}</p>
                       </div>
                       <CardFooter className="p-6 pt-0">
-                        <Button
-                          size="lg"
-                          className="w-full rounded-lg"
-                          onClick={() => toast({ title: `${product.name} afegit a la cistella!` })}
-                        >
-                          <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
-                        </Button>
+                        {isClient && (
+                          <Button
+                            size="lg"
+                            className="w-full rounded-lg"
+                            onClick={() => toast({ title: `${product.name} afegit a la cistella!` })}
+                          >
+                            <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
+                          </Button>
+                        )}
                       </CardFooter>
                     </Card>
                   );
