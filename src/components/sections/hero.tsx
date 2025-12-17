@@ -50,7 +50,7 @@ export default function Hero() {
               variant="outline"
               className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg border-white text-white hover:bg-white hover:text-primary"
             >
-              <Link href="#origen">Testimonis</Link>
+              <Link href="#qui-som">Qui som</Link>
             </Button>
           </div>
         </div>
