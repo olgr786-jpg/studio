@@ -34,7 +34,7 @@ export default function Blog() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Nalu Journal</h2>
-          <p className="mt-6 text-lg text-muted-foreground">
+          <p className="mt-6 text-lg text-muted-foreground font-sans">
             Descobreix més sobre el món de la hidratació, el benestar i la sostenibilitat amb els nostres articles.
           </p>
         </div>
@@ -61,8 +61,8 @@ export default function Blog() {
                     <Calendar className="h-4 w-4" />
                     <span>{post.date}</span>
                   </div>
-                  <CardTitle className="text-2xl mb-3 flex-grow">{post.title}</CardTitle>
-                  <p className="text-muted-foreground text-base">{post.excerpt}</p>
+                  <CardTitle className="text-2xl mb-3 flex-grow font-headline">{post.title}</CardTitle>
+                  <p className="text-muted-foreground text-base font-sans">{post.excerpt}</p>
                 </CardContent>
                 <CardFooter className="p-8 pt-0">
                   <Button variant="link" className="px-0 group text-primary">

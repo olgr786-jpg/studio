@@ -59,7 +59,7 @@ const ClientShipments = ({ empresa }: { empresa: string }) => {
   return (
     <Card className="shadow-2xl rounded-2xl">
       <CardHeader>
-        <CardTitle className="text-2xl sm:text-3xl">Els Teus Enviaments</CardTitle>
+        <CardTitle className="text-2xl sm:text-3xl font-headline">Els Teus Enviaments</CardTitle>
         <CardDescription>Aquí pots veure l'estat de les teves comandes.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -98,7 +98,7 @@ const ClientShipments = ({ empresa }: { empresa: string }) => {
 const WorkerPanel = () => (
   <Card className="shadow-2xl rounded-2xl">
     <CardHeader>
-      <CardTitle className="text-2xl sm:text-3xl">Panell de Control per a Treballadors</CardTitle>
+      <CardTitle className="text-2xl sm:text-3xl font-headline">Panell de Control per a Treballadors</CardTitle>
       <CardDescription>Accedeix a les eines de gestió.</CardDescription>
     </CardHeader>
     <CardContent className="flex flex-col gap-4">
@@ -161,7 +161,7 @@ export default function DashboardPage() {
 
           <Card className="shadow-2xl rounded-2xl">
             <CardHeader>
-              <CardTitle className="text-2xl sm:text-3xl">El Teu Perfil</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl font-headline">El Teu Perfil</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-lg">
               <div className="flex items-center gap-4">

@@ -102,7 +102,7 @@ export default function TrackingPage() {
               <div className="mt-16 max-w-4xl mx-auto">
                 <Card className="shadow-2xl rounded-2xl">
                   <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl flex items-center justify-between">
+                    <CardTitle className="text-2xl sm:text-3xl flex items-center justify-between font-headline">
                       <span>Resultats per: {shipment['tracking code']}</span>
                        <span className={`flex items-center text-lg font-medium px-3 py-1 rounded-full text-white ${currentStatus.color}`}>
                           <currentStatus.icon className="h-5 w-5 mr-2" />

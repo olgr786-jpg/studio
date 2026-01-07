@@ -25,13 +25,13 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center gap-6">
         <div className="max-w-4xl">
           <h1
-            className="text-5xl font-bold !leading-tight tracking-wide sm:text-6xl md:text-7xl"
+            className="text-5xl font-bold !leading-tight tracking-wide sm:text-6xl md:text-7xl font-headline"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}
           >
             Nalu
           </h1>
           <p
-            className="mt-6 max-w-xl mx-auto text-xl md:text-2xl text-neutral-100 font-medium"
+            className="mt-6 max-w-xl mx-auto text-xl md:text-2xl text-neutral-100 font-medium font-sans"
             style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}
           >
             Aigua pura amb essència d’illa.

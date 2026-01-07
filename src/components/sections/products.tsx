@@ -179,7 +179,7 @@ export default function Products() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">La Puresa en Cada Gota</h2>
-          <p className="mt-6 text-lg text-muted-foreground font-body">
+          <p className="mt-6 text-lg text-muted-foreground font-sans">
             Tria el format que millor s'adapta al teu estil de vida. Sempre amb la mateixa qualitat i puresa que ens defineix.
           </p>
         </div>
@@ -218,7 +218,7 @@ export default function Products() {
                       </CardHeader>
                       <div className="flex flex-col flex-grow p-6 text-center">
                         <CardTitle className="m-0 text-2xl font-headline">{product.name}</CardTitle>
-                        <p className="text-muted-foreground mt-3 flex-grow font-body text-sm">{product.description}</p>
+                        <p className="text-muted-foreground mt-3 flex-grow font-sans text-sm">{product.description}</p>
                         <p className="text-2xl font-bold text-primary mt-4 font-headline">{product.price}</p>
                       </div>
                       <CardFooter className="p-6 pt-0">
