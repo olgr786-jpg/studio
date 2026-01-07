@@ -48,7 +48,7 @@ export default function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg border-white text-white hover:bg-white hover:text-primary"
+              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg border-white text-white hover:bg-white hover:text-primary-foreground"
             >
               <Link href="#qui-som">Qui som</Link>
             </Button>
