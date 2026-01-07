@@ -40,8 +40,8 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="text-center text-gray-300 p-4 rounded-lg bg-green-900/50 font-sans">
-        <h3 className="font-bold text-lg font-headline">Gràcies!</h3>
+      <div className="text-center text-green-100 p-4 rounded-lg bg-green-900/50 font-sans">
+        <h3 className="font-bold text-lg font-headline text-white">Gràcies!</h3>
         <p>El teu missatge s'ha enviat correctament.</p>
       </div>
     );
@@ -58,7 +58,7 @@ export function ContactForm() {
         type="text"
         name="name"
         placeholder="El teu nom"
-        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-300"
+        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
         aria-label="Nom"
         required
       />
@@ -66,14 +66,14 @@ export function ContactForm() {
         type="email"
         name="email"
         placeholder="El teu correu electrònic"
-        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-300"
+        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
         aria-label="Correu electrònic"
         required
       />
       <Textarea
         name="message"
         placeholder="El teu missatge"
-        className="bg-gray-800/80 border-gray-600 text-white placeholder:text-gray-300"
+        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
         aria-label="Missatge"
         required
         rows={5}
