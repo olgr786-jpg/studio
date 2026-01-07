@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 175 73% 48%; /* Turquoise */
+    --background: 175 73% 88%; /* Lighter Turquoise */
     --foreground: 220 40% 15%; /* Navy Blue */
     --card: 260 80% 95%; /* Lighter Lilac for cards */
     --card-foreground: 220 40% 15%;
