@@ -72,7 +72,7 @@
   h4,
   h5,
   h6 {
-    @apply font-sans;
+    @apply font-headline;
   }
   h1 {
     @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl;
