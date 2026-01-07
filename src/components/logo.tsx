@@ -17,9 +17,13 @@ export function Logo({ className }: { className?: string }) {
           fill="none"
           className="h-full w-full"
         >
-         <path 
-            d="M50 0C50 0 50 25 50 25C50 41.5685 36.5685 55 20 55C10.8953 55 2.6053 50.8401 0 45.4952C16.5685 45.4952 30 58.9267 30 75.4952C30 92.0637 16.5685 100 0 100C33.1371 100 60 73.1371 60 40C60 27.819 75.8333 13.5 100 0C83.3333 13.5 68.6667 24.5 50 40C50 25 50 0 50 0Z" 
-            fill="currentColor"
+          <path
+            d="M50,5 C25,40 25,70 50,95 C75,70 75,40 50,5 Z"
+            stroke="currentColor"
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
           />
         </svg>
       </div>
