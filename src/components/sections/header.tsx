@@ -45,53 +45,51 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
-        <Logo className="mr-6 flex-shrink-0" />
-        <div className="flex-grow flex items-center justify-end">
-          <nav className="hidden md:flex items-center gap-6">
+        <div className="flex items-center gap-4 md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Obrir menú</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="md:hidden">
+                  <div className='flex justify-between items-center mb-8'>
+                      <Logo />
+                      <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
+                          <X className="h-6 w-6" />
+                      </Button>
+                  </div>
+                <nav className="flex flex-col gap-6">
+                  <Link
+                      href={isHomePage ? '/#inici' : '/'}
+                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Inici
+                    </Link>
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={isHomePage ? link.href : `/${link.href}`}
+                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
+        <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
                 {link.label}
               </Link>
             ))}
           </nav>
-        </div>
-        <div className="flex items-center gap-4 md:hidden">
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Obrir menú</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="md:hidden">
-                <div className='flex justify-between items-center mb-8'>
-                    <Logo />
-                    <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
-                        <X className="h-6 w-6" />
-                    </Button>
-                </div>
-              <nav className="flex flex-col gap-6">
-                <Link
-                    href={isHomePage ? '/#inici' : '/'}
-                    className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Inici
-                  </Link>
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={isHomePage ? link.href : `/${link.href}`}
-                    className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </SheetContent>
-          </Sheet>
-        </div>
+        <Logo className="ml-6 flex-shrink-0" />
       </div>
     </header>
   );
