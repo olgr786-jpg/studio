@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --background: 260 80% 90%; /* Light Lilac */
+    --background: 175 73% 48%; /* Turquoise */
     --foreground: 220 40% 15%; /* Navy Blue */
-    --card: 0 0% 100%;
+    --card: 260 80% 95%; /* Lighter Lilac for cards */
     --card-foreground: 220 40% 15%;
-    --popover: 0 0% 100%;
+    --popover: 260 80% 95%;
     --popover-foreground: 220 40% 15%;
-    --primary: 175 73% 48%; /* Turquoise */
-    --primary-foreground: 210 40% 98%;
+    --primary: 260 80% 90%; /* Light Lilac */
+    --primary-foreground: 220 40% 15%;
     --secondary: 25 95% 60%; /* Vivid Orange */
     --secondary-foreground: 224 76% 15%;
     --muted: 210 40% 96.1%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 175 73% 48%; /* Turquoise */
+    --ring: 260 80% 90%; /* Light Lilac */
     --chart-1: 175 73% 48%;
     --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;

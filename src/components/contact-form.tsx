@@ -58,7 +58,7 @@ export function ContactForm() {
         type="text"
         name="name"
         placeholder="El teu nom"
-        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
+        className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-300"
         aria-label="Nom"
         required
       />
@@ -66,14 +66,14 @@ export function ContactForm() {
         type="email"
         name="email"
         placeholder="El teu correu electrònic"
-        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
+        className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-300"
         aria-label="Correu electrònic"
         required
       />
       <Textarea
         name="message"
         placeholder="El teu missatge"
-        className="bg-background/20 border-white/40 text-white placeholder:text-gray-200"
+        className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-300"
         aria-label="Missatge"
         required
         rows={5}
