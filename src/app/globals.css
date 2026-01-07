@@ -6,23 +6,23 @@
   :root {
     --background: 175 73% 88%; /* Lighter Turquoise */
     --foreground: 220 40% 15%; /* Navy Blue */
-    --card: 260 80% 95%; /* Lighter Lilac for cards */
+    --card: 175 73% 95%; /* Lighter Turquoise for cards */
     --card-foreground: 220 40% 15%;
-    --popover: 260 80% 95%;
+    --popover: 175 73% 95%;
     --popover-foreground: 220 40% 15%;
-    --primary: 260 80% 90%; /* Light Lilac */
-    --primary-foreground: 220 40% 15%;
-    --secondary: 25 95% 60%; /* Vivid Orange */
+    --primary: 150 60% 50%; /* Tropical Green */
+    --primary-foreground: 220 40% 10%;
+    --secondary: 25 95% 70%; /* Light Orange */
     --secondary-foreground: 224 76% 15%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 175 73% 48%; /* Turquoise */
+    --accent: 150 60% 50%; /* Tropical Green */
     --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 260 80% 90%; /* Light Lilac */
+    --ring: 150 60% 50%; /* Tropical Green */
     --chart-1: 175 73% 48%;
     --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;
@@ -36,9 +36,9 @@
     --foreground: 210 40% 98%;
     --card: 224 71% 4%;
     --card-foreground: 210 40% 98%;
-    --primary: 175 73% 48%; /* Turquoise */
+    --primary: 150 60% 50%; /* Tropical Green */
     --primary-foreground: 210 40% 98%;
-    --secondary: 25 95% 60%; /* Vivid Orange */
+    --secondary: 25 95% 70%; /* Light Orange */
     --secondary-foreground: 224 76% 15%;
     --muted: 215 28% 17%;
     --muted-foreground: 215 20% 65%;
@@ -48,7 +48,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 215 28% 17%;
     --input: 215 28% 17%;
-    --ring: 175 73% 48%;
+    --ring: 150 60% 50%;
     --chart-1: 175 73% 48%;
     --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;
