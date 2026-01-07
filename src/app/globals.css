@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 224 76% 15%;
+    --background: 30 100% 95%; /* Light Orange */
+    --foreground: 220 40% 15%; /* Navy Blue */
     --card: 0 0% 100%;
-    --card-foreground: 224 76% 15%;
+    --card-foreground: 220 40% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 76% 15%;
+    --popover-foreground: 220 40% 15%;
     --primary: 175 73% 48%; /* Turquoise */
     --primary-foreground: 210 40% 98%;
     --secondary: 260 80% 75%; /* Lilac */
