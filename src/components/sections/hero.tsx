@@ -40,7 +40,7 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
+              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg bg-[hsl(var(--accent))] text-accent-foreground hover:bg-[hsl(var(--accent)/0.9)]"
             >
               <Link href="#productes">Veure Productes</Link>
             </Button>
