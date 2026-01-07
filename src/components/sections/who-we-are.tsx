@@ -11,7 +11,7 @@ export default function WhoWeAre() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="md:w-3/5">
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">La Nostra Història</h2>
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">La Nostra Història</h2>
             <p className="mt-6 text-lg text-gray-400 font-sans">
               Nalu Water va néixer l’any 2021 d’un somni a Barcelona: capturar l’essència de les illes més pures del món en una ampolla. Fundada per un grup d’apassionats per la natura i el benestar, la nostra aventura va començar amb un viatge a Fiji, on vam descobrir una font d’aigua d’una qualitat excepcional.
             </p>

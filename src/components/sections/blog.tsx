@@ -33,7 +33,7 @@ export default function Blog() {
     <section id="blog" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Nalu Journal</h2>
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">Nalu Journal</h2>
           <p className="mt-6 text-lg text-muted-foreground font-sans">
             Descobreix més sobre el món de la hidratació, el benestar i la sostenibilitat amb els nostres articles.
           </p>
