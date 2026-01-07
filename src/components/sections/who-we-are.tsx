@@ -21,7 +21,7 @@ export default function WhoWeAre() {
              <Button
               asChild
               size="lg"
-              className="mt-8 rounded-lg"
+              className="mt-8 rounded-lg font-sans"
             >
               <Link href="#contacte">Uneix-te a la família Nalu</Link>
             </Button>

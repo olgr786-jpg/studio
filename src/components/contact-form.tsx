@@ -40,8 +40,8 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="text-center text-gray-300 p-4 rounded-lg bg-green-900/50">
-        <h3 className="font-bold text-lg">Gràcies!</h3>
+      <div className="text-center text-gray-300 p-4 rounded-lg bg-green-900/50 font-sans">
+        <h3 className="font-bold text-lg font-headline">Gràcies!</h3>
         <p>El teu missatge s'ha enviat correctament.</p>
       </div>
     );
@@ -52,7 +52,7 @@ export function ContactForm() {
       action="https://formspree.io/f/mrbnkawl"
       method="POST"
       onSubmit={handleSubmit}
-      className="space-y-4"
+      className="space-y-4 font-sans"
     >
       <Input
         type="text"

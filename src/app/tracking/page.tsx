@@ -78,7 +78,7 @@ export default function TrackingPage() {
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
                 Localitza el teu enviament
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground">
+              <p className="mt-6 text-lg text-muted-foreground font-sans">
                 Introdueix el teu codi de seguiment per veure l'estat actual de la teva comanda.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -87,15 +87,15 @@ export default function TrackingPage() {
                   value={trackingCode}
                   onChange={(e) => setTrackingCode(e.target.value)}
                   placeholder="TRK - 000"
-                  className="h-12 text-lg text-center sm:text-left"
+                  className="h-12 text-lg text-center sm:text-left font-sans"
                   onKeyUp={(e) => e.key === 'Enter' && handleSearch()}
                 />
-                <Button size="lg" onClick={handleSearch} disabled={loading} className="w-full sm:w-auto">
+                <Button size="lg" onClick={handleSearch} disabled={loading} className="w-full sm:w-auto font-sans">
                   <PackageSearch className="mr-2 h-5 w-5" />
                   {loading ? 'Cercant...' : 'Cercar'}
                 </Button>
               </div>
-              {error && <p className="mt-4 text-red-500 font-medium">{error}</p>}
+              {error && <p className="mt-4 text-red-500 font-medium font-sans">{error}</p>}
             </div>
 
             {shipment && currentStatus && (
@@ -110,7 +110,7 @@ export default function TrackingPage() {
                        </span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-8">
+                  <CardContent className="space-y-8 font-sans">
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
                       <div>
                         <p className="text-sm text-muted-foreground">Origen</p>

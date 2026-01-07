@@ -57,7 +57,7 @@ export default function Blog() {
                   </CardHeader>
                 )}
                 <CardContent className="flex flex-col flex-grow p-8">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3 font-sans">
                     <Calendar className="h-4 w-4" />
                     <span>{post.date}</span>
                   </div>
@@ -65,7 +65,7 @@ export default function Blog() {
                   <p className="text-muted-foreground text-base font-sans">{post.excerpt}</p>
                 </CardContent>
                 <CardFooter className="p-8 pt-0">
-                  <Button variant="link" className="px-0 group text-primary">
+                  <Button variant="link" className="px-0 group text-primary font-sans">
                     Llegir Més <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </CardFooter>

@@ -60,14 +60,14 @@ const ClientShipments = ({ empresa }: { empresa: string }) => {
     <Card className="shadow-2xl rounded-2xl">
       <CardHeader>
         <CardTitle className="text-2xl sm:text-3xl font-headline">Els Teus Enviaments</CardTitle>
-        <CardDescription>Aquí pots veure l'estat de les teves comandes.</CardDescription>
+        <CardDescription className="font-sans">Aquí pots veure l'estat de les teves comandes.</CardDescription>
       </CardHeader>
       <CardContent>
-        {loading && <p>Carregant enviaments...</p>}
-        {error && <p className="text-red-500">{error}</p>}
-        {!loading && !error && shipments.length === 0 && <p>No hi ha cap enviament registrat per a la teva empresa.</p>}
+        {loading && <p className="font-sans">Carregant enviaments...</p>}
+        {error && <p className="text-red-500 font-sans">{error}</p>}
+        {!loading && !error && shipments.length === 0 && <p className="font-sans">No hi ha cap enviament registrat per a la teva empresa.</p>}
         {shipments.length > 0 && (
-          <div className="space-y-4">
+          <div className="space-y-4 font-sans">
             {shipments.map((shipment) => {
               const StatusIcon = statusConfig[shipment.estat].icon;
               const statusColor = statusConfig[shipment.estat].color;
@@ -99,13 +99,13 @@ const WorkerPanel = () => (
   <Card className="shadow-2xl rounded-2xl">
     <CardHeader>
       <CardTitle className="text-2xl sm:text-3xl font-headline">Panell de Control per a Treballadors</CardTitle>
-      <CardDescription>Accedeix a les eines de gestió.</CardDescription>
+      <CardDescription className="font-sans">Accedeix a les eines de gestió.</CardDescription>
     </CardHeader>
     <CardContent className="flex flex-col gap-4">
-       <p className="text-muted-foreground">
+       <p className="text-muted-foreground font-sans">
           Com a treballador, tens accés a la visualització de tots els enviaments de l'empresa.
        </p>
-      <Button asChild variant="outline">
+      <Button asChild variant="outline" className="font-sans">
         <Link href="/tracking">
           <PackageSearch className="mr-2 h-5 w-5" />
           Anar a Seguiment d'Enviaments
@@ -138,7 +138,7 @@ export default function DashboardPage() {
       <div className="flex flex-col min-h-dvh bg-background">
         <Header />
         <main className="flex-1 flex items-center justify-center">
-          <p>Carregant...</p>
+          <p className="font-sans">Carregant...</p>
         </main>
         <Footer />
       </div>
@@ -154,7 +154,7 @@ export default function DashboardPage() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
               Benvingut a la teva zona privada, {user.usuari}!
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-lg text-muted-foreground font-sans">
               Aquest és el teu panell de control personal.
             </p>
           </div>
@@ -166,14 +166,14 @@ export default function DashboardPage() {
             <CardContent className="space-y-6 text-lg">
               <div className="flex items-center gap-4">
                 <User className="h-6 w-6 text-primary" />
-                <div>
+                <div className="font-sans">
                   <p className="text-sm text-muted-foreground">Nom d'usuari</p>
                   <p className="font-semibold">{user.usuari}</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <Building className="h-6 w-6 text-primary" />
-                <div>
+                <div className="font-sans">
                   <p className="text-sm text-muted-foreground">Empresa</p>
                   <p className="font-semibold">{user.empresa}</p>
                 </div>
@@ -185,7 +185,7 @@ export default function DashboardPage() {
           {user.rol === 'Treballador' && <WorkerPanel />}
 
           <div className="border-t pt-8 text-center">
-            <Button onClick={handleLogout} variant="outline" size="lg">
+            <Button onClick={handleLogout} variant="outline" size="lg" className="font-sans">
               <LogOut className="mr-2 h-5 w-5" />
               Sortir
             </Button>

@@ -13,10 +13,10 @@ export default function Footer() {
           
           <div className="lg:col-span-4 space-y-6">
             <Logo className="text-white hover:text-secondary" />
-            <p className="text-gray-400">Aigua pura amb essència d’illa.</p>
+            <p className="text-gray-400 font-sans">Aigua pura amb essència d’illa.</p>
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">Dades de Contacte</h3>
-              <address className="not-italic text-gray-400 space-y-2">
+              <h3 className="text-lg font-semibold text-white mb-3 font-headline">Dades de Contacte</h3>
+              <address className="not-italic text-gray-400 space-y-2 font-sans">
                 <p>Carrer de la Puresa, 123, 08000 Paradís</p>
                 <p>Email: <a href="mailto:contacte@naluwater.cat" className="hover:text-secondary">contacte@naluwater.cat</a></p>
                 <p>Telèfon: <a href="tel:+34930123456" className="hover:text-secondary">+34 930 123 456</a></p>
@@ -25,14 +25,14 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-4 space-y-4">
-            <h3 className="text-lg font-semibold text-white">Contacta amb Nosaltres</h3>
-            <p className="text-gray-400">Tens alguna pregunta o vols fer una comanda especial?</p>
+            <h3 className="text-lg font-semibold text-white font-headline">Contacta amb Nosaltres</h3>
+            <p className="text-gray-400 font-sans">Tens alguna pregunta o vols fer una comanda especial?</p>
             <ContactForm />
           </div>
           
           <div className="lg:col-span-2 lg:col-start-11 space-y-4">
-            <h3 className="text-lg font-semibold text-white">Navegació</h3>
-            <nav className="flex flex-col space-y-2">
+            <h3 className="text-lg font-semibold text-white font-headline">Navegació</h3>
+            <nav className="flex flex-col space-y-2 font-sans">
               <Link href="#inici" className="text-gray-400 hover:text-secondary transition-colors">Inici</Link>
               <Link href="#productes" className="text-gray-400 hover:text-secondary transition-colors">Productes</Link>
               <Link href="#qui-som" className="text-gray-400 hover:text-secondary transition-colors">Qui Som</Link>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
         </div>
-        <div className="mt-16 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <div className="mt-16 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-sans">
           <p>&copy; 2024 Nalu. Tots els drets reservats.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-secondary transition-colors">Avís Legal</Link>

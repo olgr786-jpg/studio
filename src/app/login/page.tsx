@@ -64,7 +64,7 @@ export default function LoginPage() {
           <Card className="shadow-2xl rounded-2xl">
             <CardHeader className="text-center">
               <CardTitle className="text-3xl font-bold tracking-tight font-headline">Accés d'Usuaris</CardTitle>
-              <CardDescription>Introdueix les teves credencials per continuar</CardDescription>
+              <CardDescription className="font-sans">Introdueix les teves credencials per continuar</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleLogin} className="space-y-6">
@@ -78,7 +78,7 @@ export default function LoginPage() {
                     value={usuari}
                     onChange={(e) => setUsuari(e.target.value)}
                     placeholder="El teu usuari"
-                    className="h-12 text-lg"
+                    className="h-12 text-lg font-sans"
                   />
                 </div>
                 <div className="space-y-2">
@@ -91,19 +91,19 @@ export default function LoginPage() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="La teva contrasenya"
-                    className="h-12 text-lg"
+                    className="h-12 text-lg font-sans"
                   />
                 </div>
 
                 {error && (
-                  <div className="flex items-center gap-x-2 rounded-md border border-red-500/50 bg-red-500/10 p-3 text-sm font-medium text-red-500">
+                  <div className="font-sans flex items-center gap-x-2 rounded-md border border-red-500/50 bg-red-500/10 p-3 text-sm font-medium text-red-500">
                     <AlertTriangle className="h-5 w-5 flex-shrink-0" />
                     {error}
                   </div>
                 )}
 
                 <div>
-                  <Button type="submit" size="lg" disabled={loading} className="w-full">
+                  <Button type="submit" size="lg" disabled={loading} className="w-full font-sans">
                     <LogIn className="mr-2 h-5 w-5" />
                     {loading ? 'Entrant...' : 'Entrar'}
                   </Button>

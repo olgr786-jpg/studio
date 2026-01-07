@@ -187,7 +187,7 @@ export default function Products() {
         <Tabs defaultValue="principal" className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 h-auto mb-12">
             {productCategories.map((cat) => (
-              <TabsTrigger key={cat.value} value={cat.value} className="py-3 text-base">
+              <TabsTrigger key={cat.value} value={cat.value} className="py-3 text-base font-sans">
                 <cat.icon className="mr-2 h-5 w-5" /> {cat.label}
               </TabsTrigger>
             ))}
@@ -225,7 +225,7 @@ export default function Products() {
                         {isClient && (
                           <Button
                             size="lg"
-                            className="w-full rounded-lg"
+                            className="w-full rounded-lg font-sans"
                             onClick={() => toast({ title: `${product.name} afegit a la cistella!` })}
                           >
                             <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
