@@ -40,8 +40,8 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="text-center text-green-100 p-4 rounded-lg bg-green-900/50 font-sans">
-        <h3 className="font-bold text-lg font-headline text-white">Gràcies!</h3>
+      <div className="text-center text-primary-foreground p-4 rounded-lg bg-primary/90 font-sans">
+        <h3 className="font-bold text-lg font-headline">Gràcies!</h3>
         <p>El teu missatge s'ha enviat correctament.</p>
       </div>
     );
@@ -60,6 +60,7 @@ export function ContactForm() {
         placeholder="El teu nom"
         aria-label="Nom"
         required
+        className="bg-background/50 placeholder:text-foreground/70"
       />
       <Input
         type="email"
@@ -67,6 +68,7 @@ export function ContactForm() {
         placeholder="El teu correu electrònic"
         aria-label="Correu electrònic"
         required
+        className="bg-background/50 placeholder:text-foreground/70"
       />
       <Textarea
         name="message"
@@ -74,6 +76,7 @@ export function ContactForm() {
         aria-label="Missatge"
         required
         rows={5}
+        className="bg-background/50 placeholder:text-foreground/70"
       />
       <Button type="submit" variant="secondary" className="w-full rounded-lg">
         Enviar Missatge

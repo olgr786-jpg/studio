@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 180 60% 90%; /* Light Tropical Turquoise */
+    --background: 180 60% 50%; /* Vivid Turquoise */
     --foreground: 220 40% 15%; /* Navy Blue */
-    --card: 180 55% 85%; /* Slightly darker turquoise for cards */
+    --card: 180 60% 60%; /* Lighter Turquoise for cards */
     --card-foreground: 220 40% 15%;
-    --popover: 180 55% 85%;
+    --popover: 180 60% 60%;
     --popover-foreground: 220 40% 15%;
-    --primary: 150 60% 50%; /* Soft Light Green */
+    --primary: 150 60% 50%; /* Light Tropical Green */
     --primary-foreground: 220 40% 10%;
     --secondary: 250 60% 80%; /* Light Lilac */
     --secondary-foreground: 24 9.8% 10%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 150 60% 50%; /* Soft Light Green */
+    --accent: 150 60% 50%; /* Light Tropical Green */
     --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 150 60% 50%; /* Soft Light Green */
+    --ring: 150 60% 50%; /* Light Tropical Green */
     --chart-1: 180 60% 90%;
     --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;
