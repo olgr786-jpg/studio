@@ -10,7 +10,7 @@ export function Logo({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="h-10 w-10">
+      <div className="h-8 w-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
@@ -28,7 +28,7 @@ export function Logo({ className }: { className?: string }) {
         </svg>
       </div>
       <div className="flex items-baseline">
-        <span className="font-headline text-3xl font-bold tracking-wide">
+        <span className="font-headline text-2xl font-bold tracking-wide">
           NaluWater
         </span>
       </div>
