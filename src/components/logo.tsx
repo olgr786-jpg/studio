@@ -27,7 +27,7 @@ export function Logo({ className }: { className?: string }) {
       </div>
       <div className="flex items-baseline">
         <span className="font-headline text-3xl font-bold tracking-wide">
-          Nalu
+          NaluWater
         </span>
       </div>
     </Link>
