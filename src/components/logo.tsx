@@ -13,18 +13,15 @@ export function Logo({ className }: { className?: string }) {
       <div className="h-8 w-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
+          viewBox="0 0 24 24"
           fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="h-full w-full"
         >
-          <path
-            d="M50,5 C25,40 25,70 50,95 C75,70 75,40 50,5 Z"
-            stroke="currentColor"
-            strokeWidth="8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
+          <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z" />
         </svg>
       </div>
       <div className="flex items-baseline">
