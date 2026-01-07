@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 25 95% 60%; /* Vivid Orange */
+    --background: 260 80% 90%; /* Light Lilac */
     --foreground: 220 40% 15%; /* Navy Blue */
     --card: 0 0% 100%;
     --card-foreground: 220 40% 15%;
@@ -12,7 +12,7 @@
     --popover-foreground: 220 40% 15%;
     --primary: 175 73% 48%; /* Turquoise */
     --primary-foreground: 210 40% 98%;
-    --secondary: 260 80% 75%; /* Lilac */
+    --secondary: 25 95% 60%; /* Vivid Orange */
     --secondary-foreground: 224 76% 15%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -24,7 +24,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 175 73% 48%; /* Turquoise */
     --chart-1: 175 73% 48%;
-    --chart-2: 260 80% 75%;
+    --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;
     --chart-4: 210 70% 60%;
     --chart-5: 330 75% 65%;
@@ -40,7 +40,7 @@
     --popover-foreground: 210 40% 98%;
     --primary: 175 73% 48%; /* Turquoise */
     --primary-foreground: 210 40% 98%;
-    --secondary: 260 80% 75%; /* Lilac */
+    --secondary: 25 95% 60%; /* Vivid Orange */
     --secondary-foreground: 224 76% 15%;
     --muted: 215 28% 17%;
     --muted-foreground: 215 20% 65%;
@@ -52,7 +52,7 @@
     --input: 215 28% 17%;
     --ring: 175 73% 48%;
     --chart-1: 175 73% 48%;
-    --chart-2: 260 80% 75%;
+    --chart-2: 25 95% 60%;
     --chart-3: 355 85% 65%;
     --chart-4: 210 70% 60%;
     --chart-5: 330 75% 65%;
