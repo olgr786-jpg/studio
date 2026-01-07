@@ -9,7 +9,6 @@ import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/#inici', label: 'Inici' },
   { href: '/#productes', label: 'Productes' },
   { href: '/#qui-som', label: 'Qui Som' },
   { href: '/#blog', label: 'Blog' },
@@ -72,6 +71,13 @@ export default function Header() {
                     </Button>
                 </div>
               <nav className="flex flex-col gap-6">
+                <Link
+                    href={isHomePage ? '/#inici' : '/'}
+                    className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Inici
+                  </Link>
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
