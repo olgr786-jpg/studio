@@ -12,7 +12,7 @@ export function Logo({ className }: { className?: string }) {
       )}
     >
       <Image 
-        src="/logo.png" 
+        src="/Nalu water.png" 
         alt="NaluWater Logo" 
         width={140} 
         height={40}
