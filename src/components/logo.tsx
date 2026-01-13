@@ -14,9 +14,9 @@ export function Logo({ className }: { className?: string }) {
       <Image 
         src="/Nalu water.png" 
         alt="NaluWater Logo" 
-        width={140} 
-        height={40}
-        className="h-10 w-auto"
+        width={180} 
+        height={50}
+        className="h-14 w-auto"
         priority
       />
     </Link>
