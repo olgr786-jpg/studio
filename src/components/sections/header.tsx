@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/#qui-som', label: 'Qui Som' },
   { href: '/#blog', label: 'Blog' },
   { href: '/tracking', label: 'Seguiment' },
+  { href: '/documents', label: 'Factures' },
   { href: '/login', label: 'Login' },
   { href: '/#contacte', label: 'Contacte' },
 ];
@@ -40,7 +41,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-300',
+        'sticky top-0 z-50 w-full transition-all duration-300 print:hidden',
         isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >

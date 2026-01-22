@@ -7,7 +7,7 @@ import { ContactForm } from '@/components/contact-form';
 export default function Footer() {
 
   return (
-    <footer id="contacte" className="bg-card text-card-foreground">
+    <footer id="contacte" className="bg-card text-card-foreground print:hidden">
       <div className="container mx-auto px-4 md:px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
@@ -39,6 +39,7 @@ export default function Footer() {
               <Link href="#blog" className="text-card-foreground/80 hover:text-primary transition-colors">Blog</Link>
               <div className="pt-2 space-y-2">
                 <Link href="/tracking" className="block text-card-foreground/80 hover:text-primary transition-colors">Seguiment</Link>
+                <Link href="/documents" className="block text-card-foreground/80 hover:text-primary transition-colors">Factures</Link>
                 <Link href="/login" className="block text-card-foreground/80 hover:text-primary transition-colors">Login</Link>
               </div>
               <Link href="#contacte" className="text-card-foreground/80 hover:text-primary transition-colors">Contacte</Link>
