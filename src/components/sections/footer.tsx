@@ -12,8 +12,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           <div className="lg:col-span-4 space-y-6">
-            <Logo />
-            <p className="text-card-foreground/80 font-sans">Aigua pura amb essència d’illa.</p>
             <div>
               <h3 className="text-lg font-semibold text-card-foreground mb-3 font-headline">Dades de Contacte</h3>
               <address className="not-italic text-card-foreground/80 space-y-2 font-sans">
@@ -30,7 +28,7 @@ export default function Footer() {
             <ContactForm />
           </div>
           
-          <div className="lg:col-span-2 lg:col-start-11 space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h3 className="text-lg font-semibold text-card-foreground font-headline">Navegació</h3>
             <nav className="flex flex-col space-y-2 font-sans">
               <Link href="#inici" className="text-card-foreground/80 hover:text-primary transition-colors">Inici</Link>
@@ -44,6 +42,11 @@ export default function Footer() {
               </div>
               <Link href="#contacte" className="text-card-foreground/80 hover:text-primary transition-colors">Contacte</Link>
             </nav>
+          </div>
+
+          <div className="lg:col-span-2 space-y-6">
+            <Logo />
+            <p className="text-card-foreground/80 font-sans">Aigua pura amb essència d’illa.</p>
           </div>
 
         </div>
