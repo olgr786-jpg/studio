@@ -20,7 +20,6 @@ export default function Footer() {
               <Link href="#blog" className="text-card-foreground/80 hover:text-primary transition-colors">Blog</Link>
               <div className="pt-2 space-y-2">
                 <Link href="/tracking" className="block text-card-foreground/80 hover:text-primary transition-colors">Seguiment</Link>
-                <Link href="/documents" className="block text-card-foreground/80 hover:text-primary transition-colors">Factures</Link>
                 <Link href="/login" className="block text-card-foreground/80 hover:text-primary transition-colors">Login</Link>
               </div>
               <Link href="#contacte" className="text-card-foreground/80 hover:text-primary transition-colors">Contacte</Link>

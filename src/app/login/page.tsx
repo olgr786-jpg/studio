@@ -44,7 +44,7 @@ export default function LoginPage() {
           empresa: userData.empresa,
           rol: userData.rol 
         }));
-        router.push('/dashboard');
+        router.push('/documents');
       } else {
         setError('Dades incorrectes. Comprova el teu usuari i contrasenya.');
       }

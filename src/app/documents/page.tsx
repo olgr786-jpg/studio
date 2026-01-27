@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow, TableFooter } from '@/components/ui/table';
 import { Separator } from '@/components/ui/separator';
-import { Printer, ArrowLeft, Loader2 } from 'lucide-react';
+import { Printer, ArrowLeft, Loader2, LogOut } from 'lucide-react';
 import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 import { Logo } from '@/components/logo';
@@ -183,6 +183,11 @@ export default function DocumentsPage() {
 
   const handlePrint = () => {
     window.print();
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('userData');
+    router.push('/login');
   };
 
   if (!user) {
@@ -385,6 +390,12 @@ export default function DocumentsPage() {
               <p className="text-muted-foreground font-sans">No s'han trobat factures.</p>
             </div>
           )}
+          <div className="border-t pt-8 text-center">
+            <Button onClick={handleLogout} variant="outline" size="lg" className="font-sans">
+              <LogOut className="mr-2 h-5 w-5" />
+              Sortir
+            </Button>
+          </div>
         </div>
       </main>
       <Footer />
