@@ -45,14 +45,18 @@ export default function Footer() {
           </div>
           
         </div>
-        <div className="mt-16 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-card-foreground/60 font-sans">
-          <Logo className="h-14"/>
-          <p className="text-center order-first md:order-none">&copy; 2024 NaluWater.cat. Tots els drets reservats.</p>
-          <div className="flex space-x-4">
-            <Link href="#" className="hover:text-primary transition-colors">Avís Legal</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Política de Privacitat</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Política de Cookies</Link>
-          </div>
+        <div className="mt-16 border-t border-border pt-8 text-sm text-card-foreground/60 font-sans">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                 <p className="text-center">&copy; 2024 NaluWater.cat. Tots els drets reservats.</p>
+                <div className="flex space-x-4">
+                    <Link href="#" className="hover:text-primary transition-colors">Avís Legal</Link>
+                    <Link href="#" className="hover:text-primary transition-colors">Política de Privacitat</Link>
+                    <Link href="#" className="hover:text-primary transition-colors">Política de Cookies</Link>
+                </div>
+            </div>
+             <div className="mt-8 flex justify-center">
+                <Logo className="h-16"/>
+            </div>
         </div>
       </div>
     </footer>
