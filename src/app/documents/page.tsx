@@ -249,7 +249,7 @@ export default function DocumentsPage() {
             <div id="zona-factura" className="bg-white p-8 rounded-2xl shadow-2xl border print:shadow-none print:border-none print:rounded-none">
               <header className="flex justify-between items-start pb-8 border-b">
                 <div className="w-1/2">
-                   <Logo />
+                   <Logo className="h-16" />
                    <div className="mt-4 text-xs text-gray-600">
                     <p className="font-bold">Nalu Water</p>
                     <p>Carrer de la Puresa, 123</p>
@@ -329,7 +329,7 @@ export default function DocumentsPage() {
 
               <footer className="mt-12 pt-6 border-t text-center text-xs text-gray-500 space-y-6">
                 <div className="flex justify-center">
-                  <Logo />
+                  <Logo className="h-12" />
                 </div>
                 <div>
                   <p>Nalu Water | Inscrita al Registre Mercantil de Barcelona, Tom 1234, Foli 56, Full B-78901.</p>

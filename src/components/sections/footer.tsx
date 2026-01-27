@@ -11,28 +11,20 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
-          <div className="lg:col-span-4 space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <Logo />
-                <p className="text-card-foreground/80 font-sans">Aigua pura amb essència d’illa.</p>
+          <div className="lg:col-span-4 space-y-4">
+            <h3 className="text-lg font-semibold text-card-foreground font-headline">Navegació</h3>
+            <nav className="flex flex-col space-y-2 font-sans">
+              <Link href="#inici" className="text-card-foreground/80 hover:text-primary transition-colors">Inici</Link>
+              <Link href="#productes" className="text-card-foreground/80 hover:text-primary transition-colors">Productes</Link>
+              <Link href="#qui-som" className="text-card-foreground/80 hover:text-primary transition-colors">Qui Som</Link>
+              <Link href="#blog" className="text-card-foreground/80 hover:text-primary transition-colors">Blog</Link>
+              <div className="pt-2 space-y-2">
+                <Link href="/tracking" className="block text-card-foreground/80 hover:text-primary transition-colors">Seguiment</Link>
+                <Link href="/documents" className="block text-card-foreground/80 hover:text-primary transition-colors">Factures</Link>
+                <Link href="/login" className="block text-card-foreground/80 hover:text-primary transition-colors">Login</Link>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-card-foreground font-headline">Navegació</h3>
-                <nav className="flex flex-col space-y-2 font-sans">
-                  <Link href="#inici" className="text-card-foreground/80 hover:text-primary transition-colors">Inici</Link>
-                  <Link href="#productes" className="text-card-foreground/80 hover:text-primary transition-colors">Productes</Link>
-                  <Link href="#qui-som" className="text-card-foreground/80 hover:text-primary transition-colors">Qui Som</Link>
-                  <Link href="#blog" className="text-card-foreground/80 hover:text-primary transition-colors">Blog</Link>
-                  <div className="pt-2 space-y-2">
-                    <Link href="/tracking" className="block text-card-foreground/80 hover:text-primary transition-colors">Seguiment</Link>
-                    <Link href="/documents" className="block text-card-foreground/80 hover:text-primary transition-colors">Factures</Link>
-                    <Link href="/login" className="block text-card-foreground/80 hover:text-primary transition-colors">Login</Link>
-                  </div>
-                  <Link href="#contacte" className="text-card-foreground/80 hover:text-primary transition-colors">Contacte</Link>
-                </nav>
-              </div>
-            </div>
+              <Link href="#contacte" className="text-card-foreground/80 hover:text-primary transition-colors">Contacte</Link>
+            </nav>
           </div>
 
           <div className="lg:col-span-4 space-y-6">
@@ -53,9 +45,10 @@ export default function Footer() {
           </div>
           
         </div>
-        <div className="mt-16 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-card-foreground/60 font-sans">
-          <p>&copy; 2024 NaluWater.cat. Tots els drets reservats.</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+        <div className="mt-16 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-card-foreground/60 font-sans">
+          <Logo className="h-14"/>
+          <p className="text-center order-first md:order-none">&copy; 2024 NaluWater.cat. Tots els drets reservats.</p>
+          <div className="flex space-x-4">
             <Link href="#" className="hover:text-primary transition-colors">Avís Legal</Link>
             <Link href="#" className="hover:text-primary transition-colors">Política de Privacitat</Link>
             <Link href="#" className="hover:text-primary transition-colors">Política de Cookies</Link>

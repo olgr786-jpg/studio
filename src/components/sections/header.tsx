@@ -56,7 +56,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="md:hidden">
                   <div className='flex justify-between items-center mb-8'>
-                      <Logo />
+                      <Logo className="h-16" />
                       <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                           <X className="h-6 w-6" />
                       </Button>
@@ -90,7 +90,7 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-        <Logo className="ml-6 flex-shrink-0" />
+        <Logo className="h-16 ml-6 flex-shrink-0" />
       </div>
     </header>
   );
