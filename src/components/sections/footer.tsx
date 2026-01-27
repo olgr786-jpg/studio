@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer id="contacte" className="bg-card text-card-foreground print:hidden">
-      <div className="container mx-auto px-4 md:px-6 py-20">
+      <div className="container mx-auto px-4 md:px-6 pt-20 pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           <div className="lg:col-span-4 space-y-4">
@@ -54,10 +54,10 @@ export default function Footer() {
                     <Link href="#" className="hover:text-primary transition-colors">Política de Cookies</Link>
                 </div>
             </div>
-             <div className="mt-8 flex justify-center">
-                <Logo className="h-16"/>
-            </div>
         </div>
+      </div>
+      <div className="flex justify-center pb-12">
+          <Logo className="h-16"/>
       </div>
     </footer>
   );
