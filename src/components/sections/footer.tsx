@@ -11,23 +11,6 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
-          <div className="lg:col-span-4 space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-3 font-headline">Dades de Contacte</h3>
-              <address className="not-italic text-card-foreground/80 space-y-2 font-sans">
-                <p>Carrer de la Puresa, 123, 08000 Paradís</p>
-                <p>Email: <a href="mailto:contacte@naluwater.cat" className="hover:text-primary">contacte@naluwater.cat</a></p>
-                <p>Telèfon: <a href="tel:+34930123456" className="hover:text-primary">+34 930 123 456</a></p>
-              </address>
-            </div>
-          </div>
-
-          <div className="lg:col-span-4 space-y-4">
-            <h3 className="text-lg font-semibold text-card-foreground font-headline">Contacta amb Nosaltres</h3>
-            <p className="text-card-foreground/80 font-sans">Tens alguna pregunta o vols fer una comanda especial?</p>
-            <ContactForm />
-          </div>
-          
           <div className="lg:col-span-2 space-y-6">
             <Logo />
             <p className="text-card-foreground/80 font-sans">Aigua pura amb essència d’illa.</p>
@@ -49,6 +32,23 @@ export default function Footer() {
             </nav>
           </div>
 
+          <div className="lg:col-span-4 space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-card-foreground mb-3 font-headline">Dades de Contacte</h3>
+              <address className="not-italic text-card-foreground/80 space-y-2 font-sans">
+                <p>Carrer de la Puresa, 123, 08000 Paradís</p>
+                <p>Email: <a href="mailto:contacte@naluwater.cat" className="hover:text-primary">contacte@naluwater.cat</a></p>
+                <p>Telèfon: <a href="tel:+34930123456" className="hover:text-primary">+34 930 123 456</a></p>
+              </address>
+            </div>
+          </div>
+
+          <div className="lg:col-span-4 space-y-4">
+            <h3 className="text-lg font-semibold text-card-foreground font-headline">Contacta amb Nosaltres</h3>
+            <p className="text-card-foreground/80 font-sans">Tens alguna pregunta o vols fer una comanda especial?</p>
+            <ContactForm />
+          </div>
+          
         </div>
         <div className="mt-16 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-card-foreground/60 font-sans">
           <p>&copy; 2024 NaluWater.cat. Tots els drets reservats.</p>
