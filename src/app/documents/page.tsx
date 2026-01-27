@@ -327,9 +327,14 @@ export default function DocumentsPage() {
                  <p><span className='font-semibold'>Forma de Pagament:</span> {selectedInvoice.paymentMethod}</p>
               </section>
 
-              <footer className="mt-12 pt-6 border-t text-center text-xs text-gray-500">
-                <p>Nalu Water | Inscrita al Registre Mercantil de Barcelona, Tom 1234, Foli 56, Full B-78901.</p>
-                <p>En compliment del RGPD, les seves dades són tractades per a la gestió administrativa i comercial. Pot exercir els seus drets a contacte@naluwater.cat.</p>
+              <footer className="mt-12 pt-6 border-t text-center text-xs text-gray-500 space-y-6">
+                <div className="flex justify-center">
+                  <Logo />
+                </div>
+                <div>
+                  <p>Nalu Water | Inscrita al Registre Mercantil de Barcelona, Tom 1234, Foli 56, Full B-78901.</p>
+                  <p>En compliment del RGPD, les seves dades són tractades per a la gestió administrativa i comercial. Pot exercir els seus drets a contacte@naluwater.cat.</p>
+                </div>
               </footer>
             </div>
           </div>
