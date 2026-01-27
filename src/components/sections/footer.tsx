@@ -55,9 +55,9 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-      </div>
-      <div className="flex justify-center pb-12">
-          <Logo className="h-16"/>
+        <div className="flex justify-center pt-12">
+            <Logo className="h-16"/>
+        </div>
       </div>
     </footer>
   );
