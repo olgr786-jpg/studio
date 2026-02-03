@@ -41,10 +41,10 @@ export default function Header() {
     <header
       className={cn(
         'sticky top-0 z-50 w-full transition-all duration-300 print:hidden',
-        isScrolled ? 'bg-background/50 shadow-md backdrop-blur-sm' : 'bg-transparent'
+        isScrolled ? 'bg-background/20 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-14 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-4 md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
@@ -55,7 +55,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="md:hidden">
                   <div className='flex justify-between items-center mb-8'>
-                      <Logo className="h-12" />
+                      <Logo className="h-10" />
                       <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                           <X className="h-6 w-6" />
                       </Button>
@@ -89,7 +89,7 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-        <Logo className="h-12 ml-6 flex-shrink-0" />
+        <Logo className="h-10 ml-6 flex-shrink-0" />
       </div>
     </header>
   );
