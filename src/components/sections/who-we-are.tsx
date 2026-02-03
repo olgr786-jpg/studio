@@ -7,7 +7,7 @@ export default function WhoWeAre() {
   const whoWeAreImage = PlaceHolderImages.find(img => img.id === 'nalu-bottle-jungle');
 
   return (
-    <section id="qui-som" className="bg-card py-24 sm:py-32">
+    <section id="qui-som" className="bg-card py-12 sm:py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="md:w-3/5">

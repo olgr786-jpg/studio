@@ -175,7 +175,7 @@ export default function Products() {
   }, []);
 
   return (
-    <section id="productes" className="pt-12 pb-24 sm:pt-16 sm:pb-32 bg-background">
+    <section id="productes" className="bg-background py-12 sm:py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">La Puresa en Cada Gota</h2>
