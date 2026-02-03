@@ -195,7 +195,7 @@ export default function Products() {
 
           {productCategories.map((cat) => (
             <TabsContent key={cat.value} value={cat.value}>
-              <div className="grid grid-cols-1 gap-8 md:gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div className="grid grid-cols-1 gap-10 md:gap-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {cat.products.map((product) => {
                   const productImage = PlaceHolderImages.find((img) => img.id === product.imageId);
                   return (

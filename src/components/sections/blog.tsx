@@ -38,7 +38,7 @@ export default function Blog() {
             Descobreix més sobre el món de la hidratació, el benestar i la sostenibilitat amb els nostres articles.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 items-stretch">
           {blogPosts.map((post) => {
              const postImage = PlaceHolderImages.find(img => img.id === post.imageId);
              return (
