@@ -13,7 +13,7 @@ export default function Footer() {
           
           <div className="lg:col-span-4 space-y-4">
             <h3 className="text-lg font-semibold text-card-foreground font-headline">Navegació</h3>
-            <nav className="flex flex-col space-y-4 font-sans">
+            <nav className="flex flex-col space-y-6 font-sans">
               <Link href="#inici" className="text-card-foreground/80 hover:text-primary transition-colors">Inici</Link>
               <Link href="#productes" className="text-card-foreground/80 hover:text-primary transition-colors">Productes</Link>
               <Link href="#qui-som" className="text-card-foreground/80 hover:text-primary transition-colors">Qui Som</Link>

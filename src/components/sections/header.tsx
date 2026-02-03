@@ -60,7 +60,7 @@ export default function Header() {
                           <X className="h-6 w-6" />
                       </Button>
                   </div>
-                <nav className="flex flex-col gap-8">
+                <nav className="flex flex-col gap-10">
                   <Link
                       href={isHomePage ? '/#inici' : '/'}
                       className="text-lg font-medium text-foreground transition-colors hover:text-primary"
@@ -82,7 +82,7 @@ export default function Header() {
               </SheetContent>
             </Sheet>
           </div>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
               <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
                 {link.label}
