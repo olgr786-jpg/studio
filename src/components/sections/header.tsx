@@ -49,9 +49,7 @@ export default function Header() {
         <div className="flex items-center gap-4 md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className={cn(
-                    isHomePage && !isScrolled && 'border-white/50 text-white hover:bg-white/10 hover:text-white'
-                )}>
+                <Button variant="outline" size="icon">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Obrir menú</span>
                 </Button>
@@ -87,18 +85,12 @@ export default function Header() {
           </div>
         <nav className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
-              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className={cn(
-                  "text-base font-medium transition-colors hover:text-primary",
-                  isHomePage && !isScrolled ? 'text-white/90 hover:text-white' : 'text-foreground/80'
-              )}>
+              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium transition-colors hover:text-primary text-foreground/80">
                 {link.label}
               </Link>
             ))}
           </nav>
-        <Logo className={cn(
-            "h-10 ml-6 flex-shrink-0",
-            isHomePage && !isScrolled && 'brightness-0 invert'
-            )} />
+        <Logo className="h-10 ml-6 flex-shrink-0" />
       </div>
     </header>
   );
