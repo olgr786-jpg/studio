@@ -41,14 +41,17 @@ export default function Header() {
     <header
       className={cn(
         'sticky top-0 z-50 w-full transition-all duration-300 print:hidden',
-        isScrolled ? 'bg-background/20 shadow-md backdrop-blur-sm' : 'bg-transparent'
+        'bg-transparent',
+        isScrolled ? 'shadow-sm' : ''
       )}
     >
       <div className="container mx-auto flex h-14 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-4 md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
+                <Button variant="outline" size="icon" className={cn(
+                    isHomePage && !isScrolled && 'border-white/50 text-white hover:bg-white/10 hover:text-white'
+                )}>
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Obrir menú</span>
                 </Button>
@@ -84,12 +87,18 @@ export default function Header() {
           </div>
         <nav className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
-              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium text-foreground/80 transition-colors hover:text-primary">
+              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className={cn(
+                  "text-base font-medium transition-colors hover:text-primary",
+                  isHomePage && !isScrolled ? 'text-white/90 hover:text-white' : 'text-foreground/80'
+              )}>
                 {link.label}
               </Link>
             ))}
           </nav>
-        <Logo className="h-10 ml-6 flex-shrink-0" />
+        <Logo className={cn(
+            "h-10 ml-6 flex-shrink-0",
+            isHomePage && !isScrolled && 'brightness-0 invert'
+            )} />
       </div>
     </header>
   );
