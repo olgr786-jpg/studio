@@ -45,7 +45,7 @@ export default function Header() {
         isScrolled ? 'shadow-sm' : ''
       )}
     >
-      <div className="container mx-auto flex h-14 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-4 md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
@@ -56,7 +56,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="md:hidden">
                   <div className='flex justify-between items-center mb-8'>
-                      <Logo className="h-10" />
+                      <Logo className="h-12" />
                       <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                           <X className="h-6 w-6" />
                       </Button>
@@ -90,7 +90,7 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-        <Logo className="h-10 ml-6 flex-shrink-0" />
+        <Logo className="h-16 ml-6 flex-shrink-0" />
       </div>
     </header>
   );
