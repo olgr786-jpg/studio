@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background">
       <Header />
-      <main className="flex-1 space-y-56 sm:space-y-72">
+      <main className="flex-1 space-y-64 sm:space-y-80">
         <Hero />
         <Products />
         <WhoWeAre />
