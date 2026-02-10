@@ -38,13 +38,13 @@
     },
     {
       "id": "product-essences-mango",
-      "description": "Aigua amb un subtil gust de mango.",
-      "imageUrl": "https://images.unsplash.com/photo-1605341316988-5f5f4b5b317c?q=80&w=1974&auto=format&fit=crop",
+      "description": "Un sabor exòtic i aromàtic per a una hidratació deliciosa. Sense sucres afegits. Format: 500ml.",
+      "imageUrl": "/Gemini_16.png",
       "imageHint": "mango water"
     },
     {
       "id": "product-essences-citrus",
-      "description": "Aigua amb notes cítriques de llimona i llima.",
+      "description": "La combinació energètica de llimona i llima tropical. Sense sucres afegits. Format: 500ml.",
       "imageUrl": "/Gemini_Citrus.png",
       "imageHint": "citrus water"
     },
