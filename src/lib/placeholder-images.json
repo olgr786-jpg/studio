@@ -51,13 +51,13 @@
     {
       "id": "product-wellness-electrolyte",
       "description": "Ampolla d'aigua amb electròlits per a esportistes.",
-      "imageUrl": "https://images.unsplash.com/photo-1606836583199-dd9de4953a47?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/Gemini__.png",
       "imageHint": "sport water"
     },
     {
       "id": "product-wellness-boost",
       "description": "Aigua vitaminada per a un impuls d'energia.",
-      "imageUrl": "https://images.unsplash.com/photo-1622279344259-2e65d21394a1?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1622769408489-40517fa42d70?q=80&w=1974&auto=format&fit=crop",
       "imageHint": "vitamin water"
     },
     {
