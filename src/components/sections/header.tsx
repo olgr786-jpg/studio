@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
@@ -19,67 +18,81 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(false);
 
-  // Use a different root for the links when not on the homepage
-  const [isHomePage, setIsHomePage] = React.useState(false);
   useEffect(() => {
     setIsHomePage(window.location.pathname === '/');
   }, []);
 
+  useEffect(() => {
+    // Prevent body scroll when the menu is open
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    // Cleanup on component unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full print:hidden',
-        'bg-background/90 backdrop-blur-sm shadow-md'
+        'sticky top-0 z-40 w-full print:hidden',
+        'bg-background/95 shadow-sm'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <div className="flex items-center gap-4 md:hidden">
-            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Obrir menú</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left" className="md:hidden">
-                  <div className='flex justify-between items-center mb-8'>
-                      <Logo className="h-12" />
-                      <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
-                          <X className="h-6 w-6" />
-                      </Button>
-                  </div>
-                <nav className="flex flex-col gap-10">
-                  <Link
-                      href={isHomePage ? '/#inici' : '/'}
-                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Inici
-                    </Link>
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={isHomePage ? link.href : `/${link.href}`}
-                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
-        <nav className="hidden md:flex items-center gap-12">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={isHomePage ? link.href : `/${link.href}`} className="text-base font-medium transition-colors hover:text-primary text-foreground/80">
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        <Logo className="h-16 ml-6 flex-shrink-0" />
+        <Logo className="h-16 flex-shrink-0" />
+        <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(true)} className="text-foreground hover:text-primary">
+          <Menu className="h-8 w-8" />
+          <span className="sr-only">Obrir menú</span>
+        </Button>
+      </div>
+
+      {/* Fullscreen Overlay Menu */}
+      <div
+        className={cn(
+          'fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white',
+          'transition-opacity duration-300 ease-in-out',
+          isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        )}
+      >
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute top-5 right-5 h-12 w-12 text-white hover:bg-white/10 hover:text-primary"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <X className="h-8 w-8" />
+          <span className="sr-only">Tancar menú</span>
+        </Button>
+        
+        <nav className="flex flex-col items-center gap-8 text-center">
+          <Link
+              href={isHomePage ? '/#inici' : '/'}
+              className="text-2xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-3xl"
+              onClick={handleLinkClick}
+          >
+              Inici
+          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-2xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-3xl"
+              onClick={handleLinkClick}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       </div>
     </header>
   );
