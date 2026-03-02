@@ -136,34 +136,6 @@ const productCategories = [
       },
     ],
   },
-  {
-    value: 'packs',
-    label: 'Packs Especials',
-    icon: Gift,
-    products: [
-      {
-        id: 'pack-tropical',
-        name: 'Pack Degustació Tropical',
-        description: 'Descobreix el paradís amb les nostres essències: Coco, Pinya i Mango.',
-        imageId: 'pack-tropical-essences',
-        price: '7.00€',
-      },
-       {
-        id: 'pack-esport',
-        name: 'Pack Esport',
-        description: 'La combinació perfecta: Nalu Original, Electrolyte+ i Citrus Paradise per a la teva rutina.',
-        imageId: 'pack-sport',
-        price: '8.00€',
-      },
-      {
-        id: 'pack-experiencia',
-        name: 'Pack Experiència Nalu',
-        description: "El regal perfecte: selecció d'aigües, got reutilitzable i una dedicatòria especial.",
-        imageId: 'product-merch-pack',
-        price: '39.90€',
-      },
-    ],
-  },
 ];
 
 export default function Products() {
@@ -185,7 +157,7 @@ export default function Products() {
         </div>
 
         <Tabs defaultValue="principal" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 h-auto mb-12">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12">
             {productCategories.map((cat) => (
               <TabsTrigger key={cat.value} value={cat.value} className="py-3 text-base font-sans">
                 <cat.icon className="mr-2 h-5 w-5" /> {cat.label}
@@ -243,5 +215,3 @@ export default function Products() {
     </section>
   );
 }
-
-    
