@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useToast } from '@/hooks/use-toast';
-import { ShoppingCart, Leaf, Heart, Gift, GlassWater, Sparkles, Star } from 'lucide-react';
+import { ShoppingCart, Leaf, Heart, GlassWater, Sparkles, Star } from 'lucide-react';
 import React from 'react';
 
 const productCategories = [
@@ -182,7 +182,7 @@ export default function Products() {
                               src={productImage.imageUrl}
                               alt={product.name}
                               fill
-                              className="object-cover"
+                              className={product.id === 'nalu-botella' ? 'object-contain p-4' : 'object-cover'}
                               data-ai-hint={productImage.imageHint}
                             />
                           </div>
