@@ -19,27 +19,10 @@ const navLinks = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     // We can't know the pathname on the server, so we check on the client.
     setIsHomePage(window.location.pathname === '/');
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Set scrolled to true if user has scrolled more than 50px
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    // Call handler once to set initial state
-    handleScroll();
-
-    // Cleanup on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
   }, []);
 
   useEffect(() => {
@@ -62,8 +45,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-40 w-full print:hidden transition-all duration-300 ease-in-out',
-        (scrolled || !isHomePage) ? 'bg-background/95 shadow-sm' : 'bg-transparent'
+        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
+        isHomePage ? 'bg-black' : 'bg-background/95 shadow-sm'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -74,8 +57,7 @@ export default function Header() {
           onClick={() => setIsMenuOpen(true)}
           className={cn(
             'hover:text-primary',
-             // On the homepage at the top, the icon is white. Otherwise, it's the default foreground color.
-            (!scrolled && isHomePage) ? 'text-white hover:bg-white/10' : 'text-foreground'
+            isHomePage ? 'text-white hover:bg-white/10' : 'text-foreground'
           )}
         >
           <Menu className="h-8 w-8" />
@@ -101,10 +83,10 @@ export default function Header() {
           <span className="sr-only">Tancar menú</span>
         </Button>
         
-        <nav className="flex flex-col items-center gap-6 text-center">
+        <nav className="flex flex-col items-center gap-4 text-center">
           <Link
               href={isHomePage ? '/#inici' : '/'}
-              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-2xl"
+              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary md:text-xl"
               onClick={handleLinkClick}
           >
               Inici
@@ -113,7 +95,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-2xl"
+              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary md:text-xl"
               onClick={handleLinkClick}
             >
               {link.label}
