@@ -45,7 +45,9 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-40 w-full bg-black print:hidden'
+        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
+        // If it's the homepage and menu is not open, make it transparent black. Otherwise, solid black.
+        isHomePage && !isMenuOpen ? 'bg-black/50' : 'bg-black'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -84,7 +86,7 @@ export default function Header() {
         <nav className="flex flex-col items-center gap-4 text-center">
           <Link
               href={isHomePage ? '/#inici' : '/'}
-              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary md:text-xl"
+              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary"
               onClick={handleLinkClick}
           >
               Inici
@@ -93,7 +95,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary md:text-xl"
+              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary"
               onClick={handleLinkClick}
             >
               {link.label}
