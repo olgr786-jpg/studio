@@ -46,7 +46,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out bg-black shadow-md'
+        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
+        isHomePage ? 'bg-transparent' : 'bg-black shadow-md'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
