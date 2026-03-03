@@ -8,6 +8,7 @@ import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 import { useCart } from '@/hooks/use-cart';
 import { CartDrawer } from '@/components/cart-drawer';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/#productes', label: 'Productes' },
@@ -19,12 +20,9 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHomePage, setIsHomePage] = useState(false);
   const { cartCount, setIsCartOpen } = useCart();
-
-  useEffect(() => {
-    setIsHomePage(window.location.pathname === '/');
-  }, []);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     if (isMenuOpen) {

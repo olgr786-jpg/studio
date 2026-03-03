@@ -12,18 +12,20 @@ import { Logo } from '@/components/logo';
 import { Printer, ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/hooks/use-toast';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function CheckoutPage() {
   const { cartItems, cartTotal, clearCart } = useCart();
   const router = useRouter();
   const { toast } = useToast();
+  const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
     // If cart is empty after hydration, redirect to home.
     if (cartItems.length === 0) {
       router.replace('/');
     }
+    setCurrentDate(new Date().toLocaleDateString('ca-ES'));
   }, [cartItems, router]);
 
   if (cartItems.length === 0) {
@@ -89,7 +91,7 @@ export default function CheckoutPage() {
               </div>
               <div className="w-1/2 text-right">
                 <h1 className="text-4xl font-bold text-gray-800 font-headline">Resum Compra</h1>
-                <p className="text-gray-500 mt-2">Data: <span className="font-semibold text-gray-800">{new Date().toLocaleDateString('ca-ES')}</span></p>
+                <p className="text-gray-500 mt-2">Data: <span className="font-semibold text-gray-800">{currentDate}</span></p>
               </div>
             </header>
             

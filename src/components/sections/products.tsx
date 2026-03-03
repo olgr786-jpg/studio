@@ -169,7 +169,7 @@ const productCategories: ProductCategory[] = [
 ];
 
 
-const ProductCard = ({ product, isClient }: { product: Product, isClient: boolean }) => {
+const ProductCard = ({ product }: { product: Product }) => {
   const { addItem } = useCart();
   const productImage = PlaceHolderImages.find((img) => img.id === product.imageId);
 
@@ -262,16 +262,14 @@ const ProductCard = ({ product, isClient }: { product: Product, isClient: boolea
         <p className="text-2xl font-bold text-primary mt-4 font-headline">{displayedPrice}</p>
       </div>
       <CardFooter className="p-6 pt-0">
-        {isClient && (
-          <Button
-            size="lg"
-            className="w-full rounded-lg font-sans"
-            onClick={handleAddToCart}
-            disabled={product.variants && !selectedVariant}
-          >
-            <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
-          </Button>
-        )}
+        <Button
+          size="lg"
+          className="w-full rounded-lg font-sans"
+          onClick={handleAddToCart}
+          disabled={product.variants && !selectedVariant}
+        >
+          <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
+        </Button>
       </CardFooter>
     </Card>
   );
@@ -279,12 +277,6 @@ const ProductCard = ({ product, isClient }: { product: Product, isClient: boolea
 
 
 export default function Products() {
-  const [isClient, setIsClient] = React.useState(false);
-
-  React.useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <section id="productes" className="bg-primary py-12 sm:py-16">
       <div className="container mx-auto px-4 md:px-6">
@@ -308,7 +300,7 @@ export default function Products() {
             <TabsContent key={cat.value} value={cat.value}>
               <div className="grid grid-cols-1 gap-10 md:gap-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {cat.products.map((product) => (
-                    <ProductCard key={product.id} product={product} isClient={isClient} />
+                    <ProductCard key={product.id} product={product} />
                 ))}
               </div>
             </TabsContent>
