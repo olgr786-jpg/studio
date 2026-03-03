@@ -7,10 +7,10 @@ import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
+// Removed 'Blog'
 const navLinks = [
   { href: '/#productes', label: 'Productes' },
   { href: '/#qui-som', label: 'Qui Som' },
-  { href: '/#blog', label: 'Blog' },
   { href: '/tracking', label: 'Seguiment' },
   { href: '/login', label: 'Login' },
   { href: '/#contacte', label: 'Contacte' },
@@ -19,32 +19,10 @@ const navLinks = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-    const isHome = window.location.pathname === '/';
-    setIsHomePage(isHome);
-
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    if (isHome) {
-      window.addEventListener('scroll', handleScroll);
-      handleScroll(); // Check on mount
-    } else {
-      setScrolled(true); // Opaque on other pages
-    }
-
-    return () => {
-      if (isHome) {
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
+  useEffect(() => {
+    // Check if it's the home page for the "INICI" link behavior
+    setIsHomePage(window.location.pathname === '/');
   }, []);
 
 
@@ -68,12 +46,11 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
-        isHomePage && !scrolled ? 'bg-transparent' : 'bg-black shadow-md'
+        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out bg-black shadow-md'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo className="h-16 flex-shrink-0" />
+        <Logo className="h-14 flex-shrink-0" />
         <Button
           variant="ghost"
           size="icon"
@@ -105,10 +82,10 @@ export default function Header() {
           <span className="sr-only">Tancar menú</span>
         </Button>
         
-        <nav className="flex flex-col items-center gap-4 text-center">
+        <nav className="flex flex-col items-center gap-8 text-center">
           <Link
               href={isHomePage ? '/#inici' : '/'}
-              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary"
+              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary"
               onClick={handleLinkClick}
           >
               Inici
@@ -117,10 +94,10 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-lg font-light uppercase tracking-widest transition-colors hover:text-primary"
+              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary"
               onClick={handleLinkClick}
             >
-              {link.label}
+              {link.label.toUpperCase()}
             </Link>
           ))}
         </nav>

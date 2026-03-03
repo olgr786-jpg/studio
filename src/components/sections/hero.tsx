@@ -21,36 +21,29 @@ export default function Hero() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-      <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center gap-6">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center">
         <div className="max-w-4xl">
           <h1
-            className="text-5xl font-bold !leading-tight tracking-wide sm:text-6xl md:text-7xl font-headline"
+            className="text-7xl font-bold !leading-tight sm:text-8xl md:text-9xl font-headline"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}
           >
-            Nalu
+            NALU
           </h1>
           <p
-            className="mt-6 max-w-xl mx-auto text-xl md:text-2xl text-neutral-100 font-medium font-sans"
+            className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-neutral-100 font-sans tracking-widest uppercase"
             style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}
           >
-            Aigua pura amb essència d’illa.
+            Aigua pura. Essència tropical.
           </p>
           <div className="mt-10 flex gap-4 justify-center">
             <Button
               asChild
               size="lg"
-              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
-            >
-              <Link href="#productes">Veure Productes</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
               variant="outline"
-              className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg border-white text-white hover:bg-white hover:text-primary-foreground"
+              className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-white text-white hover:bg-white hover:text-primary-foreground tracking-widest px-8"
             >
-              <Link href="#qui-som">Qui som</Link>
+              <Link href="#productes">[ DESCOBREIX LA COL·LECCIÓ ]</Link>
             </Button>
           </div>
         </div>
