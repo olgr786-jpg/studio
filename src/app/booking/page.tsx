@@ -25,7 +25,7 @@ type BookingRequest = {
   id: string;
   data: string;
   usuari: string;
-  estat: 'Pendent' | 'Aprovat' | 'Rebutjat';
+  estat: 'Pendent' | 'Aprovat' | 'Rebutjat' | 'Acceptada';
   detalls: string;
 };
 
@@ -143,6 +143,7 @@ export default function BookingPage() {
   const getStatusClasses = (status: BookingRequest['estat']) => {
     switch (status) {
       case 'Aprovat':
+      case 'Acceptada':
         return 'bg-green-500/20 text-green-500 border-green-500/50';
       case 'Pendent':
         return 'bg-yellow-500/20 text-yellow-500 border-yellow-500/50';
