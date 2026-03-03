@@ -22,7 +22,7 @@ export default function Hero() {
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center">
+      <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center pb-20">
         <div className="max-w-4xl">
           <h1
             className="text-7xl font-bold !leading-tight sm:text-8xl md:text-9xl font-headline"
