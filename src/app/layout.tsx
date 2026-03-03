@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { inter, playfairDisplay } from '@/app/lib/fonts';
+import { CartProvider } from '@/hooks/use-cart';
 
 export const metadata: Metadata = {
   title: 'Nalu',
@@ -20,11 +21,13 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#00aba9" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#3ad4b9" />
+        <meta name="theme-color" content="#3ad4b9" />
       </head>
       <body className={'antialiased font-sans'}>
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

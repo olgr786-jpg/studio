@@ -3,11 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
+import { useCart } from '@/hooks/use-cart';
+import { CartDrawer } from '@/components/cart-drawer';
 
-// Removed 'Blog'
 const navLinks = [
   { href: '/#productes', label: 'Productes' },
   { href: '/#qui-som', label: 'Qui Som' },
@@ -19,21 +20,18 @@ const navLinks = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
+  const { cartCount, setIsCartOpen } = useCart();
 
   useEffect(() => {
-    // Check if it's the home page for the "INICI" link behavior
     setIsHomePage(window.location.pathname === '/');
   }, []);
 
-
   useEffect(() => {
-    // Prevent body scroll when the menu is open
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-    // Cleanup on component unmount
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -44,27 +42,46 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
-        isHomePage ? 'bg-transparent' : 'bg-black shadow-md'
-      )}
-    >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo className="h-14 flex-shrink-0" />
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setIsMenuOpen(true)}
-          className={cn(
-            'text-white hover:bg-white/10 hover:text-primary'
-          )}
-        >
-          <Menu className="h-8 w-8" />
-          <span className="sr-only">Obrir menú</span>
-        </Button>
-      </div>
+    <>
+      <header
+        className={cn(
+          'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
+          isHomePage ? 'bg-transparent' : 'bg-black shadow-md'
+        )}
+      >
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+          <Logo className="h-14 flex-shrink-0" />
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsCartOpen(true)}
+              className="relative text-white hover:bg-white/10 hover:text-primary"
+            >
+              <ShoppingCart className="h-6 w-6" />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-secondary-foreground text-xs font-bold">
+                  {cartCount}
+                </span>
+              )}
+              <span className="sr-only">Obrir cistella</span>
+            </Button>
 
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(true)}
+              className={cn(
+                'text-white hover:bg-white/10 hover:text-primary'
+              )}
+            >
+              <Menu className="h-8 w-8" />
+              <span className="sr-only">Obrir menú</span>
+            </Button>
+          </div>
+        </div>
+      </header>
+      
       {/* Fullscreen Overlay Menu */}
       <div
         className={cn(
@@ -103,6 +120,8 @@ export default function Header() {
           ))}
         </nav>
       </div>
-    </header>
+
+      <CartDrawer />
+    </>
   );
 }

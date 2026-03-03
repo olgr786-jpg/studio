@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useToast } from '@/hooks/use-toast';
+import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { useCart } from '@/hooks/use-cart';
 import { ShoppingCart, Leaf, Heart, GlassWater, Sparkles, Star } from 'lucide-react';
 import React from 'react';
 
@@ -138,13 +138,32 @@ const productCategories = [
   },
 ];
 
+type Product = typeof productCategories[0]['products'][0];
+
 export default function Products() {
-  const { toast } = useToast();
+  const { addItem } = useCart();
   const [isClient, setIsClient] = React.useState(false);
 
   React.useEffect(() => {
     setIsClient(true);
   }, []);
+
+  const handleAddToCart = (product: Product, productImage?: ImagePlaceholder) => {
+    const priceString = product.price.replace('Des de ', '').replace('€', '').replace(',', '.');
+    const price = parseFloat(priceString);
+    
+    if (isNaN(price) || !productImage) {
+      console.error('Invalid price or image for product:', product);
+      return;
+    }
+
+    addItem({
+      id: product.id,
+      name: product.name,
+      price: price,
+      image: productImage.imageUrl
+    });
+  };
 
   return (
     <section id="productes" className="bg-primary py-12 sm:py-16">
@@ -198,7 +217,7 @@ export default function Products() {
                           <Button
                             size="lg"
                             className="w-full rounded-lg font-sans"
-                            onClick={() => toast({ title: `${product.name} afegit a la cistella!` })}
+                            onClick={() => handleAddToCart(product, productImage)}
                           >
                             <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
                           </Button>
