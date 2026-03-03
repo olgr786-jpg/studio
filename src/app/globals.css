@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 210 30% 12%; /* Deep Ocean Blue */
-    --foreground: 40 30% 95%; /* Sandy White */
+    --background: 170 75% 45%; /* Vibrant Turquoise */
+    --foreground: 170 80% 5%; /* Dark Turquoise for contrast */
     --card: 210 30% 18%; /* Lighter Deep Blue */
     --card-foreground: 40 30% 95%;
     --popover: 210 30% 12%;
@@ -15,7 +15,7 @@
     --secondary: 30 90% 70%; /* Sunset Orange */
     --secondary-foreground: 20 20% 10%;
     --muted: 210 25% 25%;
-    --muted-foreground: 210 15% 65%;
+    --muted-foreground: 170 25% 30%;
     --accent: 30 90% 70%; /* Sunset Orange as accent */
     --accent-foreground: 20 20% 10%;
     --destructive: 0 84.2% 60.2%;
@@ -32,8 +32,8 @@
   }
 
   .dark {
-    --background: 210 30% 12%; /* Deep Ocean Blue */
-    --foreground: 40 30% 95%; /* Sandy White */
+    --background: 170 75% 45%; /* Vibrant Turquoise */
+    --foreground: 170 80% 5%; /* Dark Turquoise for contrast */
     --card: 210 30% 18%; /* Lighter Deep Blue */
     --card-foreground: 40 30% 95%;
     --popover: 210 30% 12%;
@@ -43,7 +43,7 @@
     --secondary: 30 90% 70%; /* Sunset Orange */
     --secondary-foreground: 20 20% 10%;
     --muted: 210 25% 25%;
-    --muted-foreground: 210 15% 65%;
+    --muted-foreground: 170 25% 30%;
     --accent: 30 90% 70%;
     --accent-foreground: 20 20% 10%;
     --destructive: 0 62.8% 30.6%;
