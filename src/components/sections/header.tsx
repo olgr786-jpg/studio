@@ -19,11 +19,34 @@ const navLinks = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    // We can't know the pathname on the server, so we check on the client.
-    setIsHomePage(window.location.pathname === '/');
+    useEffect(() => {
+    const isHome = window.location.pathname === '/';
+    setIsHomePage(isHome);
+
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    if (isHome) {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Check on mount
+    } else {
+      setScrolled(true); // Opaque on other pages
+    }
+
+    return () => {
+      if (isHome) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
   }, []);
+
 
   useEffect(() => {
     // Prevent body scroll when the menu is open
@@ -46,7 +69,7 @@ export default function Header() {
     <header
       className={cn(
         'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
-        'bg-black'
+        isHomePage && !scrolled ? 'bg-transparent' : 'bg-black shadow-md'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
