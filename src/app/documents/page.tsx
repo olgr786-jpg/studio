@@ -251,19 +251,19 @@ export default function DocumentsPage() {
             </div>
             
             {/* --- Contingut Imprimible --- */}
-            <div id="zona-factura" className="bg-white p-8 rounded-2xl shadow-2xl border print:shadow-none print:border-none print:rounded-none">
+            <div id="zona-factura" className="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl border print:shadow-none print:border-none print:rounded-none">
               <header className="flex justify-between items-start pb-8 border-b">
                 <div className="w-1/2">
                    <Logo className="h-16" />
                    <div className="mt-4 text-xs text-gray-600">
-                    <p className="font-bold">Nalu Water</p>
+                    <p className="font-bold text-gray-800">Nalu Water</p>
                     <p>Carrer de la Puresa, 123</p>
                     <p>08000 Paradís</p>
                     <p>B12345678</p>
                    </div>
                 </div>
                 <div className="w-1/2 text-right">
-                  <h1 className="text-4xl font-bold text-primary-foreground font-headline">Factura</h1>
+                  <h1 className="text-4xl font-bold font-headline">Factura</h1>
                   <p className="text-gray-500 mt-2">Número: <span className="font-semibold text-gray-800">{selectedInvoice.invoiceNumber}</span></p>
                   <p className="text-gray-500">Data: <span className="font-semibold text-gray-800">{new Date(selectedInvoice.date).toLocaleDateString('ca-ES')}</span></p>
                 </div>
@@ -319,7 +319,7 @@ export default function DocumentsPage() {
                     </div>
                   ))}
                   <Separator />
-                  <div className="flex justify-between text-2xl font-bold text-primary-foreground">
+                  <div className="flex justify-between text-2xl font-bold">
                     <span>TOTAL:</span>
                     <span>{selectedInvoice.total.toFixed(2)}€</span>
                   </div>

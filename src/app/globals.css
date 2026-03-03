@@ -92,10 +92,13 @@
       visibility: hidden;
     }
     #zona-factura,
-    #zona-factura * {
+    #zona-factura *,
+    #zona-tiquet,
+    #zona-tiquet * {
       visibility: visible;
     }
-    #zona-factura {
+    #zona-factura,
+    #zona-tiquet {
       position: absolute;
       left: 0;
       top: 0;

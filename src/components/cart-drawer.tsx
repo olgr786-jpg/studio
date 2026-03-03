@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetFooter, SheetClose }
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { ShoppingCart, Trash2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 function CartItemCard({ item }: { item: CartItem }) {
   const { updateItemQuantity, removeItem } = useCart();
@@ -53,6 +54,12 @@ function CartItemCard({ item }: { item: CartItem }) {
 
 export function CartDrawer() {
   const { cartItems, cartCount, cartTotal, isCartOpen, setIsCartOpen } = useCart();
+  const router = useRouter();
+
+  const handleCheckout = () => {
+    setIsCartOpen(false);
+    router.push('/checkout');
+  };
 
   return (
     <Sheet open={isCartOpen} onOpenChange={setIsCartOpen}>
@@ -79,7 +86,7 @@ export function CartDrawer() {
                     <span>Subtotal</span>
                     <span className="font-headline text-3xl">{cartTotal.toFixed(2)}€</span>
                 </div>
-                <Button size="lg" className="w-full font-sans text-lg py-7">
+                <Button size="lg" className="w-full font-sans text-lg py-7" onClick={handleCheckout}>
                     Finalitzar compra
                 </Button>
             </SheetFooter>
