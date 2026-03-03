@@ -147,17 +147,17 @@ export default function Products() {
   }, []);
 
   return (
-    <section id="productes" className="bg-background py-12 sm:py-16">
+    <section id="productes" className="bg-primary py-12 sm:py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">La Puresa en Cada Gota</h2>
-          <p className="mt-6 text-lg text-muted-foreground font-sans">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline text-primary-foreground">La Puresa en Cada Gota</h2>
+          <p className="mt-6 text-lg text-primary-foreground/80 font-sans">
             Tria el format que millor s'adapta al teu estil de vida. Sempre amb la mateixa qualitat i puresa que ens defineix.
           </p>
         </div>
 
         <Tabs defaultValue="principal" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12 bg-black/10 text-primary-foreground">
             {productCategories.map((cat) => (
               <TabsTrigger key={cat.value} value={cat.value} className="py-3 text-base font-sans">
                 <cat.icon className="mr-2 h-5 w-5" /> {cat.label}
