@@ -14,6 +14,7 @@ const navLinks = [
   { href: '/#productes', label: 'Productes' },
   { href: '/#qui-som', label: 'Qui Som' },
   { href: '/tracking', label: 'Seguiment' },
+  { href: '/booking', label: 'Booking' },
   { href: '/login', label: 'Login' },
   { href: '/#contacte', label: 'Contacte' },
 ];
