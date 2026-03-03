@@ -101,10 +101,10 @@ export default function Header() {
           <span className="sr-only">Tancar menú</span>
         </Button>
         
-        <nav className="flex flex-col items-center gap-8 text-center">
+        <nav className="flex flex-col items-center gap-6 text-center">
           <Link
               href={isHomePage ? '/#inici' : '/'}
-              className="text-2xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-3xl"
+              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-2xl"
               onClick={handleLinkClick}
           >
               Inici
@@ -113,7 +113,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-2xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-3xl"
+              className="text-xl font-light uppercase tracking-widest transition-colors hover:text-primary md:text-2xl"
               onClick={handleLinkClick}
             >
               {link.label}
