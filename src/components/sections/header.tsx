@@ -45,8 +45,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
-        isHomePage ? 'bg-black' : 'bg-background/95 shadow-sm'
+        'fixed top-0 z-40 w-full bg-black print:hidden'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -56,8 +55,7 @@ export default function Header() {
           size="icon"
           onClick={() => setIsMenuOpen(true)}
           className={cn(
-            'hover:text-primary',
-            isHomePage ? 'text-white hover:bg-white/10' : 'text-foreground'
+            'text-white hover:bg-white/10 hover:text-primary'
           )}
         >
           <Menu className="h-8 w-8" />
