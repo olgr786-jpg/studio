@@ -46,8 +46,7 @@ export default function Header() {
     <header
       className={cn(
         'fixed top-0 z-40 w-full print:hidden transition-colors duration-300 ease-in-out',
-        // If it's the homepage and menu is not open, make it transparent black. Otherwise, solid black.
-        isHomePage && !isMenuOpen ? 'bg-black/50' : 'bg-black'
+        'bg-black'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
