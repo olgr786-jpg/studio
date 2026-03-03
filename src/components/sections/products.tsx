@@ -4,12 +4,36 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useCart } from '@/hooks/use-cart';
 import { ShoppingCart, Leaf, Heart, GlassWater, Sparkles, Star } from 'lucide-react';
 import React from 'react';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Label } from '@/components/ui/label';
 
-const productCategories = [
+// Define types for products and variants
+type ProductVariant = {
+  size: string;
+  price: number;
+};
+
+type Product = {
+  id: string;
+  name: string;
+  description: string;
+  imageId: string;
+  price?: string;
+  variants?: ProductVariant[];
+};
+
+type ProductCategory = {
+    value: string;
+    label: string;
+    icon: React.ElementType;
+    products: Product[];
+}
+
+const productCategories: ProductCategory[] = [
   {
     value: 'principal',
     label: 'Gamma Principal',
@@ -18,9 +42,15 @@ const productCategories = [
       {
         id: 'nalu-original',
         name: 'Nalu Original',
-        description: 'Aigua pura i equilibrada. Formats: 350ml (1.50€), 500ml (1.80€), 750ml (2.20€), 1L (2.50€) i 1,5L (3.00€).',
+        description: 'Aigua pura i equilibrada, disponible en múltiples formats per adaptar-se a cada moment.',
         imageId: 'product-original',
-        price: 'Des de 1.50€',
+        variants: [
+            { size: '350ml', price: 1.50 },
+            { size: '500ml', price: 1.80 },
+            { size: '750ml', price: 2.20 },
+            { size: '1L', price: 2.50 },
+            { size: '1.5L', price: 3.00 },
+        ],
       },
       {
         id: 'nalu-premium',
@@ -138,32 +168,122 @@ const productCategories = [
   },
 ];
 
-type Product = typeof productCategories[0]['products'][0];
+
+const ProductCard = ({ product, isClient }: { product: Product, isClient: boolean }) => {
+  const { addItem } = useCart();
+  const productImage = PlaceHolderImages.find((img) => img.id === product.imageId);
+
+  const [selectedVariant, setSelectedVariant] = React.useState<ProductVariant | undefined>(product.variants?.[0]);
+  
+  const handleAddToCart = () => {
+    if (!productImage) {
+      console.error('Product image not found for:', product.id);
+      return;
+    }
+
+    let price: number;
+    let id: string;
+    let name: string;
+
+    if (product.variants && selectedVariant) {
+        price = selectedVariant.price;
+        id = `${product.id}-${selectedVariant.size}`;
+        name = `${product.name} (${selectedVariant.size})`;
+    } else if (product.price) {
+        const priceString = product.price.replace('Des de ', '').replace('€', '').replace(',', '.');
+        price = parseFloat(priceString);
+        id = product.id;
+        name = product.name;
+    } else {
+        console.error('Product has no price or variants:', product);
+        return;
+    }
+    
+    if (isNaN(price)) {
+      console.error('Invalid price for product:', product);
+      return;
+    }
+
+    addItem({
+      id: id,
+      name: name,
+      price: price,
+      image: productImage.imageUrl,
+    });
+  };
+
+  const displayedPrice = product.variants && selectedVariant
+    ? `${selectedVariant.price.toFixed(2)}€`
+    : product.price || '';
+
+
+  return (
+    <Card
+      key={product.id}
+      className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-2xl bg-card rounded-2xl shadow-lg"
+    >
+      <CardHeader className="p-0">
+        {productImage && (
+          <div className="aspect-[4/3] relative">
+            <Image
+              src={productImage.imageUrl}
+              alt={product.name}
+              fill
+              className={product.id === 'nalu-botella' ? 'object-contain p-4' : 'object-cover'}
+              data-ai-hint={productImage.imageHint}
+            />
+          </div>
+        )}
+      </CardHeader>
+      <div className="flex flex-col flex-grow p-6 text-center">
+        <CardTitle className="m-0 text-2xl font-headline">{product.name}</CardTitle>
+        <p className="text-muted-foreground mt-3 flex-grow font-sans text-sm">{product.description}</p>
+        
+        {product.variants && selectedVariant && (
+          <div className="my-4 font-sans">
+            <RadioGroup
+              defaultValue={selectedVariant.size}
+              onValueChange={(value: string) => {
+                const newVariant = product.variants?.find(v => v.size === value);
+                setSelectedVariant(newVariant);
+              }}
+              className="flex justify-center flex-wrap gap-x-4 gap-y-2"
+            >
+              {product.variants.map((variant) => (
+                <div key={variant.size} className="flex items-center space-x-2">
+                  <RadioGroupItem value={variant.size} id={`${product.id}-${variant.size}`} />
+                  <Label htmlFor={`${product.id}-${variant.size}`} className="cursor-pointer">{variant.size}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+        )}
+        
+        <p className="text-2xl font-bold text-primary mt-4 font-headline">{displayedPrice}</p>
+      </div>
+      <CardFooter className="p-6 pt-0">
+        {isClient && (
+          <Button
+            size="lg"
+            className="w-full rounded-lg font-sans"
+            onClick={handleAddToCart}
+            disabled={product.variants && !selectedVariant}
+          >
+            <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
+          </Button>
+        )}
+      </CardFooter>
+    </Card>
+  );
+};
+
 
 export default function Products() {
-  const { addItem } = useCart();
   const [isClient, setIsClient] = React.useState(false);
 
   React.useEffect(() => {
     setIsClient(true);
   }, []);
-
-  const handleAddToCart = (product: Product, productImage?: ImagePlaceholder) => {
-    const priceString = product.price.replace('Des de ', '').replace('€', '').replace(',', '.');
-    const price = parseFloat(priceString);
-    
-    if (isNaN(price) || !productImage) {
-      console.error('Invalid price or image for product:', product);
-      return;
-    }
-
-    addItem({
-      id: product.id,
-      name: product.name,
-      price: price,
-      image: productImage.imageUrl
-    });
-  };
 
   return (
     <section id="productes" className="bg-primary py-12 sm:py-16">
@@ -187,45 +307,9 @@ export default function Products() {
           {productCategories.map((cat) => (
             <TabsContent key={cat.value} value={cat.value}>
               <div className="grid grid-cols-1 gap-10 md:gap-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {cat.products.map((product) => {
-                  const productImage = PlaceHolderImages.find((img) => img.id === product.imageId);
-                  return (
-                    <Card
-                      key={product.id}
-                      className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-2xl bg-card rounded-2xl shadow-lg"
-                    >
-                      <CardHeader className="p-0">
-                        {productImage && (
-                          <div className="aspect-[4/3] relative">
-                            <Image
-                              src={productImage.imageUrl}
-                              alt={product.name}
-                              fill
-                              className={product.id === 'nalu-botella' ? 'object-contain p-4' : 'object-cover'}
-                              data-ai-hint={productImage.imageHint}
-                            />
-                          </div>
-                        )}
-                      </CardHeader>
-                      <div className="flex flex-col flex-grow p-6 text-center">
-                        <CardTitle className="m-0 text-2xl font-headline">{product.name}</CardTitle>
-                        <p className="text-muted-foreground mt-3 flex-grow font-sans text-sm">{product.description}</p>
-                        <p className="text-2xl font-bold text-primary mt-4 font-headline">{product.price}</p>
-                      </div>
-                      <CardFooter className="p-6 pt-0">
-                        {isClient && (
-                          <Button
-                            size="lg"
-                            className="w-full rounded-lg font-sans"
-                            onClick={() => handleAddToCart(product, productImage)}
-                          >
-                            <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
-                          </Button>
-                        )}
-                      </CardFooter>
-                    </Card>
-                  );
-                })}
+                {cat.products.map((product) => (
+                    <ProductCard key={product.id} product={product} isClient={isClient} />
+                ))}
               </div>
             </TabsContent>
           ))}
