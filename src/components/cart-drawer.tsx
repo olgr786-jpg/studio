@@ -82,9 +82,9 @@ export function CartDrawer() {
             </ScrollArea>
             <Separator />
             <SheetFooter className="p-6 bg-card/50 space-y-6">
-                <div className="flex justify-between items-center text-xl font-semibold">
+                <div className="flex justify-between items-center text-lg font-semibold">
                     <span>Subtotal</span>
-                    <span className="font-headline text-3xl">{cartTotal.toFixed(2)}€</span>
+                    <span className="font-headline text-2xl">{cartTotal.toFixed(2)}€</span>
                 </div>
                 <Button size="lg" className="w-full font-sans text-lg py-7" onClick={handleCheckout}>
                     Finalitzar compra
