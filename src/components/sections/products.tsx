@@ -157,9 +157,14 @@ const productCategories: ProductCategory[] = [
       {
         id: 'nalu-gots',
         name: 'Gots Reutilitzables Nalu',
-        description: 'Set de 4 gots amb dissenys tropicals. Perfectes per a qualsevol ocasió.',
+        description: 'Tria el teu disseny tropical preferit. Perfectes per a qualsevol ocasió.',
         imageId: 'product-merch-cups',
-        price: '19.90€',
+        variants: [
+          { size: 'Onada', price: 19.90 },
+          { size: 'Palmera', price: 19.90 },
+          { size: 'Corall', price: 19.90 },
+          { size: 'Volcà', price: 19.90 },
+        ],
       },
       {
         id: 'nalu-botella',
