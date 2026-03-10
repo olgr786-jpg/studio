@@ -217,8 +217,8 @@ export default function CheckoutPage() {
                         <Input id="name" placeholder="El teu nom" required className="bg-gray-50 border-gray-300 text-gray-900" />
                     </div>
                      <div className="space-y-2">
-                        <Label htmlFor="email" className="text-gray-700">Correu electrònic</Label>
-                        <Input id="email" type="email" placeholder="email@exemple.com" required className="bg-gray-50 border-gray-300 text-gray-900" />
+                        <Label htmlFor="phone" className="text-gray-700">Telèfon</Label>
+                        <Input id="phone" type="tel" placeholder="El teu telèfon" required className="bg-gray-50 border-gray-300 text-gray-900" />
                     </div>
                      <div className="col-span-1 md:col-span-2 space-y-2">
                         <Label htmlFor="address" className="text-gray-700">Adreça</Label>
