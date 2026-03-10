@@ -143,12 +143,6 @@
       "description": "Primer pla d'una pell radiant i hidratada.",
       "imageUrl": "/PYG34.avif",
       "imageHint": "hydrated skin"
-    },
-    {
-      "id": "product-special-edition",
-      "description": "Edició Especial Nalu.",
-      "imageUrl": "/ChatGPTIM.png",
-      "imageHint": "special edition"
     }
   ]
 }

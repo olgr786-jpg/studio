@@ -63,13 +63,6 @@ const productCategories: ProductCategory[] = [
             { size: '2L', price: 5.00 },
         ],
       },
-      {
-        id: 'nalu-special-edition',
-        name: 'Nalu Edició Especial',
-        description: 'Una ampolla de disseny exclusiu per a una experiència única.',
-        imageId: 'product-special-edition',
-        price: '5.00€',
-      },
     ],
   },
   {
