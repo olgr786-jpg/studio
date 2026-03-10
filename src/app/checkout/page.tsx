@@ -136,14 +136,10 @@ export default function CheckoutPage() {
       </div>
       <main className="py-12 px-4 sm:px-6 lg:px-8 bg-background print:bg-white print:p-0">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center mb-8 print:hidden">
+          <div className="flex justify-start items-center mb-8 print:hidden">
               <Button variant="outline" onClick={() => router.back()}>
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Tornar
-              </Button>
-              <Button onClick={handlePrint}>
-                <Printer className="mr-2 h-4 w-4" />
-                Imprimir Tiquet
               </Button>
           </div>
 
@@ -238,16 +234,22 @@ export default function CheckoutPage() {
                         Recorda iniciar sessió per poder guardar i consultar la teva factura més tard.
                     </p>
                 )}
-                <Button type="submit" size="lg" className="w-full mt-8 font-sans" disabled={isSubmitting}>
-                   {isSubmitting ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Processant...
-                    </>
-                  ) : (
-                    'Confirmar i Pagar'
-                  )}
-                </Button>
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <Button variant="outline" size="lg" className="font-sans" onClick={handlePrint}>
+                        <Printer className="mr-2 h-4 w-4" />
+                        Imprimir Tiquet
+                    </Button>
+                    <Button type="submit" size="lg" className="font-sans" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Processant...
+                        </>
+                      ) : (
+                        'Confirmar i Pagar'
+                      )}
+                    </Button>
+                </div>
             </form>
 
              <footer className="mt-12 pt-6 border-t text-center text-xs text-gray-500">
