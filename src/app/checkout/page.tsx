@@ -81,7 +81,7 @@ export default function CheckoutPage() {
 
     setIsSubmitting(true);
 
-    const invoiceNumber = `F-${Date.now()}`;
+    const invoiceNumber = `FRA-${Date.now()}`;
     const today = new Date().toISOString();
 
     const invoiceItems = cartItems.map(item => ({
@@ -155,7 +155,7 @@ export default function CheckoutPage() {
                  </div>
               </div>
               <div className="w-1/2 text-right">
-                <h1 className="text-4xl font-bold text-gray-800 font-headline">Resum Compra</h1>
+                <h1 className="text-4xl font-bold text-gray-800 font-headline">Factura</h1>
                 <p className="text-gray-500 mt-2">Data: <span className="font-semibold text-gray-800">{currentDate}</span></p>
               </div>
             </header>
