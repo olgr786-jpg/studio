@@ -9,16 +9,27 @@ import { Label } from '@/components/ui/label';
 import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 import { Logo } from '@/components/logo';
-import { Printer, ArrowLeft } from 'lucide-react';
+import { Printer, ArrowLeft, Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useState } from 'react';
+
+// Define UserSession type
+type UserSession = {
+  usuari: string;
+  empresa: string;
+  rol: 'Client' | 'Treballador';
+};
+
+const API_URL = 'https://sheetdb.io/api/v1/3yz5a4npc7t4c';
 
 export default function CheckoutPage() {
   const { cartItems, cartTotal, clearCart } = useCart();
   const router = useRouter();
   const { toast } = useToast();
   const [currentDate, setCurrentDate] = useState('');
+  const [user, setUser] = useState<UserSession | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     // If cart is empty after hydration, redirect to home.
@@ -26,6 +37,12 @@ export default function CheckoutPage() {
       router.replace('/');
     }
     setCurrentDate(new Date().toLocaleDateString('ca-ES'));
+
+    // Get user from localStorage
+    const storedData = localStorage.getItem('userData');
+    if (storedData) {
+      setUser(JSON.parse(storedData));
+    }
   }, [cartItems, router]);
 
   if (cartItems.length === 0) {
@@ -49,15 +66,67 @@ export default function CheckoutPage() {
   const taxAmount = subtotal * taxRate;
   const total = subtotal + taxAmount;
 
-  const handleConfirmPurchase = (e: React.FormEvent) => {
+  const handleConfirmPurchase = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here would be payment processing logic
-    toast({
-        title: "Compra realitzada!",
-        description: "Gràcies per la teva comanda. (Simulació)",
-    });
-    clearCart();
-    router.push('/');
+    
+    if (!user) {
+        toast({
+            variant: "destructive",
+            title: "Inici de sessió necessari",
+            description: "Per poder generar una factura, has d'iniciar sessió.",
+        });
+        router.push('/login');
+        return;
+    }
+
+    setIsSubmitting(true);
+
+    const invoiceNumber = `F-${Date.now()}`;
+    const today = new Date().toISOString();
+
+    const invoiceItems = cartItems.map(item => ({
+        num_factura: invoiceNumber,
+        data: today,
+        usuari: user.usuari,
+        fpagament: 'Targeta (Simulació)',
+        concepte: item.name,
+        preu_unitari: item.price.toString(),
+        unitats: item.quantity.toString(),
+        iva: '21',
+        dte: '0',
+        albara: `A-${Date.now() + Math.random()}`
+    }));
+    
+    try {
+        const response = await fetch(`${API_URL}?sheet=documents`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ data: invoiceItems })
+        });
+
+        if (!response.ok) {
+            throw new Error('No s\'ha pogut generar la factura.');
+        }
+
+        toast({
+            title: "Compra realitzada amb èxit!",
+            description: "La teva factura s'ha generat i està disponible a la secció de documents.",
+        });
+        clearCart();
+        router.push('/documents');
+    } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : 'Hi ha hagut un error inesperat.';
+        toast({
+            variant: "destructive",
+            title: "Uh oh! Alguna cosa ha anat malament.",
+            description: errorMessage,
+        });
+    } finally {
+        setIsSubmitting(false);
+    }
   }
 
   return (
@@ -164,8 +233,20 @@ export default function CheckoutPage() {
                         <Input id="zip" placeholder="08000" required className="bg-gray-50 border-gray-300 text-gray-900" />
                     </div>
                 </div>
-                <Button type="submit" size="lg" className="w-full mt-8 font-sans">
-                  Confirmar i Pagar
+                 {!user && (
+                    <p className="mt-4 text-sm text-amber-600 font-sans">
+                        Recorda iniciar sessió per poder guardar i consultar la teva factura més tard.
+                    </p>
+                )}
+                <Button type="submit" size="lg" className="w-full mt-8 font-sans" disabled={isSubmitting}>
+                   {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Processant...
+                    </>
+                  ) : (
+                    'Confirmar i Pagar'
+                  )}
                 </Button>
             </form>
 
