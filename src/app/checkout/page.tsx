@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 import { Logo } from '@/components/logo';
-import { Printer, ArrowLeft, Loader2 } from 'lucide-react';
+import { Download, ArrowLeft, Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useState } from 'react';
@@ -236,8 +236,8 @@ export default function CheckoutPage() {
                 )}
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Button variant="outline" size="lg" className="font-sans" onClick={handlePrint}>
-                        <Printer className="mr-2 h-4 w-4" />
-                        Imprimir Tiquet
+                        <Download className="mr-2 h-4 w-4" />
+                        Descarregar PDF
                     </Button>
                     <Button type="submit" size="lg" className="font-sans" disabled={isSubmitting}>
                       {isSubmitting ? (
