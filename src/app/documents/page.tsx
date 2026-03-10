@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow, TableFooter } from '@/components/ui/table';
 import { Separator } from '@/components/ui/separator';
-import { Printer, ArrowLeft, Loader2, LogOut } from 'lucide-react';
+import { Download, ArrowLeft, Loader2, LogOut } from 'lucide-react';
 import Header from '@/components/sections/header';
 import Footer from '@/components/sections/footer';
 import { Logo } from '@/components/logo';
@@ -245,8 +245,8 @@ export default function DocumentsPage() {
                 Tornar al llistat
               </Button>
               <Button onClick={handlePrint}>
-                <Printer className="mr-2 h-4 w-4" />
-                Imprimir PDF
+                <Download className="mr-2 h-4 w-4" />
+                Descarregar PDF
               </Button>
             </div>
             
@@ -379,7 +379,7 @@ export default function DocumentsPage() {
                   </CardHeader>
                   <CardContent className="flex justify-end">
                     <Button onClick={() => setSelectedInvoice(invoice)}>
-                      Veure Detalls i Imprimir
+                      Veure i Descarregar
                     </Button>
                   </CardContent>
                 </Card>
