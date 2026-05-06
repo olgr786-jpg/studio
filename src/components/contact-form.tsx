@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,8 +8,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Label } from '@/components/ui/label';
 
 export function ContactForm() {
+  const [hasMounted, setHasMounted] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [requestType, setRequestType] = useState('consulta');
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -30,6 +35,18 @@ export function ContactForm() {
       console.error('Error submitting form:', error);
     }
   };
+
+  if (!hasMounted) {
+    return (
+      <div className="space-y-4 animate-pulse">
+        <div className="h-10 bg-background/50 rounded-md" />
+        <div className="h-10 bg-background/50 rounded-md" />
+        <div className="h-10 bg-background/50 rounded-md" />
+        <div className="h-24 bg-background/50 rounded-md" />
+        <div className="h-12 bg-secondary/50 rounded-md" />
+      </div>
+    );
+  }
   
   if (submitted) {
     return (

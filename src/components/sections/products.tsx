@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useCart } from '@/hooks/use-cart';
 import { ShoppingCart, Leaf, Heart, GlassWater, Sparkles, Star } from 'lucide-react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 
@@ -179,11 +179,16 @@ const productCategories: ProductCategory[] = [
 
 
 const ProductCard = ({ product }: { product: Product }) => {
+  const [hasMounted, setHasMounted] = useState(false);
   const { addItem } = useCart();
   const productImage = PlaceHolderImages.find((img) => img.id === product.imageId);
 
-  const [selectedVariant, setSelectedVariant] = React.useState<ProductVariant | undefined>(product.variants?.[0]);
+  const [selectedVariant, setSelectedVariant] = useState<ProductVariant | undefined>(product.variants?.[0]);
   
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
   const handleAddToCart = () => {
     if (!productImage) {
       console.error('Product image not found for:', product.id);
@@ -225,6 +230,19 @@ const ProductCard = ({ product }: { product: Product }) => {
     ? `${selectedVariant.price.toFixed(2)}€`
     : product.price || '';
 
+  if (!hasMounted) {
+    return (
+       <Card className="flex flex-col overflow-hidden bg-card rounded-2xl shadow-lg animate-pulse">
+          <div className="aspect-[4/3] bg-muted" />
+          <div className="p-6 space-y-4">
+            <div className="h-8 bg-muted rounded w-3/4 mx-auto" />
+            <div className="h-4 bg-muted rounded w-full" />
+            <div className="h-4 bg-muted rounded w-5/6 mx-auto" />
+            <div className="h-10 bg-muted rounded w-full" />
+          </div>
+       </Card>
+    );
+  }
 
   return (
     <Card
@@ -276,7 +294,6 @@ const ProductCard = ({ product }: { product: Product }) => {
           className="w-full rounded-lg font-sans"
           onClick={handleAddToCart}
           disabled={product.variants && !selectedVariant}
-          suppressHydrationWarning
         >
           <ShoppingCart className="mr-2 h-5 w-5" /> Comprar
         </Button>
